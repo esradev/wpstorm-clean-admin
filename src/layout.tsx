@@ -8,9 +8,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <SidebarProvider>
-        <AppSidebar side="right" />
-        <SidebarInset>
-          <main className="flex w-full flex-col">
+        <div className="flex min-h-screen w-full bg-background text-foreground">
+          <AppSidebar side="right" />
+          <SidebarInset className="flex flex-1">
             <AppHeader />
             {children}
             <Toaster
@@ -19,8 +19,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               closeButton={true}
               swipeDirections={["top", "right", "bottom", "left"]}
             />
-          </main>
-        </SidebarInset>
+          </SidebarInset>
+        </div>
       </SidebarProvider>
     </ThemeProvider>
   );

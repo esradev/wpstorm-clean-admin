@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 import { __ } from "@wordpress/i18n";
 import { Fingerprint } from "lucide-react";
 
-import Auth from "@/layouts/auth";
+import Dashboard from "@/layouts/dashboard/dashboard";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -15,7 +15,7 @@ export const items = [
     url: "/",
     restRoute: "dashboard_options",
     isVisiable: true,
-    component: Auth,
+    component: Dashboard,
     icon: Fingerprint,
     infoDetails: __("Clean Admin dashboard", "wpstorm-clean-admin"),
     infoLink: {

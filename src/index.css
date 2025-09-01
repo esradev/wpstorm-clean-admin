@@ -131,17 +131,17 @@
   --font-serif: danafanum, ui-serif, Georgia, serif;
 
   /* === Custom Colors === */
-  --color-wpstorm-clean-admin-50: #fcf8f0;
-  --color-wpstorm-clean-admin-100: #f9eddb;
-  --color-wpstorm-clean-admin-200: #f1d8b7;
-  --color-wpstorm-clean-admin-300: #e8be89;
-  --color-wpstorm-clean-admin-400: #db924b;
-  --color-wpstorm-clean-admin-500: #d68039;
-  --color-wpstorm-clean-admin-600: #c86a2e;
-  --color-wpstorm-clean-admin-700: #a65228;
-  --color-wpstorm-clean-admin-800: #854227;
-  --color-wpstorm-clean-admin-900: #6c3822;
-  --color-wpstorm-clean-admin-950: #3a1b10;
+  --color-cream-50: #fcf8f0;
+  --color-cream-100: #f9eddb;
+  --color-cream-200: #f1d8b7;
+  --color-cream-300: #e8be89;
+  --color-cream-400: #db924b;
+  --color-cream-500: #d68039;
+  --color-cream-600: #c86a2e;
+  --color-cream-700: #a65228;
+  --color-cream-800: #854227;
+  --color-cream-900: #6c3822;
+  --color-cream-950: #3a1b10;
 
   --color-vivid-tangerine-50: #fef4f2;
   --color-vivid-tangerine-100: #ffe6e1;

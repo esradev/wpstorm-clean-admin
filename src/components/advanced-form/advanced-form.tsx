@@ -95,7 +95,7 @@ export function AdvancedForm<TFormValues extends FieldValues>({
 
   return (
     <>
-      <div className="flex w-full h-full flex-col relative justify-between">
+      <div className="flex h-full flex-1 flex-col relative justify-between">
         {isFetching ? (
           <LoadingSkeleton inputs={Object.values(fields)} />
         ) : !hasAccess ? (
