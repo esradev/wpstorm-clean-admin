@@ -21,21 +21,25 @@ export function AppSidebar() {
   const { toggleSidebar } = useSidebar();
 
   return (
-    <Sidebar side="right" className="w-64 bg-payamito-plus-600 pb-8">
+    <Sidebar
+      side="right"
+      className="bg-wpstorm-clean-admin-600 pb-8"
+      variant="inset"
+    >
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <a href="#">
                 <span className="truncate font-semibold">
-                  {__("Smart Payamito Plus plugin", "payamito-plus")}
+                  {__("Clean Admin", "payamito-plus")}
                 </span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent className="bg-wpstorm-clean-admin-600">
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
