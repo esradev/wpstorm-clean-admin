@@ -1,0 +1,48 @@
+﻿:root {
+  --wpstorm-clean-admin-font-family: danafanum;
+}
+
+@font-face {
+  font-family: danafanum;
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url('./woff/DanaFaNum-Light.woff') format('woff'),
+    url('./woff2/DanaFaNum-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: danafanum;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('./woff/DanaFaNum-Regular.woff') format('woff'),
+    url('./woff2/DanaFaNum-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: danafanum;
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('./woff/DanaFaNum-Medium.woff') format('woff'),
+    url('./woff2/DanaFaNum-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: danafanum;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url('./woff/DanaFaNum-Bold.woff') format('woff'),
+    url('./woff2/DanaFaNum-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: danafanum;
+  font-style: normal;
+  font-weight: 900;
+  src:
+    url('./woff/DanaFaNum-Black.woff') format('woff'),
+    url('./woff2/DanaFaNum-Black.woff2') format('woff2');
+}

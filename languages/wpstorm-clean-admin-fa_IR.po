@@ -1,0 +1,3926 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-08-10T14:11:57+00:00\n"
+"PO-Revision-Date: 2024-08-10T14:11:57+00:00\n"
+"Language: \n"
+
+#. Plugin Name of the plugin
+#: wpstorm-clean-admin.php
+msgid "WpstormCleanAdmin"
+msgstr "مدیریت پاک"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: wpstorm-clean-admin.php
+msgid "https://wpstorm.ir"
+msgstr "https://wpstorm.ir"
+
+#: includes/Core/Settings.php:48
+msgid "Docs"
+msgstr "مستندات"
+
+#: includes/Modules/Core/Comments.php:196
+msgid "Like: 0930****381"
+msgstr "مانند: 09301111111"
+
+#: includes/Modules/Core/Comments.php:244
+msgid "Error: Mobile number is required."
+msgstr "خطا: شماره موبایل الزامی است."
+
+#: includes/Modules/AwesomeSupport.php:141
+#: includes/Modules/Core/Comments.php:191
+#: includes/Modules/Core/Comments.php:374
+#: includes/Modules/Core/Comments.php:409
+#: includes/Modules/Core/LoginRegister.php:488
+#: includes/Modules/Core/LoginRegister.php:491
+#: includes/Modules/Core/LoginRegister.php:533
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:209
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:161
+#: includes/Modules/WooCommerce/Products/InStock.php:128
+#: assets/build/index.js:1
+#: assets/build/index.js:2
+#: assets/build/index.js:4
+msgid "Phone number"
+msgstr "شماره موبایل"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:80
+msgid "Sender number"
+msgstr "خط ارسال پیامک"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:103
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:154
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:183
+msgid "Enable"
+msgstr "فعال"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:104
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:155
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:184
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Disable"
+msgstr "غیر فعال"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:94
+msgid "Find the field id in each of form fields in the advanced tab."
+msgstr "آیدی فیلد را در هر فیلد فرم، در تب پیشرفته پیدا کنید."
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:115
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:195
+msgid "How to send?"
+msgstr "ارسال به چه صورت باشد؟"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:124
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:204
+msgid "None"
+msgstr "هیچ کدام"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:140
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:220
+msgid "Sms content"
+msgstr "متن پیامک"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:143
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:223
+msgid "Enter SMS text or pattern variables"
+msgstr "متن پیامک یا متغییر های پترن را وارد کنید."
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:152
+msgid "Save in the system phonebook"
+msgstr "ذخیره شماره در دفترتلفن سامانه"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:181
+msgid "Send sms to the admin"
+msgstr "ارسال پیامک به ادمین"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:227
+msgid "By completing the form, an SMS will be sent to the admin. The administrator number must be defined in the plugin settings."
+msgstr "با تکمیل فرم، یک پیامک به ادمین ارسال می شود. شماره ادمین باید در بخش تنظیمات افزونه قسمت احراز هویت، ثبت شده باشد."
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Phonebook"
+msgstr "دفترتلفن"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Activated"
+msgstr "فعال"
+
+#: assets/build/index.js:1
+msgid "Save Settings"
+msgstr "ذخیره تنظیمات"
+
+#: assets/build/index.js:4
+msgid "Username"
+msgstr "نام کاربری"
+
+#: assets/build/index.js:4
+msgid "Enter Admin Number"
+msgstr "شماره موبایل ادمین را وارد کنید"
+
+#: assets/build/index.js:1
+msgid "User First Name"
+msgstr "نام کاربر"
+
+#: assets/build/index.js:1
+msgid "User Last Name"
+msgstr "نام خانوادگی کاربر"
+
+#: assets/build/index.js:1
+msgid "User Full Name"
+msgstr "نام و نام خانوادگی کاربر"
+
+#: assets/build/index.js:1
+msgid "User Email"
+msgstr "ایمیل کاربر"
+
+#: assets/build/index.js:1
+msgid "User Username"
+msgstr "نام کاربری"
+
+#: assets/build/index.js:1
+msgid "User Role"
+msgstr "نقش کاربر"
+
+#: assets/build/index.js:1
+msgid "User Agent"
+msgstr "مرورگر کاربر"
+
+#: assets/build/index.js:1
+msgid "User Login Time"
+msgstr "زمان ورود کاربر"
+
+#: assets/build/index.js:1
+msgid "User Login Date"
+msgstr "تاریخ ورود کاربر"
+
+#: assets/build/index.js:1
+msgid "User Register Time"
+msgstr "زمان عضویت کاربر"
+
+#: assets/build/index.js:1
+msgid "User Register Date"
+msgstr "تاریخ عضویت کاربر"
+
+#: includes/Core/Settings.php:81
+#: assets/build/index.js:4
+msgid "Login Notify"
+msgstr "اطلاع‌رسانی ورود"
+
+#: assets/build/index.js:4
+msgid "Send sms to user when login."
+msgstr "ارسال پیامک به کاربر هنگام ورود به سایت."
+
+#: assets/build/index.js:4
+msgid "Admin sms text to send when a user is registered."
+msgstr "متن پیامک ارسالی به ادمین هنگام عضویت کاربر جدید."
+
+#: assets/build/index.js:1
+msgid "Comment Content"
+msgstr "متن کامنت"
+
+#: assets/build/index.js:1
+msgid "Comment Author"
+msgstr "نویسنده کامنت"
+
+#: assets/build/index.js:1
+msgid "Comment Author Email"
+msgstr "ایمیل نویسنده کامنت"
+
+#: assets/build/index.js:1
+msgid "Comment Author URL"
+msgstr "آدرس سایت نویسنده کامنت"
+
+#: assets/build/index.js:1
+msgid "Comment Date"
+msgstr "تاریخ کامنت"
+
+#: assets/build/index.js:1
+msgid "Comment Url"
+msgstr "لینک کامنت"
+
+#: includes/Core/Settings.php:89
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Comments"
+msgstr "نظرات"
+
+#: includes/Core/Settings.php:121
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Elementor"
+msgstr "المنتور"
+
+#: assets/build/index.js:4
+msgid "Action after submit"
+msgstr "عملگر بعد از ثبت فرم"
+
+#: assets/build/index.js:4
+msgid "Action after submit form to save phone number or send sms"
+msgstr "عملگر بعد از ثبت فرم برای ذخیره شماره همراه یا ارسال پیامک"
+
+#: includes/Core/Settings.php:193
+#: assets/build/index.js:4
+msgid "Integration"
+msgstr "ادغام"
+
+#: assets/build/index.js:4
+msgid "Woocommerce plugin"
+msgstr "افزونه ووکامرس"
+
+#: assets/build/index.js:4
+msgid "Elementor plugin"
+msgstr "افزونه المنتور"
+
+#: assets/build/index.js:4
+msgid "Read more"
+msgstr "مطالعه بیشتر"
+
+#: assets/build/index.js:4
+msgid "This page does not exist"
+msgstr "این صفحه موجود نیست"
+
+#: assets/build/index.js:4
+msgid "Back to home"
+msgstr "برگشت به صفحه اصلی"
+
+#: includes/Core/Settings.php:73
+#: assets/build/index.js:4
+msgid "Auth"
+msgstr "احراز هویت"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:109
+#: assets/build/index.js:1
+msgid "Variables:"
+msgstr "متغیرها:"
+
+#: assets/build/index.js:1
+msgid "User Display Name"
+msgstr "نام نمایشی کاربر"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:87
+msgid "User phone number (field shortcode)"
+msgstr "شورتکد فیلد شماره موبایل کاربر"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:92
+msgid "Example: [field id=\\\"mobile\\\"]"
+msgstr "مانند: [field id=\\\"mobile\\\"]"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:101
+msgid "Send sms to the user"
+msgstr "ارسال پیامک به کاربر"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:107
+msgid "After completing the form and pressing the send button, an SMS will be sent to the user."
+msgstr "بعد از این که کاربر فرم را تکمیل کنید، یک پیامک به او ارسال می شود."
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:147
+msgid "If you choose the web service sending method, enter the text of your SMS."
+msgstr "اگر روش ارسال وب سرویس را انتخاب کرده اید، متن پیامک را وارد کنید."
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:187
+msgid "If you want an SMS alert to be sent to the admin number as soon as the user completes the form, check this option."
+msgstr "اگر می خواهید ادمین از ثبت فرم جدید توسط کاربر مطلع شود، این گزینه را فعال کنید."
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:120
+msgid "Form Title"
+msgstr "تیتر فرم"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:147
+msgid "Submit Button"
+msgstr "دکمه ثبت"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:149
+#: includes/Modules/WooCommerce/Products/InStock.php:139
+#: includes/Modules/WooCommerce/Products/InStock.php:153
+msgid "Submit"
+msgstr "ثبت"
+
+#: includes/Modules/AwesomeSupport.php:170
+#: includes/Modules/Core/Newsletter.php:143
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:230
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:171
+#: includes/Modules/WooCommerce/Products/InStock.php:149
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Verification code"
+msgstr "کد تأیید"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:2
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Cancel"
+msgstr "لغو"
+
+#: assets/build/index.js:4
+msgid "Add contact"
+msgstr "افزودن مخاطب"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "First Name"
+msgstr "نام"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Last Name"
+msgstr "نام خانوادگی"
+
+#: assets/build/index.js:4
+msgid "Gender"
+msgstr "جنسیت"
+
+#: assets/build/index.js:4
+msgid "Woman"
+msgstr "زن"
+
+#: assets/build/index.js:4
+msgid "Man"
+msgstr "مرد"
+
+#: assets/build/index.js:4
+msgid "Corporation"
+msgstr "شرکت"
+
+#: assets/build/index.js:4
+msgid "Add phonebook"
+msgstr "افزودن دفترتلفن"
+
+#: assets/build/index.js:1
+msgid "Enter Phonebook Name"
+msgstr "نام دفترتلفن را وارد کنید"
+
+#: assets/build/index.js:1
+msgid "Phonebook Name"
+msgstr "نام دفترتلفن"
+
+#: assets/build/index.js:1
+msgid "Enter Phonebook Description"
+msgstr "توضیحات دفترتلفن را وارد کنید"
+
+#: assets/build/index.js:1
+msgid "Phonebook Description"
+msgstr "توضیحات دفترتلفن"
+
+#: assets/build/index.js:1
+msgid "Show to Childs"
+msgstr "نمایش به زیر مجموعه"
+
+#: assets/build/index.js:4
+msgid "Edit phonebook"
+msgstr "ویرایش دفترتلفن"
+
+#: includes/Core/Settings.php:97
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:267
+#: assets/build/index.js:4
+msgid "Phonebooks"
+msgstr "دفترتلفن ها"
+
+#: includes/Modules/Core/Newsletter.php:118
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:151
+#: assets/build/index.js:4
+msgid "Name"
+msgstr "نام"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:139
+#: assets/build/index.js:4
+msgid "Description"
+msgstr "توضیحات"
+
+#: assets/build/index.js:4
+msgid "Contact Count"
+msgstr "تعداد مخاطبین"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:2
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Actions"
+msgstr "عملیات ها"
+
+#: assets/build/index.js:4
+msgid "View phonebook"
+msgstr "مشاهده دفترتلفن"
+
+#: includes/Core/Settings.php:105
+#: assets/build/index.js:4
+msgid "Patterns"
+msgstr "الگوها"
+
+#: assets/build/index.js:4
+msgid "Id"
+msgstr "شناسه"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:129
+#: assets/build/index.js:1
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Title"
+msgstr "عنوان"
+
+#: assets/build/index.js:4
+msgid "Body"
+msgstr "متن"
+
+#: assets/build/index.js:4
+msgid "Body Status"
+msgstr "وضعیت"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Add pattern"
+msgstr "افزودن الگو"
+
+#: assets/build/index.js:1
+msgid "Enter Pattern Title"
+msgstr "عنوان الگو را وارد کنید"
+
+#: assets/build/index.js:1
+msgid "Pattern Title"
+msgstr "عنوان الگو"
+
+#: assets/build/index.js:1
+msgid "Enter Pattern Body"
+msgstr "متن الگو را وارد کنید"
+
+#: assets/build/index.js:1
+msgid "Pattern Body"
+msgstr "متن الگو"
+
+#: assets/build/index.js:1
+msgid "Pattern Added successfully! 👌"
+msgstr "الگو با موفقیت ثبت شد"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:61
+#: includes/Modules/WooCommerce/TrackingCode.php:70
+msgid "Send tracking code"
+msgstr "ارسال کد رهگیری"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:110
+msgid "Enter details of tracking code for send a sms with that details to the customer."
+msgstr "جزئیات کد رهگیری را وارد کنید که برای مشتری ارسال شود."
+
+#: includes/Modules/WooCommerce/TrackingCode.php:119
+msgid "Tracking code"
+msgstr "کد رهگیری"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:121
+msgid "Enter tracking code"
+msgstr "کد رهگیری را وارد کنید"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:127
+msgid "Post service name"
+msgstr "نام شرکت پست"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:129
+msgid "Post Office"
+msgstr "شرکت ملی پست"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:130
+msgid "Tipaxco"
+msgstr "تیپاکس"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:132
+msgid "Custom Provider"
+msgstr "گزینه سفارشی"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:139
+msgid "Tracking link"
+msgstr "لینک بررسی کد رهگیری"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:141
+msgid "Enter tracking link"
+msgstr "لینک بررسی کد رهگیری را وارد کنید"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:146
+msgid "Send date"
+msgstr "تاریخ ارسال"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:156
+msgid "Send Tracking Code SMS"
+msgstr "ارسال پیامک کد رهگیری"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:186
+msgid "Please enter the tracking code."
+msgstr "لطفاً کد رهگیری را وارد کنید"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:191
+msgid "Please select a service provider."
+msgstr "لطفاً یک شرکت پستی انتخاب کنید."
+
+#: includes/Modules/WooCommerce/TrackingCode.php:196
+msgid "Please select the date of posting."
+msgstr "لطفاً تاریخ ارسال را انتخاب کنید."
+
+#: includes/Modules/WooCommerce/TrackingCode.php:208
+msgid "Customer phone number not entered."
+msgstr "شماره موبایل مشتری وارد نشده است."
+
+#: includes/Modules/WooCommerce/TrackingCode.php:307
+#: includes/Modules/WooCommerce/TrackingCode.php:316
+msgid "Already sent tracking code"
+msgstr "کدهای رهگیری ارسال شده"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:351
+msgid "No tracking code data found for this order."
+msgstr "هیچ کد رهگیری ارسال شده برای این سفارش یافت نشد"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:361
+msgid "Multiple tracking codes found for this order:"
+msgstr "اطلاعات تعدادی کد رهگیری ارسال شده به کاربر یافت شد:"
+
+#: includes/Modules/WooCommerce/TrackingCode.php:380
+msgid "Tracking Code: "
+msgstr "کد رهگیری: "
+
+#: includes/Modules/WooCommerce/TrackingCode.php:384
+msgid "Post Service Provider: "
+msgstr "شرکت ارائه خدمات پستی: "
+
+#: includes/Modules/WooCommerce/TrackingCode.php:388
+msgid "Post Date: "
+msgstr "تاریخ ارسال: "
+
+#: includes/Modules/WooCommerce/TrackingCode.php:363
+msgid "One tracking code found for this order:"
+msgstr "یک کد رهگیری ارسال شده در این سفارش یافت شد:"
+
+#: assets/build/index.js:4
+msgid "Active"
+msgstr "تأیید شده"
+
+#: assets/build/index.js:2
+#: assets/build/index.js:4
+msgid "Pending"
+msgstr "منتظر تأیید"
+
+#: assets/build/index.js:4
+msgid "Edit pattern"
+msgstr "ویرایش الگو"
+
+#: assets/build/index.js:1
+msgid "Pattern Edited successfully! 👌"
+msgstr "الگو با موفقیت ویرایش شد! 👌"
+
+#: includes/Core/Settings.php:129
+#: assets/build/index.js:4
+msgid "Woocommerce"
+msgstr "ووکامرس"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:112
+#: assets/build/index.js:1
+msgid "Order ID"
+msgstr "شناسه سفارش"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:113
+#: assets/build/index.js:1
+msgid "Order Date"
+msgstr "تاریخ سفارش"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:116
+#: assets/build/index.js:1
+msgid "Order Status"
+msgstr "وضعیت سفارش"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Tracking Code"
+msgstr "کد رهگیری"
+
+#: assets/build/index.js:1
+msgid "Tracking Link"
+msgstr "لینک بررسی کد رهگیری"
+
+#: assets/build/index.js:1
+msgid "Post Date"
+msgstr "تاریخ ارسال"
+
+#: assets/build/index.js:1
+msgid "Post Service Provider"
+msgstr "شرکت خدمات پستی"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:118
+#: assets/build/index.js:1
+msgid "Customer Full Name"
+msgstr "نام کامل مشتری"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:122
+#: assets/build/index.js:1
+msgid "Customer Email"
+msgstr "ایمیل مشتری"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:121
+#: assets/build/index.js:1
+msgid "Customer Phone"
+msgstr "موبایل مشتری"
+
+#: includes/Modules/WooCommerce/OrderReview/order-review-page.php:46
+msgid "Placed on"
+msgstr "ثبت شده در"
+
+#: includes/Modules/WooCommerce/OrderReview/order-review-page.php:58
+msgid "Feedback"
+msgstr "بازخورد"
+
+#: includes/Modules/WooCommerce/OrderReview/order-review-page.php:61
+msgid "Enter your review"
+msgstr "بازخورد خود را وارد کنید"
+
+#: includes/Modules/WooCommerce/OrderReview/order-review-page.php:65
+msgid "Rating"
+msgstr "امتیاز"
+
+#: includes/Modules/WooCommerce/OrderReview/order-review-page.php:87
+msgid "Submit Review"
+msgstr "ثبت نظر"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:2
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Delete"
+msgstr "حذف"
+
+#: assets/build/index.js:1
+msgid "Order Review Link"
+msgstr "لینک صفحه نظرسنجی سفارش"
+
+#: includes/Core/Settings.php:137
+#: assets/build/index.js:4
+msgid "Order Actions"
+msgstr "عملگرهای سفارش"
+
+#: assets/build/index.js:4
+msgid "Manage Woocommerce order actions"
+msgstr "مدیریت عملگرهای سفارشات ووکامرس"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Action Name"
+msgstr "نام عملگر"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Order type"
+msgstr "نوع سفارش"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Add Order Action"
+msgstr "افزودن عملگر سفارش"
+
+#: assets/build/index.js:1
+msgid "Action name"
+msgstr "نام عملگر"
+
+#: assets/build/index.js:1
+msgid "Enter the action name, it will show only to you."
+msgstr "نامی برای عملگر وارد کنید، این نام فقط به شما نشان داده می شود."
+
+#: assets/build/index.js:1
+msgid "Completed"
+msgstr "تکمیل شده"
+
+#: assets/build/index.js:1
+msgid "Processing"
+msgstr "در حال انجام"
+
+#: assets/build/index.js:1
+msgid "On hold"
+msgstr "در انتظار بررسی"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Failed"
+msgstr "ناموفق"
+
+#: assets/build/index.js:1
+msgid "Refunded"
+msgstr "مسترد شده"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Draft"
+msgstr "پیش‌نویس"
+
+#: assets/build/index.js:1
+msgid "Order status"
+msgstr "وضعیت سفارش"
+
+#: assets/build/index.js:1
+msgid "All"
+msgstr "همه سفارشات"
+
+#: assets/build/index.js:1
+msgid "Based on Product"
+msgstr "بر اساس محصول"
+
+#: assets/build/index.js:1
+msgid "Based on Category"
+msgstr "بر اساس دسته بندی"
+
+#: assets/build/index.js:1
+msgid "Based on Tag"
+msgstr "بر اساس برچسب"
+
+#: assets/build/index.js:1
+msgid "Exclude Product"
+msgstr "شامل محصول نباشد"
+
+#: assets/build/index.js:1
+msgid "Exclude Category"
+msgstr "شامل دسته بندی نباشد"
+
+#: assets/build/index.js:1
+msgid "Exclude Tag"
+msgstr "شامل برچسب نباشد"
+
+#: assets/build/index.js:4
+msgid "Edit Order Action"
+msgstr "ویرایش عملگر سفارش"
+
+#: assets/build/index.js:4
+msgid "Need to edit"
+msgstr "نیاز به ویرایش"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:86
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Use web service (pattern)"
+msgstr "استفاده از وب سرویس (الگو)"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:85
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Normal (without pattern)"
+msgstr "عادی (بدون الگو)"
+
+#: assets/build/index.js:4
+msgid "404"
+msgstr "404"
+
+#: assets/build/index.js:4
+msgid "Pending review"
+msgstr "منتظر بررسی مجدد"
+
+#: assets/build/index.js:1
+msgid "Send sms to customer"
+msgstr "ارسال پیامک به مشتری"
+
+#: assets/build/index.js:1
+msgid "Send sms to admin"
+msgstr "ارسال پیامک به ادمین"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:122
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:202
+msgid "Normal without pattern"
+msgstr "عادی بدون الگو"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:123
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:203
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Pattern"
+msgstr "الگو"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:129
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:209
+msgid "Pattern code"
+msgstr "کد الگو"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:131
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:211
+msgid "Enter your pattern code"
+msgstr "کد الگوی خود را وارد کنید"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:233
+msgid "Send sms copy to others"
+msgstr "ارسال یک رونوشت به دیگران"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:235
+msgid "Example: 09121234567,09351234567"
+msgstr "مانند: 09121234567,09351234567"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:240
+msgid "A copy of this SMS will be sent to these numbers, while sending to the administrator. (Separate with english commas.)"
+msgstr "یک رونوشت از پیامک ادمین به این شماره ها ارسال می شود، (شماره ها را با کامای انگلیسی جدا نمایید.)"
+
+#: assets/build/index.js:1
+msgid "Product Name"
+msgstr "نام محصول"
+
+#: assets/build/index.js:1
+msgid "Product SKU"
+msgstr "شناسه انبار محصول"
+
+#: assets/build/index.js:1
+msgid "Product Price"
+msgstr "قیمت محصول"
+
+#: assets/build/index.js:1
+msgid "Product Stock"
+msgstr "موجودی محصول"
+
+#: assets/build/index.js:1
+msgid "Product URL"
+msgstr "لینک محصول"
+
+#: assets/build/index.js:1
+msgid "Add Number"
+msgstr "افزودن شماره"
+
+#: assets/build/index.js:1
+msgid "Use admin numbers that was added on auth section."
+msgstr "از شماره های ادمین که در بخش احراز هویت ثبت کردم استفاده کن."
+
+#: assets/build/index.js:1
+msgid "Use custom numbers with auth numbers."
+msgstr "علاوه بر شماره های بخش احراز هویت، شماره دیگری می خواهم وارد کنم"
+
+#: assets/build/index.js:1
+msgid "Use completely custom numbers."
+msgstr "به طور کامل می خواهم شماره های سفارشی وارد کنم."
+
+#: assets/build/index.js:1
+msgid "Admin numbers method"
+msgstr "انتخاب نوع شماره های مدیران"
+
+#: assets/build/index.js:1
+msgid "Admin phone numbers"
+msgstr "شماره های مدیران"
+
+#: assets/build/index.js:4
+msgid "Enter admin numbers"
+msgstr "شماره های مدیران را وارد کنید"
+
+#: includes/Modules/WooCommerce/OrderReview/order-review-page.php:23
+msgid "Invalid order ID"
+msgstr "شناسه سفارش معتبر نیست"
+
+#: includes/Modules/WooCommerce/OrderReview/order-review-page.php:28
+msgid "No order ID provided"
+msgstr "شناسه سفارش ارائه نشده است"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:2
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Edit"
+msgstr "ویرایش"
+
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "View"
+msgstr "مشاهده"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:122
+#: includes/Modules/WooCommerce/Products/InStock.php:124
+msgid "Notify me when available"
+msgstr "وقتی موجود شد، باخبرم کن."
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:131
+#: includes/Modules/WooCommerce/Products/InStock.php:130
+msgid "Enter your phone"
+msgstr "شماره همراهتون رو وارد کنید"
+
+#: includes/Modules/Core/Newsletter.php:130
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:140
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:181
+#: includes/Modules/WooCommerce/Products/InStock.php:134
+msgid "Send code"
+msgstr "ارسال کد تأیید"
+
+#: includes/Modules/AwesomeSupport.php:171
+#: includes/Modules/Core/Comments.php:207
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:158
+#: includes/Modules/WooCommerce/Products/InStock.php:152
+msgid "Enter verification code"
+msgstr "کد تأیید رو وارد کنید"
+
+#: includes/Modules/Core/Newsletter.php:156
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:167
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:221
+#: includes/Modules/WooCommerce/Products/InStock.php:159
+msgid "Change phone number"
+msgstr "تغییر شماره همراه"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:114
+#: assets/build/index.js:1
+msgid "Order Time"
+msgstr "زمان ثبت سفارش"
+
+#: assets/build/index.js:1
+msgid "Order Total Price"
+msgstr "مبلغ کل سفارش"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:119
+#: assets/build/index.js:1
+msgid "Customer First Name"
+msgstr "نام مشتری"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:120
+#: assets/build/index.js:1
+msgid "Customer Last Name"
+msgstr "نام خانوادگی مشتری"
+
+#: includes/Modules/GravityForms.php:257
+#: assets/build/index.js:1
+msgid "Verify Code"
+msgstr "کد تأیید"
+
+#: assets/build/index.js:4
+msgid "Send schedule sms"
+msgstr "ارسال پیامک زمانبندی شده"
+
+#: assets/build/index.js:4
+msgid "Generate auto phonebook base on product name"
+msgstr "ساخت دفترتلفن خودکار بر اساس نام محصول"
+
+#: assets/build/index.js:4
+msgid "Generate auto phonebook base on one of product categories"
+msgstr "ساخت دفترتلفن خودکار بر اساس یکی از دسته بندی های محصول"
+
+#: assets/build/index.js:4
+msgid "Select custom phonebook for all users"
+msgstr "انتخاب دفترتلفن سفارشی برای همه کاربران"
+
+#: assets/build/index.js:4
+msgid "Updating order action status..."
+msgstr "در حال به روز رسانی وضعیت عملگر سفارش..."
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Activate"
+msgstr "فعال کردن"
+
+#: includes/Core/Settings.php:145
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Cart Abandonment"
+msgstr "سبد خرید رهاشده"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:115
+#: assets/build/index.js:1
+msgid "Order Total"
+msgstr "مجموع مبلغ سفارش"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Days"
+msgstr "روز"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Hours"
+msgstr "ساعت"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Minutes"
+msgstr "دقیقه"
+
+#: assets/build/index.js:1
+msgid "Create Coupon"
+msgstr "ایجاد کد تخفیف"
+
+#: assets/build/index.js:1
+msgid "Coupon Expire Time"
+msgstr "زمان انقضای کد تخفیف"
+
+#: assets/build/index.js:1
+msgid "Percentage"
+msgstr "درصد تخفیف"
+
+#: assets/build/index.js:1
+msgid "Fixed"
+msgstr "مبلغ ثابت تخفیف"
+
+#: assets/build/index.js:1
+msgid "Coupon Amount"
+msgstr "مقدار کد تخفیف"
+
+#: assets/build/index.js:4
+msgid "Add Cart Abandonment"
+msgstr "افزودن پیامک سبد خرید رهاشده"
+
+#: assets/build/index.js:4
+msgid "Cart Abandonment Cutoff Time"
+msgstr "زمان رهاشدن سبد خرید"
+
+#: assets/build/index.js:4
+msgid "The time after which the cart is considered abandoned."
+msgstr "زمانی که سبد خرید به عنوان رهاشده در نظر گرفته می شود."
+
+#: assets/build/index.js:4
+msgid "User Roles to Exclude"
+msgstr "نقش های کاربری برای استثناء کردن"
+
+#: assets/build/index.js:4
+msgid "Select the user roles to exclude from cart abandonment tracking."
+msgstr "یک یا چند نقش کاربری را برای استثناء کردن از پیگیری سبد خرید رهاشده انتخاب کنید."
+
+#: assets/build/index.js:4
+msgid "Order Status to Exclude"
+msgstr "وضعیت سفارش برای استثناء کردن"
+
+#: assets/build/index.js:4
+msgid "Select the order statuses to exclude from cart abandonment tracking."
+msgstr "یک یا چند وضعیت سفارش را برای استثناء کردن از پیگیری سبد خرید رهاشده انتخاب کنید."
+
+#: assets/build/index.js:4
+msgid "Notify Admin on Recovery"
+msgstr "اطلاع‌رسانی به مدیر در هنگام بازیابی"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Admin Numbers Method"
+msgstr "نوع شماره های مدیر"
+
+#: assets/build/index.js:1
+msgid "Admin numbers"
+msgstr "شماره های مدیر"
+
+#: assets/build/index.js:1
+msgid "Removing cart abandonment..."
+msgstr "حذف سبد خرید رهاشده..."
+
+#: assets/build/index.js:1
+msgid "Error removing cart abandonment"
+msgstr "خطا در حذف پیامک سبد خرید رهاشده"
+
+#: assets/build/index.js:1
+msgid "Created At"
+msgstr "ساخته شده در"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Remove item!"
+msgstr "حذف آیتم!"
+
+#: assets/build/index.js:1
+msgid "Are you want to remove that item?"
+msgstr "آیا می خواهید آن آیتم را حذف کنید؟"
+
+#: assets/build/index.js:4
+msgid "Edit Cart Abandonment"
+msgstr "ویرایش پیامک سبد خرید رهاشده"
+
+#: includes/Core/Settings.php:60
+msgid "new"
+msgstr "جدید"
+
+#: includes/Core/Settings.php:153
+msgid "Abandonment Report"
+msgstr "گزارش بازیابی سبد خرید"
+
+#: includes/Modules/WooCommerce/Cart/CartAbandonment.php:233
+msgid "Every "
+msgstr "هر "
+
+#: includes/Modules/WooCommerce/Cart/CartAbandonment.php:437
+msgid "This order was recovered by the customer via a recovery link."
+msgstr "این سفارش توسط مشتری بازیابی شد."
+
+#: assets/build/index.js:1
+msgid "Click here to add new item"
+msgstr "برای افزودن آیتم جدید اینجا را کلیک کنید."
+
+#: assets/build/index.js:1
+msgid "No Result Exist"
+msgstr "نتیجه ای موجود نیست."
+
+#: assets/build/index.js:1
+msgid "Time after cart abandonment"
+msgstr "زمان بعد از رهاشدن سبد خرید"
+
+#: assets/build/index.js:1
+msgid "SMS Template ID"
+msgstr "شناسه قالب پیامک"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:2
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Status"
+msgstr "وضعیت"
+
+#: assets/build/index.js:4
+msgid "Cart Abandonment Report"
+msgstr "گزارش بازیابی سبد خرید"
+
+#: assets/build/index.js:4
+msgid "This report shows the list of abandoned carts."
+msgstr "در این گزارش لیستی از سبدهای خرید رها شده را نشان می دهد."
+
+#: assets/build/index.js:1
+msgid "Pending Payment"
+msgstr "در انتظار پرداخت"
+
+#: assets/build/index.js:1
+msgid "Canceled"
+msgstr "لغو شده"
+
+#: assets/build/index.js:1
+msgid "Order URL"
+msgstr "لینک بازیابی سفارش"
+
+#: assets/build/index.js:1
+msgid "Coupon Code"
+msgstr "کد تخفیف"
+
+#: assets/build/index.js:1
+msgid "Coupon Code Expire Date"
+msgstr "تاریخ انقضای کد تخفیف"
+
+#: includes/Modules/WooCommerce/OrderReview/order-review-page.php:54
+msgid "Price: "
+msgstr "قیمت: "
+
+#: assets/build/index.js:4
+msgid "Removing order action..."
+msgstr "در حال حذف عملگر سفارش..."
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:48
+#: includes/Modules/WooCommerce/OrderDirectSms.php:57
+#: includes/Modules/WooCommerce/OrderDirectSms.php:131
+msgid "Send direct sms"
+msgstr "ارسال پیامک مستقیم"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:83
+msgid "Order direct sms method"
+msgstr "روش ارسال پیامک مستقیم"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:98
+msgid "Order direct sms pattern"
+msgstr "الگوی پیامک مستقیم سفارش"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:100
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/orderDirectSmsForm.js:64
+msgid "Select a pattern"
+msgstr "یک الگو انتخاب کنید"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:117
+#: assets/build/index.js:1
+msgid "Order Items Count"
+msgstr "تعداد اقلام سفارش"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:165
+msgid "The phone number is empty."
+msgstr "شماره همراه خالی می باشد."
+
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/orderDirectSmsForm.js:184
+msgid "Message sent successfully."
+msgstr "پیامک با موفقیت ارسال شد."
+
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/orderDirectSmsForm.js:187
+#: assets/js/alpine-datas/orderDirectSmsForm.js:193
+msgid "Failed to send message."
+msgstr "خطاء در ارسال پیامک."
+
+#: assets/build/index.js:4
+msgid "Removing phonebook..."
+msgstr "در حال حذف دفترتلفن..."
+
+#: assets/build/index.js:4
+msgid "Removing contact..."
+msgstr "در حال حذف مخاطب..."
+
+#: assets/build/index.js:4
+msgid "Enable order direct sms"
+msgstr "فعال سازی پیامک مستقیم سفارش"
+
+#: assets/build/index.js:4
+msgid "Enter the time"
+msgstr "مقدار زمان را وارد کنید"
+
+#: includes/Modules/WooCommerce/OrderReview/OrderReview.php:190
+msgid "Reviews added successfully"
+msgstr "نظرات با موفقیت ثبت شدند."
+
+#: includes/Core/Settings.php:113
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Gravity Forms"
+msgstr "گرویتی فرم"
+
+#: assets/build/index.js:1
+msgid "Removing gravityforms action..."
+msgstr "در حال حذف عملگر گرویتی فرم..."
+
+#: assets/build/index.js:1
+msgid "Error removing gravityforms action"
+msgstr "خطا در حذف عملگر گرویتی فرم"
+
+#: assets/build/index.js:1
+msgid "Form title"
+msgstr "عنوان فرم"
+
+#: assets/build/index.js:1
+msgid "Entry date"
+msgstr "تاریخ تکمیل فرم توسط کاربر"
+
+#: assets/build/index.js:1
+msgid "Entry time"
+msgstr "زمان تکمیل فرم توسط کاربر"
+
+#: assets/build/index.js:4
+msgid "Add Gravity Forms action"
+msgstr "افزودن عملگر بعد از ثبت فرم گرویتی فرم"
+
+#: assets/build/index.js:4
+msgid "Edit Gravity Forms action"
+msgstr "ویرایش عملگر بعد از ثبت فرم گرویتی فرم"
+
+#: assets/build/index.js:4
+msgid "Gravity Forms plugin"
+msgstr "افزونه گرویتی فرم"
+
+#: includes/Helpers/PhoneVerification.php:121
+msgid "Code not found"
+msgstr "کد یافت نشد"
+
+#: includes/Helpers/PhoneVerification.php:141
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/gfPhoneVerification.js:97
+#: assets/js/alpine-datas/phoneVerification.js:95
+msgid "Code expired."
+msgstr "کد منقضی شده است."
+
+#: includes/Helpers/PhoneVerification.php:148
+msgid "Code is valid"
+msgstr "کد صحیح است."
+
+#: includes/Modules/Core/Comments.php:200
+#: includes/Modules/Core/Newsletter.php:133
+#: includes/Modules/GravityForms.php:250
+#: includes/Modules/WooCommerce/OrderDirectSms.php:136
+msgid "Sending..."
+msgstr "در حال ارسال ..."
+
+#: includes/Modules/Core/Comments.php:212
+#: includes/Modules/Core/Newsletter.php:148
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:201
+msgid "Verify"
+msgstr "اعتبار سنجی"
+
+#: includes/Modules/Core/Comments.php:213
+#: includes/Modules/Core/Newsletter.php:151
+#: includes/Modules/GravityForms.php:257
+msgid "Verifying..."
+msgstr "در حال اعتبار سنجی ..."
+
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/phoneVerification.js:87
+msgid "Phone number verified successfully."
+msgstr "شماره همراه با موفقیت تأیید شد."
+
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/gfPhoneVerification.js:95
+#: assets/js/alpine-datas/phoneVerification.js:91
+msgid "Code not found."
+msgstr "کد تأیید یافت نشد."
+
+#: assets/build/index.js:4
+msgid "Verification code pattern"
+msgstr "الگوی کد تأیید"
+
+#: assets/build/index.js:4
+msgid "Verification code pattern text"
+msgstr "متن الگوی کد تأیید"
+
+#: assets/build/index.js:4
+msgid "Verification code expiration time in minutes"
+msgstr "زمان انقضای کد تأیید (به دقیقه)"
+
+#: assets/build/index.js:4
+msgid "Verification code length"
+msgstr "طول کد تأیید (تعداد ارقام)"
+
+#: includes/Modules/Core/Comments.php:199
+#: includes/Modules/GravityForms.php:250
+msgid "Send Code"
+msgstr "ارسال کد تأیید"
+
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/gfPhoneVerification.js:54
+#: assets/js/alpine-datas/phoneVerification.js:47
+msgid "Failed to send verification code."
+msgstr "خطاء در ارسال کد تأیید."
+
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/gfPhoneVerification.js:59
+#: assets/js/alpine-datas/phoneVerification.js:53
+msgid "Error occurred while sending SMS."
+msgstr "خطاء هنگام ارسال پیامک کد تأیید."
+
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/gfPhoneVerification.js:102
+#: assets/js/alpine-datas/phoneVerification.js:101
+msgid "Error verifying code."
+msgstr "خطای اعتبارسنجی کد تأیید."
+
+#: includes/Modules/GravityForms.php:246
+msgid "Phone Verified"
+msgstr "شماره همراه تأیید شد."
+
+#: includes/Modules/GravityForms.php:254
+msgid "Enter Code"
+msgstr "کد تأیید را وارد کنید"
+
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/gfPhoneVerification.js:23
+msgid "Enter your phone number."
+msgstr "شماره موبایل خود را وارد کنید."
+
+#: assets/alpine/alpine.js:1
+#: assets/js/alpine-datas/gfPhoneVerification.js:68
+msgid "Enter the verification code."
+msgstr "کد تأیید را وارد کنید."
+
+#: includes/Modules/GravityForms.php:208
+msgid "Phone verification is required."
+msgstr "اعتبارسنجی شماره همراه الزامی می باشد."
+
+#: assets/build/index.js:4
+msgid "Validate phones"
+msgstr "اعتبارسنجی شماره های همراه"
+
+#: assets/build/index.js:1
+msgid "Form"
+msgstr "فرم"
+
+#: assets/build/index.js:1
+msgid "Section doc"
+msgstr "آموزش بخش"
+
+#: assets/build/index.js:1
+msgid "Saving Settings, wait..."
+msgstr "در حال ذخیره تنظیمات, منتظر بمانید ..."
+
+#: assets/build/index.js:1
+msgid "Changes Saved"
+msgstr "تنظیمات ذخیره شدند"
+
+#: assets/build/index.js:1
+msgid "Error"
+msgstr "ارور"
+
+#: assets/build/index.js:1
+msgid "Save your changes"
+msgstr "تنظیمات را ذخیره کنید."
+
+#: assets/build/index.js:1
+msgid "No result found"
+msgstr "نتیجه ای یافت نشد."
+
+#: assets/build/index.js:1
+msgid "Showing"
+msgstr "نمایش"
+
+#: assets/build/index.js:1
+msgid "to"
+msgstr "تا"
+
+#: assets/build/index.js:1
+msgid "of"
+msgstr "از"
+
+#: assets/build/index.js:1
+msgid "results"
+msgstr "نتایج"
+
+#: assets/build/index.js:1
+msgid "Go to previous page"
+msgstr "رفتن به صفحه قبل"
+
+#: assets/build/index.js:1
+msgid "Go to page"
+msgstr "رفتن به صفحه"
+
+#: assets/build/index.js:1
+msgid "Go to next page"
+msgstr "رفتن به صفحه بعد"
+
+#: assets/build/index.js:4
+msgid "Learn more"
+msgstr "بیشتر بدانید"
+
+#: assets/build/index.js:4
+msgid "Notify admins / users when they login / register"
+msgstr "به ادمین / کاربران هنگام ورود / عضویت اطلاع‌رسانی کنید."
+
+#: assets/build/index.js:4
+msgid "Send SMS notifications when a comment is posted / approved / repled"
+msgstr "ارسال اعلانیه پیامکی هنگامی که یک نظر ثبت شود / تأیید شود / پاسخ دریافت کند."
+
+#: assets/build/index.js:4
+msgid "Manage Sending SMS on Gravity Forms plugin"
+msgstr "مدیریت ارسال پیامک در افزونه گرویتی فرم"
+
+#: assets/build/index.js:4
+msgid "Manage Sending SMS on Woocommerce plugin"
+msgstr "مدیریت ارسال پیامک در افزونه ووکامرس"
+
+#: assets/build/index.js:4
+msgid "Manage Woocommerce Cart Abandonment"
+msgstr "مدیریت سبد خرید رهاشده ووکامرس"
+
+#: assets/build/index.js:4
+msgid "View Cart Abandonment Report"
+msgstr "مشاهده گزارشات سبدهای خرید رهاشده"
+
+#: assets/build/index.js:4
+msgid "Integrate with other plugins"
+msgstr "ادغام با سائر افزونه ها"
+
+#: assets/build/index.js:4
+msgid "Sorry, we couldn't find the page you're looking for."
+msgstr "متأسفیم، صفحه ای که به دنبالش هستید را پیدا نمی کنیم."
+
+#: assets/build/index.js:4
+msgid "Toggle theme"
+msgstr "تغییر تِم"
+
+#: assets/build/index.js:4
+msgid "Light"
+msgstr "روشن"
+
+#: assets/build/index.js:4
+msgid "Dark"
+msgstr "تاریک"
+
+#: assets/build/index.js:4
+msgid "System"
+msgstr "سیستم"
+
+#. Author of the plugin
+#: wpstorm-clean-admin.php
+#: includes/Core/Settings.php:62
+#: includes/Core/Settings.php:63
+#: includes/Core/Settings.php:72
+#: includes/Core/Settings.php:80
+#: includes/Core/Settings.php:88
+#: includes/Core/Settings.php:96
+#: includes/Core/Settings.php:104
+#: includes/Core/Settings.php:112
+#: includes/Core/Settings.php:120
+#: includes/Core/Settings.php:128
+#: includes/Core/Settings.php:136
+#: includes/Core/Settings.php:144
+#: includes/Core/Settings.php:152
+#: includes/Core/Settings.php:160
+#: includes/Core/Settings.php:168
+#: includes/Core/Settings.php:176
+#: includes/Core/Settings.php:184
+#: includes/Core/Settings.php:192
+#: includes/Core/Settings.php:219
+#: includes/Modules/Elementor/Elementor.php:48
+msgid "Wpstorm Clean Admin"
+msgstr "مدیریت پاک"
+
+#: includes/Core/Settings.php:161
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Awesome Support"
+msgstr "تیکت پشتیبانی"
+
+#: assets/build/index.js:4
+msgid "Awesome Support plugin"
+msgstr "افزونه تیکت پشتیبانی"
+
+#: assets/build/index.js:1
+msgid "Author Display Name"
+msgstr "نام نمایشی نویسنده"
+
+#: assets/build/index.js:1
+msgid "Author First Name"
+msgstr "نام نویسنده"
+
+#: assets/build/index.js:1
+msgid "Author Last Name"
+msgstr "نام خانوادگی نویسنده"
+
+#: assets/build/index.js:1
+msgid "Author Phone"
+msgstr "شماره همراه نویسنده"
+
+#: assets/build/index.js:1
+msgid "Ticket ID"
+msgstr "شناسه تیکت"
+
+#: assets/build/index.js:1
+msgid "Ticket Status"
+msgstr "وضعیت تیکت"
+
+#: assets/build/index.js:1
+msgid "Ticket Title"
+msgstr "موضوع تیکت"
+
+#: assets/build/index.js:1
+msgid "Ticket Content"
+msgstr "متن تیکت"
+
+#: assets/build/index.js:1
+msgid "Ticket Created At Date"
+msgstr "تاریخ ایجاد تیکت"
+
+#: assets/build/index.js:1
+msgid "Ticket Created At Time"
+msgstr "زمان ایجاد تیکت"
+
+#: assets/build/index.js:1
+msgid "Ticket Type Name"
+msgstr "نوع تیکت"
+
+#: assets/build/index.js:1
+msgid "Ticket Priority Name"
+msgstr "اهمیت تیکت"
+
+#: assets/build/index.js:1
+msgid "Ticket Channel Name"
+msgstr "کانال تیکت"
+
+#: assets/build/index.js:1
+msgid "Ticket Department Name"
+msgstr "دپارتمان تیکت"
+
+#: assets/build/index.js:1
+msgid "Ticket Tag Name"
+msgstr "برچسب تیکت"
+
+#: assets/build/index.js:1
+msgid "Send SMS to customer on ticket status change"
+msgstr "ارسال پیامک به کاربر هنگام تغییر وضعیت تیکت"
+
+#: assets/build/index.js:4
+msgid "Manage SMS notifications for Awesome Support plugin"
+msgstr "مدیریت اطلاع‌رسانی پیامکی برای افزونه تیکت پشتیبانی"
+
+#: includes/Modules/AwesomeSupport.php:142
+msgid "Enter your phone number"
+msgstr "شماره همراه خود را وارد نمایید"
+
+#: assets/build/index.js:1
+msgid "Code"
+msgstr "کد تأیید"
+
+#: assets/build/index.js:1
+msgid "Send SMS to customer on open ticket"
+msgstr "ارسال پیامک به کاربر هنگام ثبت تیکت جدید"
+
+#: assets/build/index.js:1
+msgid "Save user phone number in phonebook on first ticket"
+msgstr "ذخیره شماره همراه کاربر در دفترتلفن هنگام ثبت اولین تیکت"
+
+#: assets/build/index.js:1
+msgid "Send SMS to customer on reply ticket"
+msgstr "ارسال پیامک به کاربر هنگام دریافت جواب تیکت"
+
+#: assets/build/index.js:1
+msgid "Send SMS to admin on open ticket"
+msgstr "ارسال پیامک به ادمین هنگام ثبت تیکت جدید"
+
+#: assets/build/index.js:1
+msgid "Send SMS to admin on reply ticket"
+msgstr "ارسال پیامک به ادمین هنگام دریافت جواب تیکت"
+
+#: assets/build/index.js:4
+msgid "User phone metakey callback"
+msgstr "متا کی شماره همراه کاربر به عنوان جایگزین"
+
+#: assets/build/index.js:4
+msgid "Select user phone metakey for callback when the user phone not exist."
+msgstr "هنگامی که شماره همراه کاربر وجود ندارد، متا کی شماره همراه کاربر را به عنوان جایگزین انتخاب کنید."
+
+#: assets/build/index.js:1
+msgid "New Status"
+msgstr "وضعیت جدید"
+
+#: assets/build/index.js:1
+msgid "Old Status"
+msgstr "وضعیت قدیمی"
+
+#: assets/build/index.js:1
+msgid "Reply content"
+msgstr "متن جواب"
+
+#: assets/build/index.js:1
+msgid "Reply Date"
+msgstr "تاریخ جواب"
+
+#: assets/build/index.js:1
+msgid "Reply Time"
+msgstr "زمان جواب"
+
+#: assets/build/index.js:1
+msgid "Reply author"
+msgstr "نویسنده جواب"
+
+#: assets/build/index.js:1
+msgid "ID of ticket replyed"
+msgstr "شناسه تیکتی که پاسخ دریافت کرده است"
+
+#: assets/build/index.js:1
+msgid "Title of ticket replyed"
+msgstr "عنوان تیکتی که پاسخ دریافت کرده است"
+
+#: includes/Core/Settings.php:169
+#: assets/build/index.js:4
+msgid "SMS Reports"
+msgstr "گزارش‌های پیامک"
+
+#: assets/build/index.js:1
+msgid "SMS Resent"
+msgstr "پیامک دوباره ارسال شد"
+
+#: assets/build/index.js:1
+msgid "Report Details"
+msgstr "جزئیات گزارش"
+
+#: assets/build/index.js:1
+msgid "Complete information about SMS report sent on"
+msgstr "اطلاعات کامل در مورد گزارش پیامک ارسال شده در تاریخ"
+
+#: assets/build/index.js:1
+msgid "Details"
+msgstr "جزئیات"
+
+#: assets/build/index.js:1
+msgid "Content"
+msgstr "محتوا"
+
+#: assets/build/index.js:1
+msgid "Raw Data"
+msgstr "داده‌های خام"
+
+#: assets/build/index.js:1
+msgid "Basic Information"
+msgstr "اطلاعات پایه"
+
+#: assets/build/index.js:1
+msgid "ID:"
+msgstr "شناسه:"
+
+#: assets/build/index.js:1
+msgid "SMS ID:"
+msgstr "شناسه پیامک:"
+
+#: assets/build/index.js:1
+msgid "Status:"
+msgstr "وضعیت:"
+
+#: assets/build/index.js:1
+msgid "Created At:"
+msgstr "تاریخ ایجاد:"
+
+#: assets/build/index.js:1
+msgid "Delivery Information"
+msgstr "اطلاعات تحویل"
+
+#: assets/build/index.js:1
+msgid "Section:"
+msgstr "بخش:"
+
+#: assets/build/index.js:1
+msgid "Pattern Body ID:"
+msgstr "شناسه الگو:"
+
+#: assets/build/index.js:1
+msgid "Server Response"
+msgstr "پاسخ سرور"
+
+#: assets/build/index.js:1
+msgid "Server Code:"
+msgstr "کد سرور:"
+
+#: assets/build/index.js:1
+msgid "Server Message:"
+msgstr "پیام سرور:"
+
+#: assets/build/index.js:1
+msgid "Delivery Failed"
+msgstr "تحویل شکست خورد"
+
+#: assets/build/index.js:1
+msgid "This message failed to deliver. You can troubleshoot the issue or attempt to resend."
+msgstr "این پیامک ارسال نشد. می‌توانید مشکل را رفع کنید یا تلاش کنید که دوباره ارسال شود."
+
+#: assets/build/index.js:1
+msgid "Troubleshooting"
+msgstr "عیب‌یابی"
+
+#: assets/build/index.js:1
+msgid "Troubleshoot"
+msgstr "عیب‌یابی"
+
+#: assets/build/index.js:1
+msgid "Resend"
+msgstr "دوباره ارسال کن"
+
+#: assets/build/index.js:1
+msgid "SMS Content"
+msgstr "محتوای پیامک"
+
+#: assets/build/index.js:1
+msgid "No content"
+msgstr "بدون محتوا"
+
+#: assets/build/index.js:1
+msgid "Additional Data"
+msgstr "داده‌های اضافی"
+
+#: assets/build/index.js:1
+msgid "Message Preview"
+msgstr "پیش‌نمایش پیام"
+
+#: assets/build/index.js:1
+msgid "Phone Preview"
+msgstr "پیش‌نمایش تلفن"
+
+#: assets/build/index.js:1
+msgid "Copied to clipboard"
+msgstr "به حافظه موقت کپی شد"
+
+#: assets/build/index.js:1
+msgid "Report data has been copied as JSON"
+msgstr "داده‌های گزارش به صورت JSON کپی شد"
+
+#: assets/build/index.js:1
+msgid "Copy JSON"
+msgstr "کپی JSON"
+
+#: assets/build/index.js:1
+msgid "Close"
+msgstr "بستن"
+
+#: assets/build/index.js:1
+msgid "Resend SMS"
+msgstr "ارسال مجدد پیامک"
+
+#: assets/build/index.js:1
+msgid "Delete Record"
+msgstr "حذف سابقه"
+
+#: assets/build/index.js:1
+msgid "Troubleshoot Failed SMS"
+msgstr "عیب‌یابی پیامک‌های ارسال نشده"
+
+#: assets/build/index.js:1
+msgid "Analyze and fix issues with SMS report"
+msgstr "تحلیل و رفع مشکلات گزارش پیامک"
+
+#: assets/build/index.js:1
+msgid "Error Details"
+msgstr "جزئیات خطا"
+
+#: assets/build/index.js:1
+msgid "Error details have been copied to your clipboard"
+msgstr "جزئیات خطا به حافظه موقت شما کپی شد"
+
+#: assets/build/index.js:1
+msgid "Copy Details"
+msgstr "کپی جزئیات"
+
+#: assets/build/index.js:1
+msgid "Ready to Analyze"
+msgstr "آماده برای تحلیل"
+
+#: assets/build/index.js:1
+msgid "Click the button below to analyze the issue and get recommendations"
+msgstr "برای تحلیل مشکل و دریافت پیشنهادات، روی دکمه زیر کلیک کنید"
+
+#: assets/build/index.js:1
+msgid "Analyze Issue"
+msgstr "تحلیل مشکل"
+
+#: assets/build/index.js:1
+msgid "Analyzing Issue"
+msgstr "در حال تحلیل مشکل"
+
+#: assets/build/index.js:1
+msgid "Please wait while we analyze the error and determine the cause"
+msgstr "لطفاً صبر کنید تا خطا را تحلیل کنیم و علت آن را مشخص کنیم"
+
+#: assets/build/index.js:1
+msgid "complete"
+msgstr "کامل"
+
+#: assets/build/index.js:1
+msgid "Analysis Complete"
+msgstr "تحلیل کامل شد"
+
+#: assets/build/index.js:1
+msgid "We've identified the likely cause of the failure and recommended solutions."
+msgstr "ما علت احتمالی شکست را شناسایی کرده‌ایم و راه‌حل‌های پیشنهادی را ارائه داده‌ایم."
+
+#: assets/build/index.js:1
+msgid "Identified Issues"
+msgstr "مسائل شناسایی شده"
+
+#: assets/build/index.js:1
+msgid "Carrier Rejected Message"
+msgstr "اپراتور پیام را رد کرد"
+
+#: assets/build/index.js:1
+msgid "The carrier rejected the message due to content filtering rules."
+msgstr "اپراتور پیام را به دلیل قوانین فیلترینگ محتوا رد کرد."
+
+#: assets/build/index.js:1
+msgid "Message Format Issue"
+msgstr "مشکل فرمت پیام"
+
+#: assets/build/index.js:1
+msgid "The message contains formatting that may be triggering spam filters."
+msgstr "پیام دارای فرمت‌هایی است که ممکن است فیلترهای هرزنامه را فعال کند."
+
+#: assets/build/index.js:1
+msgid "Recommended Solutions"
+msgstr "راه‌حل‌های پیشنهادی"
+
+#: assets/build/index.js:1
+msgid "Modify Message Content"
+msgstr "محتوای پیام را تغییر دهید"
+
+#: assets/build/index.js:1
+msgid "Remove promotional language and URL shorteners that may trigger spam filters."
+msgstr "زبان تبلیغاتی و کوتاه‌کننده‌های URL که ممکن است فیلترهای هرزنامه را فعال کنند حذف کنید."
+
+#: assets/build/index.js:1
+msgid "Use Pattern Method"
+msgstr "از روش الگو استفاده کنید"
+
+#: assets/build/index.js:1
+msgid "Switch to a pre-approved message template that complies with carrier requirements."
+msgstr "به یک الگوی پیام از پیش تأیید شده که با الزامات اپراتور سازگار است سوئیچ کنید."
+
+#: assets/build/index.js:1
+msgid "Verify Sender ID"
+msgstr "شناسه فرستنده را تأیید کنید"
+
+#: assets/build/index.js:1
+msgid "Ensure your sender ID is properly registered and approved by the carrier."
+msgstr "اطمینان حاصل کنید که شناسه فرستنده شما به درستی ثبت و تأیید شده است."
+
+#: assets/build/index.js:1
+msgid "ID"
+msgstr "شناسه"
+
+#: assets/build/index.js:1
+msgid "Section"
+msgstr "بخش"
+
+#: assets/build/index.js:1
+msgid "Method"
+msgstr "روش"
+
+#: assets/build/index.js:1
+msgid "Date"
+msgstr "تاریخ"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Open menu"
+msgstr "باز کردن منو"
+
+#: assets/build/index.js:1
+msgid "View details"
+msgstr "مشاهده جزئیات"
+
+#: assets/build/index.js:1
+msgid "Delete record"
+msgstr "حذف سابقه"
+
+#: assets/build/index.js:1
+msgid "All statuses"
+msgstr "تمام وضعیت‌ها"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Delivered"
+msgstr "تحویل داده شد"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Sent"
+msgstr "ارسال شد"
+
+#: assets/build/index.js:1
+msgid "Bulk Actions"
+msgstr "عملیات انبوه"
+
+#: assets/build/index.js:1
+msgid "Resend All"
+msgstr "ارسال مجدد همه"
+
+#: assets/build/index.js:1
+msgid "Delete All"
+msgstr "حذف همه"
+
+#: assets/build/index.js:1
+msgid "Columns"
+msgstr "ستون‌ها"
+
+#: assets/build/index.js:1
+msgid "Are you sure you want to delete these reports?"
+msgstr "آیا از حذف این گزارش‌ها مطمئن هستید؟"
+
+#: assets/build/index.js:1
+msgid "Records Deleted"
+msgstr "سوابق حذف شد"
+
+#: assets/build/index.js:1
+msgid "reports have been deleted."
+msgstr "گزارش‌ها حذف شده‌اند."
+
+#: assets/build/index.js:1
+msgid "Resend selected SMS messages?"
+msgstr "آیا پیامک‌های انتخاب‌شده را دوباره ارسال می‌کنید؟"
+
+#: assets/build/index.js:1
+msgid "SMS messages have been queued for resending."
+msgstr "پیامک‌ها برای ارسال دوباره در صف قرار گرفته‌اند."
+
+#: assets/build/index.js:4
+msgid "View and manage your SMS delivery reports"
+msgstr "گزارش‌های تحویل پیامک خود را مشاهده و مدیریت کنید"
+
+#: assets/build/index.js:4
+msgid "Data has been refreshed"
+msgstr "داده‌ها بروزرسانی شده‌اند"
+
+#: assets/build/index.js:4
+msgid "All reports have been updated with the latest data"
+msgstr "تمام گزارش‌ها با آخرین داده‌ها بروزرسانی شده‌اند"
+
+#: assets/build/index.js:4
+msgid "Refreshing..."
+msgstr "در حال بروزرسانی..."
+
+#: assets/build/index.js:4
+msgid "Refresh"
+msgstr "بروزرسانی"
+
+#: assets/build/index.js:4
+msgid "Notifications"
+msgstr "اعلان‌ها"
+
+#: assets/build/index.js:4
+msgid "Total Reports"
+msgstr "تعداد کل گزارش‌ها"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Overview"
+msgstr "نمای کلی"
+
+#: assets/build/index.js:4
+msgid "Reports"
+msgstr "گزارش‌ها"
+
+#: assets/build/index.js:4
+msgid "A list of all SMS reports with filtering and sorting options."
+msgstr "لیستی از تمام گزارش‌های SMS با گزینه‌های فیلتر و مرتب‌سازی."
+
+#: assets/build/index.js:4
+msgid "View SMS reports"
+msgstr "مشاهده گزارش‌های SMS"
+
+#: assets/build/index.js:1
+msgid "Filter phone numbers..."
+msgstr "فیلتر شماره تلفن ها..."
+
+#: assets/build/index.js:1
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Filter by status"
+msgstr "فیلتر بر اساس وضعیت"
+
+#: assets/build/index.js:1
+msgid "Previous"
+msgstr "قبلی"
+
+#: assets/build/index.js:1
+msgid "Next"
+msgstr "بعدی"
+
+#: assets/build/index.js:1
+msgid "WooCommerce"
+msgstr "ووکامرس"
+
+#: assets/build/index.js:1
+msgid "Select addon"
+msgstr "گزینه را انتخاب کنید"
+
+#: assets/build/index.js:1
+msgid "Error saving options"
+msgstr "خطاء ذخیره تنظیمات"
+
+#: assets/build/index.js:1
+msgid "No patterns found"
+msgstr "الگویی یافت نشد."
+
+#: assets/build/index.js:1
+msgid "You can add a new pattern by clicking the button below."
+msgstr "شما می توانید با کلیک بروی دکمه زیر یک الگوی جدید بسازید."
+
+#: assets/build/index.js:1
+msgid "This name will just show to you"
+msgstr "این نام فقط به شما نشان داده می شود"
+
+#: assets/build/index.js:1
+msgid "This is the body of your pattern, for variable placeholders use {0} , {1} and ..."
+msgstr "این متن الگوی شماست، برای متغیر ها از ساختار {0} و {1} ... استفاده کنید."
+
+#: assets/build/index.js:1
+msgid "Resending SMS"
+msgstr "در حال ارسال مجدد پیامک"
+
+#: assets/build/index.js:1
+msgid "The SMS is being resent to the same recipient."
+msgstr "پیامک به شماره مد نظر در حال ارسال است."
+
+#: assets/build/index.js:1
+msgid "Failed to Delete"
+msgstr "خطاء در حذف"
+
+#: assets/build/index.js:1
+msgid "An error occurred while deleting the record."
+msgstr "هنگام حذف گزارش یک مشکل رخ داد."
+
+#: assets/build/index.js:1
+msgid "Order Direct SMS"
+msgstr "پیامک مستقیم سفارش"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Order Review"
+msgstr "پیامک نظرسنجی سفارش"
+
+#: assets/build/index.js:1
+msgid "Notify Admin on Login"
+msgstr "اطلاع ورود به ادمین"
+
+#: assets/build/index.js:1
+msgid "No Results"
+msgstr "داده ای یافت نشد"
+
+#: assets/build/index.js:1
+msgid "There is no results to show."
+msgstr "نتیجه ای برای نمایش وجود ندارد."
+
+#: assets/build/index.js:4
+msgid "Copied!"
+msgstr "رونوشت گرفته شد!"
+
+#: assets/build/index.js:4
+msgid "Failed to copy!"
+msgstr "خطاء در رونوشت!"
+
+#: assets/build/index.js:4
+msgid "Copy ID"
+msgstr "رونوشت شناسه"
+
+#: assets/build/index.js:4
+msgid "% success rate"
+msgstr "% میزان موفقیت"
+
+#: assets/build/index.js:4
+msgid "Mark all as read"
+msgstr "علامت همه به عنوان خوانده شده"
+
+#: includes/Helpers/Sms.php:59
+msgid "Something went wrong"
+msgstr "مشکلی رخ داده است."
+
+#: assets/build/index.js:1
+msgid "SMS messages was resent by the system."
+msgstr "پیامک ها توسط سامانه باز ارسال شدند."
+
+#: assets/build/index.js:1
+msgid "Failed to Resend"
+msgstr "خطاء در ارسال مجدد"
+
+#: assets/build/index.js:1
+msgid "An error occurred while resending the SMS."
+msgstr "هنگام ارسال مجدد پیامک خطائی رخ داده است."
+
+#: assets/build/index.js:1
+msgid "Schedule"
+msgstr "زمانبندی شده"
+
+#: assets/build/index.js:1
+msgid "record(s)"
+msgstr "گزارش (ها)"
+
+#: assets/build/index.js:1
+msgid "Begin Resend"
+msgstr "در حال ارسال مجدد ..."
+
+#: assets/build/index.js:4
+msgid "You have a total of "
+msgstr "کل اطلاعات فعلی شما عبارت است از "
+
+#: assets/build/index.js:4
+msgid " SMS reports"
+msgstr "گزارش پیامک"
+
+#: assets/build/index.js:4
+msgid "% failure rate"
+msgstr "% میزان عدم موفقیت"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:123
+#: assets/build/index.js:1
+msgid "Products (separated by comma)"
+msgstr "محصولات (جدا شده با ویرگول)"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:124
+#: assets/build/index.js:1
+msgid "Products with prices (separated by comma)"
+msgstr "محصولات همراه تعداد و قیمت (جدا شده با ویرگول)"
+
+#: assets/build/index.js:1
+msgid "Plugin integration is off"
+msgstr "ادغام با افزونه غیر فعال است"
+
+#: assets/build/index.js:1
+msgid "Enable the plugin integration to access this page"
+msgstr "ادغام با افزونه را فعال کنید تا بتوانید به این صفحه دسترسی داشته باشید"
+
+#: assets/build/index.js:1
+msgid "Please wait, we are troubleshooting the issue."
+msgstr "لطفاً صبر کنید، ما در حال عیب یابی مشکل هستیم."
+
+#: assets/build/index.js:1
+msgid "Parent Comment Content"
+msgstr "متن نظر اصلی (نظر جواب داده شده)"
+
+#: assets/build/index.js:1
+msgid "Parent Comment Author"
+msgstr "نویسنده نظر اصلی (نظر جواب داده شده)"
+
+#: assets/build/index.js:1
+msgid "Parent Comment Author Email"
+msgstr "ایمیل نظر اصلی (نظر جواب داده شده)"
+
+#: assets/build/index.js:1
+msgid "Parent Comment Author URL"
+msgstr "آدرس وب نویسنده نظر اصلی (نظر جواب داده شده)"
+
+#: assets/build/index.js:1
+msgid "Parent Comment Date"
+msgstr "تاریخ نظر اصلی (نظر جواب داده شده)"
+
+#: assets/build/index.js:1
+msgid "Parent Comment Url"
+msgstr "لینک نظر اصلی (نظر جواب داده شده)"
+
+#: assets/build/index.js:4
+msgid "% Sent rate"
+msgstr "% میزان ارسال"
+
+#: assets/build/index.js:1
+msgid "Access Denied"
+msgstr "محدودیت دسترسی"
+
+#: assets/build/index.js:1
+msgid "You need to enable the following integrations to access this page:"
+msgstr "شما باید موارد زیر را در بخش ادغام ها فعال کنید تا بتوانید به این صفحه دسترسی داشته باشید:"
+
+#: assets/build/index.js:1
+msgid "Go Back"
+msgstr "برگشت"
+
+#: assets/build/index.js:1
+msgid "Select an option"
+msgstr "یک گزینه را انتخاب کنید"
+
+#: assets/build/index.js:1
+msgid "Toggle"
+msgstr "تغییر وضعیت"
+
+#: assets/build/index.js:1
+msgid "Pick a date"
+msgstr "تاریخ را انتخاب کنید"
+
+#: assets/build/index.js:1
+msgid "Reset"
+msgstr "بازنشانی"
+
+#: assets/build/index.js:1
+msgid "Settings saved"
+msgstr "تنظیمات ذخیره شد"
+
+#: assets/build/index.js:1
+msgid "Your settings have been updated"
+msgstr "تنظیمات شما به‌روزرسانی شد"
+
+#: assets/build/index.js:1
+msgid "There was an error saving your options."
+msgstr "خطایی در ذخیره‌سازی تنظیمات رخ داد"
+
+#: assets/build/index.js:1
+msgid "Loading..."
+msgstr "در حال بارگذاری..."
+
+#: assets/build/index.js:1
+msgid "Sending data to the server."
+msgstr "در حال ارسال اطلاعات به سرور"
+
+#: assets/build/index.js:1
+msgid "Enable Auto Remove"
+msgstr "فعال‌سازی حذف خودکار"
+
+#: assets/build/index.js:1
+msgid "Automatically remove old SMS reports based on your settings"
+msgstr "گزارش‌های قدیمی پیامک به‌صورت خودکار بر اساس تنظیمات شما حذف خواهند شد"
+
+#: assets/build/index.js:1
+msgid "Remove Reports Older Than"
+msgstr "حذف گزارش‌های قدیمی‌تر از"
+
+#: assets/build/index.js:1
+msgid "Time Unit"
+msgstr "واحد زمان"
+
+#: assets/build/index.js:1
+msgid "Weeks"
+msgstr "هفته"
+
+#: assets/build/index.js:1
+msgid "Months"
+msgstr "ماه"
+
+#: assets/build/index.js:4
+msgid "Sender Number"
+msgstr "شماره فرستنده"
+
+#: assets/build/index.js:4
+msgid "Select Sender Number"
+msgstr "شماره فرستنده را انتخاب کنید"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Admin Numbers"
+msgstr "شماره‌های مدیر"
+
+#: assets/build/index.js:4
+msgid "Admin Login Notify"
+msgstr "اطلاع‌رسانی ورود به مدیر"
+
+#: assets/build/index.js:4
+msgid "Admin Login Notify Settings"
+msgstr "تنظیمات اطلاع‌رسانی ورود به مدیر"
+
+#: assets/build/index.js:4
+msgid "Enable Admin Login Notify"
+msgstr "فعال‌سازی اطلاع‌رسانی ورود به مدیر"
+
+#: assets/build/index.js:4
+msgid "Select Admin Numbers Method"
+msgstr "روش انتخاب شماره‌های مدیر"
+
+#: assets/build/index.js:4
+msgid "User Login Notify"
+msgstr "اطلاع‌رسانی ورود به کاربر"
+
+#: assets/build/index.js:4
+msgid "User Login Notify Settings"
+msgstr "تنظیمات اطلاع‌رسانی ورود به کاربر"
+
+#: assets/build/index.js:4
+msgid "Admin Register Notify"
+msgstr "اطلاع‌رسانی ثبت‌نام به مدیر"
+
+#: assets/build/index.js:4
+msgid "Admin Register Notify Settings"
+msgstr "تنظیمات اطلاع‌رسانی ثبت‌نام به مدیر"
+
+#: assets/build/index.js:4
+msgid "Enable Admin Register Notify"
+msgstr "فعال‌سازی اطلاع‌رسانی ثبت‌نام مدیر"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Enter Admin Numbers"
+msgstr "شماره‌های مدیر را وارد کنید"
+
+#: assets/build/index.js:4
+msgid "Enable User Register Notify"
+msgstr "فعال‌سازی اطلاع‌رسانی ثبت‌نام کاربر"
+
+#: assets/build/index.js:4
+msgid "User Phone Metakey"
+msgstr "کلید متای شماره تلفن کاربر"
+
+#: assets/build/index.js:4
+msgid "Select User Phone Metakey"
+msgstr "انتخاب کلید متای شماره تلفن کاربر"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:176
+#: assets/build/index.js:4
+msgid "General"
+msgstr "عمومی"
+
+#: assets/build/index.js:4
+msgid "General settings for comments"
+msgstr "تنظیمات عمومی بخش دیدگاه‌ها"
+
+#: assets/build/index.js:4
+msgid "Use Metakey For Loged In User"
+msgstr "استفاده از متا کی برای کاربر وارد شده"
+
+#: assets/build/index.js:4
+msgid "Add Mobile Filed"
+msgstr "افزودن فیلد موبایل"
+
+#: assets/build/index.js:4
+msgid "Add mobile field to the comment form"
+msgstr "افزودن فیلد شماره موبایل به فرم دیدگاه"
+
+#: assets/build/index.js:4
+msgid "Require Mobile Field"
+msgstr "الزامی بودن فیلد موبایل"
+
+#: assets/build/index.js:4
+msgid "Require mobile field to be filled"
+msgstr "الزامی بودن پر کردن فیلد شماره موبایل"
+
+#: assets/build/index.js:4
+msgid "Remove Email Field"
+msgstr "حذف فیلد ایمیل"
+
+#: assets/build/index.js:4
+msgid "Remove email field from the comment form"
+msgstr "حذف فیلد ایمیل از فرم دیدگاه"
+
+#: assets/build/index.js:4
+msgid "Remove URL Field"
+msgstr "حذف فیلد آدرس سایت"
+
+#: assets/build/index.js:4
+msgid "Remove URL field from the comment form"
+msgstr "حذف فیلد آدرس سایت از فرم دیدگاه"
+
+#: assets/build/index.js:4
+msgid "Remove Cookies Field"
+msgstr "حذف فیلد کوکی‌ها"
+
+#: assets/build/index.js:4
+msgid "Remove cookies field from the comment form"
+msgstr "حذف فیلد مربوط به ذخیره کوکی‌ها از فرم دیدگاه"
+
+#: assets/build/index.js:4
+msgid "Enable verification code for verifying phone"
+msgstr "فعال‌سازی ارسال کد تأیید برای شماره تلفن"
+
+#: assets/build/index.js:4
+msgid "Text to be sent with the verification code"
+msgstr "متنی که همراه با کد تأیید ارسال می‌شود"
+
+#: assets/build/index.js:4
+msgid "Admin SMS"
+msgstr "پیامک مدیر"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Admin SMS Settings"
+msgstr "تنظیمات پیامک مدیر"
+
+#: assets/build/index.js:4
+msgid "Text to be sent to admin"
+msgstr "متنی که به مدیر ارسال می‌شود"
+
+#: assets/build/index.js:4
+msgid "Author SMS"
+msgstr "پیامک نویسنده"
+
+#: assets/build/index.js:4
+msgid "Enable Author Login Notify"
+msgstr "فعال‌سازی اطلاع‌رسانی ورود نویسنده"
+
+#: assets/build/index.js:4
+msgid "Text to be sent to author"
+msgstr "متنی که به نویسنده ارسال می‌شود"
+
+#: assets/build/index.js:4
+msgid "Author Approval Comment SMS"
+msgstr "پیامک تأیید دیدگاه نویسنده"
+
+#: assets/build/index.js:4
+msgid "Author Approval Comment SMS Settings"
+msgstr "تنظیمات پیامک تأیید دیدگاه نویسنده"
+
+#: assets/build/index.js:4
+msgid "Enable Author Approval Comment SMS"
+msgstr "فعال‌سازی پیامک تأیید دیدگاه نویسنده"
+
+#: assets/build/index.js:4
+msgid "Parent Author Comment SMS"
+msgstr "پیامک نویسنده دیدگاه اصلی"
+
+#: assets/build/index.js:4
+msgid "Parent Author Comment SMS Settings"
+msgstr "تنظیمات پیامک نویسنده دیدگاه اصلی"
+
+#: assets/build/index.js:4
+msgid "Enable Parent Author Comment SMS"
+msgstr "فعال‌سازی پیامک نویسنده دیدگاه اصلی"
+
+#: assets/build/index.js:4
+msgid "Auto Remove"
+msgstr "حذف خودکار"
+
+#: assets/build/index.js:4
+msgid "Auto Remove Settings"
+msgstr "تنظیمات حذف خودکار"
+
+#: assets/build/index.js:4
+msgid "Configure automatic removal of old SMS reports based on conditions."
+msgstr "پیکربندی حذف خودکار گزارش‌های پیامک قدیمی بر اساس شرایط مشخص‌شده"
+
+#: assets/build/index.js:1
+msgid "Enable this option to show this phonebook to child users"
+msgstr "با فعال‌سازی این گزینه، این دفترچه تلفن برای کاربران زیرمجموعه نمایش داده می‌شود"
+
+#: assets/build/index.js:1
+msgid "Phonebook added successfully"
+msgstr "دفترچه تلفن با موفقیت اضافه شد"
+
+#: assets/build/index.js:1
+msgid "Update Phonebook"
+msgstr "به‌روزرسانی دفترچه تلفن"
+
+#: assets/build/index.js:1
+msgid "Add Phonebook"
+msgstr "افزودن دفترچه تلفن"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "User data missing. Please login again."
+msgstr "اطلاعات کاربر موجود نیست. لطفاً دوباره وارد شوید."
+
+#: assets/build/index.js:1
+msgid "You can send sms to customer after order is created."
+msgstr "می‌توانید پس از ثبت سفارش، پیامک به مشتری ارسال کنید."
+
+#: assets/build/index.js:1
+msgid "You can send sms to admin after order is created."
+msgstr "می‌توانید پس از ثبت سفارش، پیامک به مدیر ارسال کنید."
+
+#: assets/build/index.js:1
+msgid "Save customer phone to phonebook"
+msgstr "ذخیره شماره مشتری در دفترچه تلفن"
+
+#: assets/build/index.js:1
+msgid "Order settings"
+msgstr "تنظیمات سفارش"
+
+#: assets/build/index.js:1
+msgid "Product"
+msgstr "محصول"
+
+#: assets/build/index.js:1
+msgid "Categories"
+msgstr "دسته‌بندی‌ها"
+
+#: assets/build/index.js:1
+msgid "Tags"
+msgstr "برچسب‌ها"
+
+#: assets/build/index.js:1
+msgid "Exclude Products"
+msgstr "حذف محصولات"
+
+#: assets/build/index.js:1
+msgid "Exclude Categories"
+msgstr "حذف دسته‌بندی‌ها"
+
+#: assets/build/index.js:1
+msgid "Exclude Tags"
+msgstr "حذف برچسب‌ها"
+
+#: assets/build/index.js:1
+msgid "Failed to save order action. Please try again."
+msgstr "ذخیره عملیات سفارش ناموفق بود. لطفاً دوباره تلاش کنید."
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Failed to update order action. Please try again."
+msgstr "به‌روزرسانی عملیات سفارش ناموفق بود. لطفاً دوباره تلاش کنید."
+
+#: assets/build/index.js:1
+msgid "Update Order Action"
+msgstr "به‌روزرسانی عملیات سفارش"
+
+#: assets/build/index.js:1
+msgid "Enter Action Name"
+msgstr "نام عملیات را وارد کنید"
+
+#: assets/build/index.js:1
+msgid "Select Form"
+msgstr "فرم را انتخاب کنید"
+
+#: assets/build/index.js:1
+msgid "Phone Field"
+msgstr "فیلد شماره تماس"
+
+#: assets/build/index.js:1
+msgid "Select Phone Field"
+msgstr "فیلد شماره تماس را انتخاب کنید"
+
+#: assets/build/index.js:1
+msgid "Require Phone Number Validation"
+msgstr "نیاز به تأیید شماره تماس"
+
+#: assets/build/index.js:1
+msgid "Require phone number validation before submitting the form."
+msgstr "قبل از ارسال فرم، تأیید شماره تماس ضروری است."
+
+#: assets/build/index.js:1
+msgid "Save Phone Number to Phonebook"
+msgstr "ذخیره شماره تماس در دفترچه تلفن"
+
+#: assets/build/index.js:1
+msgid "User SMS Settings"
+msgstr "تنظیمات پیامک کاربر"
+
+#: assets/build/index.js:1
+msgid "SMS Settings"
+msgstr "تنظیمات پیامک"
+
+#: assets/build/index.js:1
+msgid "Send SMS to User"
+msgstr "ارسال پیامک به کاربر"
+
+#: assets/build/index.js:1
+msgid "Send SMS to Admin"
+msgstr "ارسال پیامک به مدیر"
+
+#: assets/build/index.js:1
+msgid "Action Added successfully! 👌"
+msgstr "عملیات با موفقیت اضافه شد! 👌"
+
+#: assets/build/index.js:1
+msgid "Action Edited successfully! 👌"
+msgstr "عملیات با موفقیت ویرایش شد! 👌"
+
+#: assets/build/index.js:1
+msgid "Update Action"
+msgstr "به‌روزرسانی عملیات"
+
+#: assets/build/index.js:1
+msgid "Add Action"
+msgstr "افزودن عملیات"
+
+#: assets/build/index.js:1
+msgid "User Phone Method"
+msgstr "روش شناسایی شماره کاربر"
+
+#: assets/build/index.js:1
+msgid "Configure how to detect user phone numbers"
+msgstr "پیکربندی نحوه شناسایی شماره تماس کاربران"
+
+#: assets/build/index.js:1
+msgid "How detect user phone"
+msgstr "نحوه شناسایی شماره تماس کاربر"
+
+#: assets/build/index.js:1
+msgid "Use value of a meta key"
+msgstr "استفاده از مقدار یک کلید متا"
+
+#: assets/build/index.js:1
+msgid "Add field to ticket form, to get user phone number"
+msgstr "افزودن فیلد به فرم تیکت برای دریافت شماره تماس کاربر"
+
+#: assets/build/index.js:1
+msgid "Select the metakey for user phone"
+msgstr "کلید متای شماره کاربر را انتخاب کنید"
+
+#: assets/build/index.js:1
+msgid "User SMS on Open Ticket"
+msgstr "ارسال پیامک به کاربر هنگام ثبت تیکت"
+
+#: assets/build/index.js:1
+msgid "Configure SMS for users when a ticket is opened"
+msgstr "پیکربندی پیامک به کاربر هنگام ثبت تیکت"
+
+#: assets/build/index.js:1
+msgid "User SMS on Reply Ticket"
+msgstr "ارسال پیامک به کاربر هنگام پاسخ به تیکت"
+
+#: assets/build/index.js:1
+msgid "Configure SMS for users when a ticket is replied to"
+msgstr "پیکربندی پیامک به کاربر هنگام پاسخ به تیکت"
+
+#: assets/build/index.js:1
+msgid "User SMS on Ticket Status Change"
+msgstr "ارسال پیامک به کاربر هنگام تغییر وضعیت تیکت"
+
+#: assets/build/index.js:1
+msgid "Configure SMS for users when a ticket status changes"
+msgstr "پیکربندی پیامک به کاربر هنگام تغییر وضعیت تیکت"
+
+#: assets/build/index.js:1
+msgid "Admin SMS on Open Ticket"
+msgstr "ارسال پیامک به مدیر هنگام ثبت تیکت"
+
+#: assets/build/index.js:1
+msgid "Configure SMS for admins when a ticket is opened"
+msgstr "پیکربندی پیامک به مدیر هنگام ثبت تیکت"
+
+#: assets/build/index.js:1
+msgid "Admin SMS on Reply Ticket"
+msgstr "ارسال پیامک به مدیر هنگام پاسخ به تیکت"
+
+#: assets/build/index.js:1
+msgid "Configure SMS for admins when a ticket is replied to"
+msgstr "پیکربندی پیامک به مدیر هنگام پاسخ به تیکت"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Use Auth Admin Numbers"
+msgstr "استفاده از شماره‌های تأییدشده مدیر"
+
+#: assets/build/index.js:4
+msgid "Add Contact"
+msgstr "افزودن مخاطب"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:241
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "General settings"
+msgstr "تنظیمات عمومی"
+
+#: assets/build/index.js:4
+msgid "Tracking code settings"
+msgstr "تنظیمات کد رهگیری"
+
+#: assets/build/index.js:4
+msgid "Enable SMS Tracking Code"
+msgstr "فعال‌سازی پیامک کد رهگیری"
+
+#: assets/build/index.js:4
+msgid "Order review settings"
+msgstr "تنظیمات نظر‌سنجی سفارش"
+
+#: assets/build/index.js:4
+msgid "Enable SMS Order Review"
+msgstr "فعال‌سازی پیامک نظر‌سنجی سفارش"
+
+#: assets/build/index.js:4
+msgid "SMS Order Review After Days"
+msgstr "تعداد روز پس از سفارش برای ارسال نظر‌سنجی"
+
+#: assets/build/index.js:4
+msgid "Out of Stock"
+msgstr "ناموجود"
+
+#: assets/build/index.js:4
+msgid "Out of stock admin SMS settings"
+msgstr "تنظیمات پیامک مدیر هنگام ناموجود شدن کالا"
+
+#: assets/build/index.js:4
+msgid "Enable SMS Out of Stock"
+msgstr "فعال‌سازی پیامک ناموجود شدن"
+
+#: assets/build/index.js:4
+msgid "Before Out of Stock"
+msgstr "قبل از ناموجود شدن"
+
+#: assets/build/index.js:4
+msgid "Before out of stock admin SMS settings"
+msgstr "تنظیمات پیامک مدیر قبل از ناموجود شدن کالا"
+
+#: assets/build/index.js:4
+msgid "Enable SMS Before Out of Stock"
+msgstr "فعال‌سازی پیامک قبل از ناموجود شدن"
+
+#: assets/build/index.js:4
+msgid "In stock users SMS settings"
+msgstr "تنظیمات پیامک به کاربران هنگام موجود شدن"
+
+#: assets/build/index.js:4
+msgid "Enable SMS In Stock"
+msgstr "فعال‌سازی پیامک موجود شدن"
+
+#: assets/build/index.js:4
+msgid "Send Verify Code"
+msgstr "ارسال کد تأیید"
+
+#: assets/build/index.js:4
+msgid "Add Users To Phonebook"
+msgstr "افزودن کاربران به دفترچه تلفن"
+
+#: assets/build/index.js:4
+msgid "Add Users To Phonebook Method"
+msgstr "روش افزودن کاربران به دفترچه تلفن"
+
+#: assets/build/index.js:4
+msgid "General cart abandonment settings"
+msgstr "تنظیمات عمومی ترک سبد خرید"
+
+#: assets/build/index.js:4
+msgid "Auto Remove Coupon on Abandonment"
+msgstr "حذف خودکار کد تخفیف در صورت ترک سبد خرید"
+
+#: assets/build/index.js:4
+msgid "Automatically remove coupons from abandoned carts."
+msgstr "کدهای تخفیف را به‌طور خودکار از سبدهای خرید رها شده حذف کن."
+
+#: assets/build/index.js:4
+msgid "Admin Notification"
+msgstr "اطلاع‌رسانی به مدیر"
+
+#: assets/build/index.js:4
+msgid "Settings for notifying admin on cart recovery."
+msgstr "تنظیمات اطلاع‌رسانی به مدیر هنگام بازیابی سبد خرید."
+
+#: assets/build/index.js:1
+msgid "SMS Title"
+msgstr "عنوان پیامک"
+
+#: assets/build/index.js:1
+msgid "Enter the SMS title"
+msgstr "عنوان پیامک را وارد کنید."
+
+#: assets/build/index.js:1
+msgid "Enabled"
+msgstr "فعال شده"
+
+#: assets/build/index.js:1
+msgid "Enable or disable the cart abandonment SMS"
+msgstr "فعال سازی پیامک سبد خرید رها شده"
+
+#: assets/build/index.js:1
+msgid "Something went wrong! Please try again."
+msgstr "مشکلی رخ داده است! لطفاً مجدد تلاش کنید."
+
+#: assets/build/index.js:4
+msgid "SMS"
+msgstr "پیامک"
+
+#: assets/build/index.js:4
+msgid "Default"
+msgstr "پیشفرض"
+
+#: assets/build/index.js:4
+msgid "Verification code text"
+msgstr "متن پیامک کد تأیید"
+
+#: assets/build/index.js:4
+msgid "Verification code expiration time"
+msgstr "مدت زمان انقضاء کد تأیید"
+
+#: includes/Core/Settings.php:177
+#: assets/build/index.js:4
+msgid "Newsletter"
+msgstr "خبرنامه"
+
+#: includes/Modules/Core/Newsletter.php:124
+msgid "Phone"
+msgstr "شماره همراه"
+
+#: assets/build/index.js:4
+msgid "Manage SMS notifications for Newsletter plugin"
+msgstr "مدیریت اطلاع رسانی ها برای خبرنامه پیامکی"
+
+#: includes/Modules/Core/Newsletter.php:107
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:131
+msgid "Join Our Newsletter"
+msgstr "به خبرنامه ما بپیوندید"
+
+#: includes/Modules/Core/Newsletter.php:110
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:141
+msgid "Get the latest updates and exclusive offers delivered directly to your phone."
+msgstr "جدیدترین به‌روزرسانی‌ها و پیشنهادهای ویژه را مستقیماً در تلفن همراه خود دریافت کنید."
+
+#: includes/Modules/Core/Newsletter.php:165
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:231
+msgid "Thank you for subscribing!"
+msgstr "از ثبت‌نام شما متشکریم!"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:112
+msgid "Form Texts"
+msgstr "متن‌های فرم"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:129
+msgid "Phone Placeholder"
+msgstr "متن پیش‌فرض شماره تلفن"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:138
+msgid "Send Code Button"
+msgstr "دکمه ارسال کد"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:165
+msgid "Change Phone Button"
+msgstr "دکمه تغییر شماره"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:184
+msgid "Send Verification Code"
+msgstr "ارسال کد تأیید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:121
+msgid "Form Content"
+msgstr "محتوای فرم"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:132
+msgid "Enter form title"
+msgstr "عنوان فرم را وارد کنید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:142
+msgid "Enter form description"
+msgstr "توضیح فرم را وارد کنید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:149
+msgid "Name Field Label"
+msgstr "برچسب فیلد نام"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:152
+msgid "Enter name field label"
+msgstr "برچسب فیلد نام را وارد کنید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:159
+msgid "Phone Field Label"
+msgstr "برچسب فیلد شماره تلفن"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:162
+msgid "Enter phone field label"
+msgstr "برچسب فیلد شماره تلفن را وارد کنید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:169
+msgid "Verification Code Label"
+msgstr "برچسب کد تأیید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:172
+msgid "Enter verification code label"
+msgstr "برچسب کد تأیید را وارد کنید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:179
+msgid "Send Code Button Text"
+msgstr "متن دکمه ارسال کد"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:182
+msgid "Enter send code button text"
+msgstr "متن دکمه ارسال کد را وارد کنید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:189
+msgid "Sending Code Text"
+msgstr "متن در حال ارسال کد"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:191
+msgid "Sending code"
+msgstr "در حال ارسال کد"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:192
+msgid "Enter sending code text"
+msgstr "متن ارسال کد را وارد کنید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:199
+msgid "Verify Button Text"
+msgstr "متن دکمه تأیید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:202
+msgid "Enter verify button text"
+msgstr "متن دکمه تأیید را وارد کنید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:209
+msgid "Verifying Code Text"
+msgstr "متن در حال تأیید کد"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:211
+msgid "Verifying code"
+msgstr "در حال تأیید کد"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:212
+msgid "Enter verifying code text"
+msgstr "متن تأیید کد را وارد کنید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:219
+msgid "Change Phone Button Text"
+msgstr "متن دکمه تغییر شماره"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:222
+msgid "Enter change phone button text"
+msgstr "متن دکمه تغییر شماره را وارد کنید"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:229
+msgid "Success Message"
+msgstr "پیام موفقیت"
+
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:232
+msgid "Enter success message"
+msgstr "پیام موفقیت را وارد کنید"
+
+#: assets/build/index.js:4
+msgid "Add Newsletter Widget"
+msgstr "افزودن ابزارک خبرنامه"
+
+#: assets/build/index.js:4
+msgid "Add newsletter widget to elementor widgets list"
+msgstr "افزودن ابزارک خبرنامه به لیست ابزارک‌های المنتور"
+
+#: assets/build/index.js:4
+msgid "Add In Stock Form Widget"
+msgstr "افزودن ابزارک باخبرم کن"
+
+#: assets/build/index.js:4
+msgid "Add in stock form widget to elementor widgets list"
+msgstr "افزودن ابزارک فرم با خبرم کن به لیست ابزارک‌های المنتور"
+
+#: assets/build/index.js:4
+msgid "Aviliable SMS:"
+msgstr "تعداد پیامک‌های موجود:"
+
+#: assets/build/index.js:4
+msgid "Expire Date:"
+msgstr "تاریخ انقضاء:"
+
+#: assets/build/index.js:4
+msgid "Credit:"
+msgstr "اعتبار:"
+
+#: assets/build/index.js:4
+msgid "Rials"
+msgstr "ریال"
+
+#: assets/build/index.js:4
+msgid "Current Version: "
+msgstr "نسخه فعلی: "
+
+#: assets/build/index.js:1
+msgid "Order Action User SMS"
+msgstr "پیامک علمگر سفارش برای کاربر"
+
+#: assets/build/index.js:1
+msgid "Order Action Admin SMS"
+msgstr "پیامک علمگر سفارش برای مدیر"
+
+#: assets/build/index.js:1
+msgid "Product In Stock"
+msgstr "موجود شدن محصول"
+
+#: assets/build/index.js:1
+msgid "Product Out of Stock"
+msgstr "ناموجود شدن محصول"
+
+#: assets/build/index.js:1
+msgid "Product Before Out of Stock"
+msgstr "قبل از اتمام موجودی محصول"
+
+#: assets/build/index.js:1
+msgid "Notify User on Login"
+msgstr "اطلاع‌رسانی به کاربر هنگام ورود"
+
+#: assets/build/index.js:1
+msgid "Notify Admin on Register"
+msgstr "اطلاع‌رسانی به مدیر هنگام ثبت‌نام"
+
+#: assets/build/index.js:1
+msgid "Notify User on Register"
+msgstr "اطلاع‌رسانی به کاربر هنگام ثبت‌نام"
+
+#: assets/build/index.js:1
+msgid "Total Subscribers"
+msgstr "تعداد کل مشترکین"
+
+#: assets/build/index.js:1
+msgid "Active subscribers"
+msgstr "مشترکین فعال"
+
+#: assets/build/index.js:1
+msgid "this month"
+msgstr "این ماه"
+
+#: assets/build/index.js:1
+msgid "Analytics"
+msgstr "تحلیل‌ها"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:2
+#: assets/build/index.js:4
+msgid "Campaigns"
+msgstr "کمپین‌ها"
+
+#: assets/build/index.js:1
+msgid "Subscriber Growth"
+msgstr "رشد مشترکین"
+
+#: assets/build/index.js:1
+msgid "New subscribers over the last 30 days"
+msgstr "مشترکین جدید در 30 روز گذشته"
+
+#: assets/build/index.js:1
+msgid "New Subscribers"
+msgstr "مشترکین جدید"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:2
+#: assets/build/index.js:4
+msgid "Unsubscribed"
+msgstr "لغو اشتراک"
+
+#: assets/build/index.js:1
+msgid "Campaign Performance"
+msgstr "عملکرد کمپین"
+
+#: assets/build/index.js:1
+msgid "Success rates of recent campaigns"
+msgstr "نرخ موفقیت کمپین‌های اخیر"
+
+#: assets/build/index.js:1
+msgid "Detailed Analytics"
+msgstr "تحلیل‌های دقیق"
+
+#: assets/build/index.js:1
+msgid "In-depth metrics for your campaigns"
+msgstr "متریک‌های عمیق برای کمپین‌های شما"
+
+#: assets/build/index.js:1
+msgid "More detailed analytics will be available in future updates."
+msgstr "تحلیل‌های دقیق‌تر در به‌روزرسانی‌های آینده در دسترس خواهد بود."
+
+#: assets/build/index.js:1
+msgid "Campaign Breakdown"
+msgstr "شکست کمپین"
+
+#: assets/build/index.js:1
+msgid "Performance metrics by campaign"
+msgstr "متریک‌های عملکرد بر اساس کمپین"
+
+#: assets/build/index.js:1
+msgid "Campaign-specific analytics will be available in future updates."
+msgstr "تحلیل‌های خاص کمپین در به‌روزرسانی‌های آینده در دسترس خواهد بود."
+
+#: assets/build/index.js:2
+msgid "Create and manage your newsletter campaigns."
+msgstr "کمپین‌های خبرنامه خود را ایجاد و مدیریت کنید."
+
+#: assets/build/index.js:2
+msgid "Create Campaign"
+msgstr "ایجاد کمپین"
+
+#: assets/build/index.js:3
+msgid "Export started"
+msgstr "برون‌ریزی آغاز شد"
+
+#: assets/build/index.js:3
+msgid "Export"
+msgstr "برون‌ریزی"
+
+#: assets/build/index.js:2
+msgid "Campaign Management"
+msgstr "مدیریت کمپین"
+
+#: assets/build/index.js:3
+msgid "Search campaigns..."
+msgstr "جستجوی کمپین‌ها..."
+
+#: assets/build/index.js:2
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "All Statuses"
+msgstr "همه وضعیت‌ها"
+
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Scheduled"
+msgstr "زمان‌بندی شده"
+
+#: assets/build/index.js:2
+#: assets/build/index.js:3
+#: assets/build/index.js:4
+msgid "Unknown"
+msgstr "نامشخص"
+
+#: assets/build/index.js:3
+msgid "Send Now"
+msgstr "اکنون ارسال کن"
+
+#: assets/build/index.js:3
+msgid "Campaign duplicated"
+msgstr "کمپین کپی شد"
+
+#: assets/build/index.js:3
+msgid "A copy of the campaign has been created."
+msgstr "یک کپی از کمپین ایجاد شده است."
+
+#: assets/build/index.js:3
+msgid "Duplicate"
+msgstr "کپی"
+
+#: assets/build/index.js:3
+msgid "No campaigns found."
+msgstr "هیچ کمپینی پیدا نشد."
+
+#: assets/build/index.js:4
+msgid "Edit Campaign"
+msgstr "ویرایش کمپین"
+
+#: assets/build/index.js:4
+msgid "Campaign Title"
+msgstr "عنوان کمپین"
+
+#: assets/build/index.js:2
+#: assets/build/index.js:3
+msgid "Are you sure?"
+msgstr "آیا مطمئن هستید؟"
+
+#: assets/build/index.js:3
+msgid "This will permanently delete the campaign"
+msgstr "این عمل به‌طور دائمی کمپین را حذف خواهد کرد."
+
+#: assets/build/index.js:3
+msgid "and all associated data."
+msgstr "و تمام داده‌های مرتبط."
+
+#: assets/build/index.js:2
+msgid "Campaign deleted"
+msgstr "کمپین حذف شد"
+
+#: assets/build/index.js:2
+msgid "The campaign has been successfully removed from the system."
+msgstr "کمپین با موفقیت از سیستم حذف شد."
+
+#: assets/build/index.js:3
+msgid "Send Campaign Now?"
+msgstr "آیا می‌خواهید کمپین را اکنون ارسال کنید؟"
+
+#: assets/build/index.js:3
+msgid "You are about to send"
+msgstr "شما در حال ارسال"
+
+#: assets/build/index.js:3
+msgid "to all active subscribers immediately. This action cannot be undone."
+msgstr "به تمام مشترکین فعال به‌طور فوری. این عمل غیرقابل بازگشت است."
+
+#: assets/build/index.js:3
+msgid "Campaign sent"
+msgstr "کمپین ارسال شد"
+
+#: assets/build/index.js:3
+msgid "Your campaign is being sent to all active subscribers."
+msgstr "کمپین شما در حال ارسال به تمام مشترکین فعال است."
+
+#: assets/build/index.js:4
+msgid "Subscriber Name"
+msgstr "نام مشترک"
+
+#: assets/build/index.js:4
+msgid "Welcome Message"
+msgstr "پیام خوش‌آمدگویی"
+
+#: assets/build/index.js:4
+msgid "Welcome Message Settings"
+msgstr "تنظیمات پیام خوش‌آمدگویی"
+
+#: assets/build/index.js:4
+msgid "Enable Welcome Message"
+msgstr "فعال‌سازی پیام خوش‌آمدگویی"
+
+#: assets/build/index.js:4
+msgid "Enable welcome message for new subscribers"
+msgstr "فعال‌سازی پیام خوش‌آمدگویی برای مشترکین جدید"
+
+#: assets/build/index.js:4
+msgid "Text to be sent as a welcome message"
+msgstr "متنی که به عنوان پیام خوش‌آمدگویی ارسال می‌شود"
+
+#: assets/build/index.js:4
+msgid "Notify About New Subscriber"
+msgstr "اطلاع‌رسانی درباره مشترک جدید"
+
+#: assets/build/index.js:4
+msgid "Notify About New Subscriber Settings"
+msgstr "تنظیمات اطلاع‌رسانی درباره مشترک جدید"
+
+#: assets/build/index.js:4
+msgid "Enable Notify About New Subscriber"
+msgstr "فعال‌سازی اطلاع‌رسانی درباره مشترک جدید"
+
+#: assets/build/index.js:4
+msgid "Enable notify about new subscriber"
+msgstr "فعال‌سازی اطلاع‌رسانی درباره مشترک جدید"
+
+#: assets/build/index.js:4
+msgid "Notify About New Subscriber Admin Numbers Method"
+msgstr "روش شماره‌های مدیر برای اطلاع‌رسانی درباره مشترک جدید"
+
+#: assets/build/index.js:4
+msgid "Select Notify About New Subscriber Admin Numbers Method"
+msgstr "انتخاب روش شماره‌های مدیر برای اطلاع‌رسانی درباره مشترک جدید"
+
+#: assets/build/index.js:4
+msgid "Notify About New Subscriber Admin Numbers"
+msgstr "شماره‌های مدیر برای اطلاع‌رسانی درباره مشترک جدید"
+
+#: assets/build/index.js:4
+msgid "Select admin numbers to notify about new subscriber"
+msgstr "انتخاب شماره‌های مدیر برای اطلاع‌رسانی درباره مشترک جدید"
+
+#: assets/build/index.js:4
+msgid "Text to be sent as a notification about new subscriber"
+msgstr "متنی که به عنوان اطلاع‌رسانی درباره مشترک جدید ارسال می‌شود"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Subscribers"
+msgstr "مشترکین"
+
+#: assets/build/index.js:1
+msgid "Manage your newsletter subscribers and their subscription status."
+msgstr "مدیریت مشترکین خبرنامه و وضعیت اشتراک آن‌ها."
+
+#: assets/build/index.js:1
+msgid "Subscriber Management"
+msgstr "مدیریت مشترکین"
+
+#: assets/build/index.js:2
+#: assets/build/index.js:4
+msgid "Search by phone number..."
+msgstr "جستجو بر اساس شماره تلفن..."
+
+#: assets/build/index.js:2
+#: assets/build/index.js:4
+msgid "Subscribed"
+msgstr "مشترک شده"
+
+#: assets/build/index.js:2
+msgid "No subscribers found."
+msgstr "هیچ مشترکی پیدا نشد."
+
+#: assets/build/index.js:4
+msgid "Edit Subscriber"
+msgstr "ویرایش مشترک"
+
+#: assets/build/index.js:2
+msgid "This will permanently delete the subscriber"
+msgstr "این عمل به‌طور دائمی مشترک را حذف خواهد کرد."
+
+#: assets/build/index.js:2
+msgid "and remove their data from the system."
+msgstr "و اطلاعات آن‌ها را از سیستم حذف خواهد کرد."
+
+#: assets/build/index.js:1
+msgid "Add New Subscriber"
+msgstr "افزودن مشترک جدید"
+
+#: assets/build/index.js:4
+msgid "Add Subscriber"
+msgstr "افزودن مشترک"
+
+#: assets/build/index.js:3
+msgid "Unknown Campaign"
+msgstr "کمپین ناشناخته"
+
+#: assets/build/index.js:3
+msgid "Message Logs"
+msgstr "گزارش‌های پیام"
+
+#: assets/build/index.js:3
+msgid "View detailed logs of all sent messages and their delivery status."
+msgstr "مشاهده گزارش‌های دقیق از تمام پیام‌های ارسال شده و وضعیت تحویل آن‌ها."
+
+#: assets/build/index.js:3
+msgid "Your logs are being exported. The download will start shortly."
+msgstr "گزارش‌های شما در حال صادرات هستند. دانلود به زودی آغاز خواهد شد."
+
+#: assets/build/index.js:3
+msgid "Message Log History"
+msgstr "تاریخچه گزارش‌های پیام"
+
+#: assets/build/index.js:4
+msgid "Filter by campaign"
+msgstr "فیلتر بر اساس کمپین"
+
+#: assets/build/index.js:4
+msgid "All Campaigns"
+msgstr "تمام کمپین‌ها"
+
+#: assets/build/index.js:4
+msgid "Campaign"
+msgstr "کمپین"
+
+#: assets/build/index.js:4
+msgid "Sent At"
+msgstr "ارسال شده در"
+
+#: assets/build/index.js:4
+msgid "Error Message"
+msgstr "پیام خطا"
+
+#: assets/build/index.js:4
+msgid "No message logs found."
+msgstr "هیچ گزارشی از پیام‌ها پیدا نشد."
+
+#. translators: %s is the number of subscribers
+#: assets/build/index.js:2
+msgid "You have a total of %s subscribers in your database."
+msgstr "شما مجموعاً %s مشترک در پایگاه داده خود دارید."
+
+#. translators: %s is the number of campaigns
+#: assets/build/index.js:3
+msgid "You have created %s campaigns."
+msgstr "شما %s کمپین ایجاد کرده‌اید."
+
+#. translators: %s is the number of message logs
+#: assets/build/index.js:4
+msgid "You have %s message logs in your system."
+msgstr "شما %s گزارش پیام در سیستم خود دارید."
+
+#: assets/build/index.js:4
+msgid "Enter Subscriber Name"
+msgstr "نام مشترک را وارد کنید"
+
+#: assets/build/index.js:4
+msgid "Subscriber Phone Number"
+msgstr "شماره تلفن مشترک"
+
+#: assets/build/index.js:4
+msgid "Enter Subscriber Phone Number"
+msgstr "شماره تلفن مشترک را وارد کنید"
+
+#: assets/build/index.js:4
+msgid "Subscriber Status"
+msgstr "وضعیت مشترک"
+
+#: assets/build/index.js:4
+msgid "Subscriber added successfully"
+msgstr "مشترک با موفقیت اضافه شد"
+
+#: assets/build/index.js:4
+msgid "Update Subscriber"
+msgstr "به‌روزرسانی مشترک"
+
+#: assets/build/index.js:4
+msgid "Enter Campaign Title"
+msgstr "عنوان کمپین را وارد کنید"
+
+#: assets/build/index.js:4
+msgid "Message"
+msgstr "پیام"
+
+#: assets/build/index.js:4
+msgid "Enter Message"
+msgstr "پیام را وارد کنید"
+
+#: assets/build/index.js:4
+msgid "Campaign Status"
+msgstr "وضعیت کمپین"
+
+#: assets/build/index.js:4
+msgid "Schedule At"
+msgstr "زمان‌بندی در"
+
+#: assets/build/index.js:4
+msgid "YYYY-MM-DD HH:MM:SS"
+msgstr "YYYY-MM-DD HH:MM:SS"
+
+#: assets/build/index.js:4
+msgid "Campaign added successfully"
+msgstr "کمپین با موفقیت اضافه شد"
+
+#: assets/build/index.js:4
+msgid "Update Campaign"
+msgstr "به‌روزرسانی کمپین"
+
+#: assets/build/index.js:4
+msgid "Add Campaign"
+msgstr "افزودن کمپین"
+
+#: assets/build/index.js:4
+msgid "Manage SMS notifications for Subscriber plugin"
+msgstr "مدیریت اطلاع‌رسانی پیامکی برای افزونه مشترکین"
+
+#: assets/build/index.js:4
+msgid "Manage SMS notifications for Campaign plugin"
+msgstr "مدیریت اطلاع‌رسانی پیامکی برای افزونه کمپین"
+
+#: assets/build/index.js:4
+msgid "Newsletter Logs"
+msgstr "گزارش‌های خبرنامه"
+
+#: assets/build/index.js:4
+msgid "Manage SMS notifications for Newsletter logs"
+msgstr "مدیریت اطلاع‌رسانی پیامکی برای گزارش‌های خبرنامه"
+
+#: assets/build/index.js:4
+msgid "Newsletter Settings"
+msgstr "تنظیمات خبرنامه"
+
+#: includes/Core/Settings.php:46
+#: assets/build/index.js:4
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: assets/build/index.js:1
+msgid "Not Sent"
+msgstr "ارسال نشده"
+
+#: assets/build/index.js:1
+msgid "Sent to Server"
+msgstr "به سرور ارسال شد"
+
+#: assets/build/index.js:1
+msgid "Not Delivered"
+msgstr "تحویل نشده"
+
+#: assets/build/index.js:1
+msgid "Delivered to Server"
+msgstr "به سرور تحویل شد"
+
+#: assets/build/index.js:1
+msgid "Not Delivered to Server"
+msgstr "به سرور تحویل نشده"
+
+#: assets/build/index.js:1
+msgid "Black List"
+msgstr "لیست سیاه"
+
+#: assets/build/index.js:1
+msgid "Filtered"
+msgstr "فیلتر شده"
+
+#: assets/build/index.js:1
+msgid "In Queue"
+msgstr "در صف"
+
+#: assets/build/index.js:4
+msgid "Manage SMS notifications for Newsletter settings"
+msgstr "مدیریت اطلاع‌رسانی پیامکی برای تنظیمات خبرنامه"
+
+#: includes/Core/Settings.php:185
+#: assets/build/index.js:4
+msgid "Login/Register"
+msgstr "ورود/عضویت"
+
+#: includes/Modules/Core/LoginRegister.php:157
+#: includes/Modules/Core/LoginRegister.php:236
+#: includes/Modules/Core/LoginRegister.php:373
+#: includes/Modules/Core/LoginRegister.php:406
+#: includes/Modules/Core/LoginRegister.php:461
+msgid "Invalid request."
+msgstr "درخواست نامعتبر است."
+
+#: assets/build/index.js:4
+msgid "OTP Code"
+msgstr "کد یکبار مصرف"
+
+#: assets/build/index.js:4
+msgid "Enable Custom Login"
+msgstr "فعال‌سازی ورود سفارشی"
+
+#: assets/build/index.js:4
+msgid "Enable or disable custom login functionality."
+msgstr "فعال‌سازی یا غیرفعال‌سازی قابلیت ورود سفارشی."
+
+#: assets/build/index.js:4
+msgid "Disable Default Login"
+msgstr "غیرفعال‌سازی ورود پیش‌فرض"
+
+#: assets/build/index.js:4
+msgid "Disable the default WordPress login functionality."
+msgstr "غیرفعال‌سازی قابلیت ورود پیش‌فرض وردپرس."
+
+#: assets/build/index.js:4
+msgid "Login Form Title"
+msgstr "عنوان فرم ورود"
+
+#: assets/build/index.js:4
+msgid "Title for the login form."
+msgstr "عنوانی برای فرم ورود."
+
+#: assets/build/index.js:4
+msgid "Login Form Description"
+msgstr "توضیحاتی برای فرم ورود."
+
+#: assets/build/index.js:4
+msgid "Description for the login form."
+msgstr "توضیحاتی برای فرم ورود."
+
+#: assets/build/index.js:4
+msgid "Generate Username Method"
+msgstr "روش ساخت نام کاربری"
+
+#: assets/build/index.js:4
+msgid "Select Username Generation Method"
+msgstr "انتخاب روش ساخت نام کاربری"
+
+#: assets/build/index.js:4
+msgid "Random"
+msgstr "تصادفی"
+
+#: assets/build/index.js:4
+msgid "Text to be sent as OTP to recipient"
+msgstr "متنی که به عنوان کد یکبار مصرف به گیرنده ارسال می‌شود"
+
+#: assets/build/index.js:4
+msgid "OTP Length"
+msgstr "تعداد ارقام کد یکبار مصرف"
+
+#: assets/build/index.js:4
+msgid "Length of the OTP code to be generated."
+msgstr "طول کد یکبار مصرف که باید تولید شود."
+
+#: assets/build/index.js:4
+msgid "Login to Your Account"
+msgstr "به حساب کاربری خود وارد شوید"
+
+#: assets/build/index.js:4
+msgid "Please enter your credentials to log in."
+msgstr "لطفاً اطلاعات ورود خود را برای ورود وارد کنید."
+
+#: assets/build/index.js:4
+msgid "Manage Login/Register options"
+msgstr "مدیریت گزینه‌های ورود/عضویت"
+
+#: includes/Modules/Core/LoginRegister.php:210
+#: includes/Modules/Core/LoginRegister.php:330
+#: includes/Modules/Core/LoginRegister.php:452
+#: includes/Modules/Core/LoginRegister.php:478
+msgid "Login successful."
+msgstr "ورود موفق."
+
+#: includes/Modules/Core/LoginRegister.php:293
+#: includes/Modules/Core/LoginRegister.php:340
+msgid "Error creating user."
+msgstr "ارور در ایجاد کاربر."
+
+#: includes/Modules/Core/LoginRegister.php:306
+#: includes/Modules/Core/LoginRegister.php:351
+msgid "Registration and login successful."
+msgstr "ثبت‌نام و ورود موفق."
+
+#: includes/Modules/Core/LoginRegister.php:382
+#: includes/Modules/Core/LoginRegister.php:415
+#: includes/Modules/Core/LoginRegister.php:468
+msgid "User not found."
+msgstr "کاربر پیدا نشد."
+
+#: includes/Modules/Core/LoginRegister.php:386
+msgid "Incorrect password."
+msgstr "رمز عبور نادرست است."
+
+#: includes/Modules/Core/LoginRegister.php:397
+msgid "Credentials verified."
+msgstr "اطلاعات کاربری تأیید شد."
+
+#: includes/Modules/Core/LoginRegister.php:439
+msgid "Phone verification failed."
+msgstr "تأیید شماره تلفن ناموفق بود."
+
+#: assets/build/index.js:4
+msgid "Smart Wpstorm Clean Admin plugin"
+msgstr "افزونه هوشمند مدیریت پاک"
+
+#: includes/Modules/Core/LoginRegister.php:219
+msgid "Phone verified. Please complete registration."
+msgstr "شماره تلفن تأیید شد. لطفاً ثبت‌نام را تکمیل کنید."
+
+#: includes/Modules/Core/LoginRegister.php:246
+msgid "Email is required."
+msgstr "ایمیل الزامی است."
+
+#: includes/Modules/Core/LoginRegister.php:249
+msgid "First name is required."
+msgstr "نام الزامی است."
+
+#: includes/Modules/Core/LoginRegister.php:252
+msgid "Last name is required."
+msgstr "نام خانوادگی الزامی است."
+
+#: includes/Modules/Core/LoginRegister.php:269
+msgid "Email already exists and is in use."
+msgstr "ایمیل قبلاً وجود دارد و در حال استفاده است."
+
+#: assets/build/index.js:4
+msgid "General settings for login and registration"
+msgstr "تنظیمات عمومی برای ورود و ثبت‌نام"
+
+#: assets/build/index.js:4
+msgid "Collect New User Email"
+msgstr "جمع‌آوری ایمیل کاربر جدید"
+
+#: assets/build/index.js:4
+msgid "Enable to collect email addresses from new users during registration."
+msgstr "فعال‌سازی جمع‌آوری آدرس‌های ایمیل از کاربران جدید در حین ثبت‌نام."
+
+#: assets/build/index.js:4
+msgid "Collect New User First Name"
+msgstr "جمع‌آوری نام کاربر جدید"
+
+#: assets/build/index.js:4
+msgid "Enable to collect first names from new users during registration."
+msgstr "فعال‌سازی جمع‌آوری نام‌های کوچک از کاربران جدید در حین ثبت‌نام."
+
+#: assets/build/index.js:4
+msgid "Collect New User Last Name"
+msgstr "جمع‌آوری نام خانوادگی کاربر جدید"
+
+#: assets/build/index.js:4
+msgid "Enable to collect last names from new users during registration."
+msgstr "فعال‌سازی جمع‌آوری نام‌های خانوادگی از کاربران جدید در حین ثبت‌نام."
+
+#: assets/build/index.js:4
+msgid "OTP Settings"
+msgstr "تنظیمات کد یکبار مصرف"
+
+#: assets/build/index.js:4
+msgid "Settings for One-Time Password (OTP) functionality"
+msgstr "تنظیمات برای قابلیت کد یکبار مصرف (OTP)"
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:158
+msgid "The number entered by the user in the form will be saved in the phonebook of SMS gateway system."
+msgstr "شماره وارد شده توسط کاربر در فرم در دفترچه تلفن سامانه پیامکی ذخیره خواهد شد."
+
+#: assets/build/index.js:4
+msgid "Enter SMS gateway Username"
+msgstr "نام کاربری سامانه پیامکی را وارد کنید."
+
+#: assets/build/index.js:4
+msgid "Authenticate with to send SMS notifications"
+msgstr "برای ارسال اعلان‌های پیامکی احراز هویت کنید."
+
+#: assets/build/index.js:4
+msgid "Manage patterns for web service SMS"
+msgstr "مدیریت الگوها برای پیامکی وب سرویس"
+
+#: assets/build/index.js:4
+msgid "Are you want to use our plugin with Woocommerce plugin"
+msgstr "آیا می‌خواهید از افزونه ما با افزونه ووکامرس استفاده کنید؟"
+
+#: assets/build/index.js:4
+msgid "Are you want to use our plugin with Elementor plugin"
+msgstr "آیا می‌خواهید از افزونه ما با افزونه المنتور استفاده کنید؟"
+
+#: assets/build/index.js:4
+msgid "Are you want to use our plugin with Gravity Forms plugin"
+msgstr "آیا می‌خواهید از افزونه ما با افزونه فرم‌های گرانشی استفاده کنید؟"
+
+#: assets/build/index.js:4
+msgid "Are you want to use our plugin with Awesome Support plugin"
+msgstr "آیا می‌خواهید از افزونه ما با افزونه پشتیبانی فوق‌العاده استفاده کنید؟"
+
+#: assets/build/index.js:4
+msgid "Password or apikey"
+msgstr "رمز عبور یا کلید API"
+
+#: assets/build/index.js:4
+msgid "Enter SMS gateway password or apikey"
+msgstr "رمز عبور یا کلید API سامانه پیامکی را وارد کنید."
+
+#: assets/build/index.js:4
+msgid "Roles to send login sms"
+msgstr "نقش‌ها برای ارسال پیامک ورود"
+
+#: assets/build/index.js:4
+msgid "Select Roles those will be sent sms on there login"
+msgstr "نقش‌هایی را انتخاب کنید که در ورود آنها پیامک ارسال خواهد شد."
+
+#: assets/build/index.js:4
+msgid "User Register Notify to user"
+msgstr "اطلاع‌رسانی ثبت‌نام کاربر به کاربر"
+
+#: assets/build/index.js:4
+msgid "User Register Notify to user Settings"
+msgstr "تنظیمات اطلاع‌رسانی ثبت‌نام کاربر به کاربر"
+
+#: assets/build/index.js:4
+msgid "Use metakey for loged in user insted of showing phone field on the comment form."
+msgstr "استفاده از متا‌کی برای کاربر وارد شده به جای نمایش فیلد تلفن در فرم نظرات."
+
+#: includes/Modules/Core/Comments.php:278
+#: assets/alpine/alpine.js:1
+#: assets/build/index.js:1
+#: assets/js/alpine-datas/gfPhoneVerification.js:28
+#: assets/js/alpine-datas/phoneVerification.js:23
+msgid "Invalid phone number format."
+msgstr "فرمت شماره تلفن نامعتبر است."
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:93
+msgid "Enter SMS text"
+msgstr "متن پیامک را وارد کنید."
+
+#: includes/Modules/Core/LoginRegister.php:264
+#: assets/build/index.js:1
+msgid "Phone number already exists"
+msgstr "شماره تلفن قبلاً وجود دارد."
+
+#: assets/build/index.js:1
+msgid "Enable integration"
+msgstr "فعال‌سازی یکپارچگی"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Updated successfully!"
+msgstr "با موفقیت به‌روزرسانی شد!"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Removed successfully"
+msgstr "با موفقیت حذف شد"
+
+#: assets/build/index.js:1
+msgid "Error updating"
+msgstr "ارور در به‌روزرسانی"
+
+#: assets/build/index.js:4
+msgid "Failed to remove. Please try again."
+msgstr "خطا در حذف. لطفاً دوباره تلاش کنید."
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Failed to add. Please try again. 🤯"
+msgstr "خطا در افزودن. لطفاً دوباره تلاش کنید. 🤯"
+
+#: assets/build/index.js:1
+msgid "Failed to edit. Please try again. 🤯"
+msgstr "خطا در ویرایش. لطفاً دوباره تلاش کنید. 🤯"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:156
+msgid "Verification code placeholder"
+msgstr "متن نگهدارنده مکان فیلد کد تأیید"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Verification code Expiration Time"
+msgstr "زمان انقضای کد تأیید"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Verification code Length"
+msgstr "طول کد تأیید"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:2
+#: assets/build/index.js:3
+msgid "Deleting item"
+msgstr "در حال حذف آیتم"
+
+#: assets/build/index.js:1
+msgid "Please wait while the item is being deleted."
+msgstr "لطفاً صبر کنید در حال حذف آیتم."
+
+#: assets/build/index.js:2
+msgid "Deleting error"
+msgstr "خطا در حذف"
+
+#: assets/build/index.js:2
+msgid "There was an error on deleting. Please try again."
+msgstr "خطا در حذف. لطفاً دوباره تلاش کنید."
+
+#: assets/build/index.js:4
+msgid "Verification code Settings"
+msgstr "تنظیمات کد تأیید"
+
+#: assets/build/index.js:4
+msgid "Enable Verification code"
+msgstr "فعال‌سازی ارسال کد تأیید"
+
+#: assets/build/index.js:4
+msgid "Verification code to verify phone number on comment form"
+msgstr "کد تأیید برای تأیید شماره تلفن در فرم نظرات"
+
+#: assets/build/index.js:1
+msgid "Add item"
+msgstr "افزودن آیتم"
+
+#: assets/build/index.js:4
+msgid "Are you sure to remove that item?"
+msgstr "آیا از حذف این آیتم مطمئن هستید؟"
+
+#: assets/build/index.js:4
+msgid "Add action"
+msgstr "افزودن عملگر"
+
+#: assets/build/index.js:4
+msgid "Add order action"
+msgstr "افزودن عملگر سفارش"
+
+#: assets/build/index.js:4
+msgid "Add cart abandonment"
+msgstr "افزودن رها کردن سبد خرید"
+
+#: assets/build/index.js:4
+msgid "Add subscriber"
+msgstr "افزودن مشترک"
+
+#: assets/build/index.js:4
+msgid "Add campaign"
+msgstr "افزودن کمپین"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Editing item..."
+msgstr "در حال ویرایش آیتم..."
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Adding item..."
+msgstr "در حال افزودن آیتم..."
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "SMS method"
+msgstr "شیوه ارسال پیامک"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Select SMS method"
+msgstr "انتخاب شیوه ارسال پیامک"
+
+#: assets/build/index.js:1
+msgid "Item deleted"
+msgstr "آیتم حذف شد"
+
+#: assets/build/index.js:1
+msgid "The item has been successfully deleted."
+msgstr "آیتم با موفقیت حذف شد."
+
+#: assets/build/index.js:1
+msgid "Failed to delete item"
+msgstr "خطا در حذف آیتم"
+
+#: assets/build/index.js:1
+msgid "Update pattern"
+msgstr "به‌روزرسانی الگو"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Pattern text"
+msgstr "متن الگو"
+
+#: includes/Modules/WooCommerce/OrderDirectSms.php:90
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Text"
+msgstr "متن"
+
+#: assets/build/index.js:1
+#: assets/build/index.js:4
+msgid "Added successfully! 👌"
+msgstr "با موفقیت افزوده شد! 👌"
+
+#: assets/build/index.js:4
+msgid "Select phonebook"
+msgstr "انتخاب دفترچه تلفن"
+
+#: assets/build/index.js:4
+msgid "Enter first name"
+msgstr "وارد کردن نام"
+
+#: assets/build/index.js:4
+msgid "Enter last name"
+msgstr "وارد کردن نام خانوادگی"
+
+#: assets/build/index.js:4
+msgid "Select gender"
+msgstr "انتخاب جنسیت"
+
+#: assets/build/index.js:4
+msgid "Enter corporation"
+msgstr "وارد کردن شرکت"
+
+#: assets/build/index.js:4
+msgid "Enter phone number"
+msgstr "وارد کردن شماره تلفن"
+
+#: assets/build/index.js:4
+msgid "Remaining Count"
+msgstr "تعداد باقی‌مانده"
+
+#: assets/build/index.js:4
+msgid "Remaining count of product to send SMS on that"
+msgstr "تعداد باقی‌مانده محصول برای ارسال پیامک در آن"
+
+#: assets/build/index.js:4
+msgid "Notify user on product in stock"
+msgstr "اطلاع‌رسانی به کاربر هنگام موجود شدن محصول"
+
+#. Description of the plugin
+#: wpstorm-clean-admin.php
+msgid "Wpstorm Clean Admin SMS Gateway. Send SMS from your WordPress site. Send SMS to your customers when they purchase a product or when their order status changes."
+msgstr "درگاه پیامک مدیریت پاک. ارسال پیامک از سایت وردپرس شما. ارسال پیامک به مشتریان شما هنگام خرید محصول یا زمانی که وضعیت سفارش آنها تغییر می‌کند."
+
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:53
+#: includes/Modules/Elementor/FormActions/NewsletterAction.php:72
+#: includes/Modules/Elementor/Widgets/NewsletterWidget.php:49
+msgid "Wpstorm Clean Admin Newsletter"
+msgstr "خبرنامه مدیریت پاک"
+
+#: includes/Modules/Elementor/Widgets/InStockFormWidget.php:40
+msgid "Wpstorm Clean Admin OutStock"
+msgstr "خبرنامه مدیریت پاک"

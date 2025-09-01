@@ -1,0 +1,21 @@
+{
+    "name": "payamito/wpstorm-clean-admin",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Wpstorm Clean Admin",
+            "email": "wpstorm-clean-admin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WpstormCleanAdmin\\Includes\\": "includes/"
+        }
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    }
+}
