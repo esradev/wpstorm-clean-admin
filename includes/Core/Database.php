@@ -34,7 +34,7 @@ if (! class_exists('Database')) {
 		{
 			global $wpdb;
 			$this->charset                          = $wpdb->get_charset_collate();
-			$this->login_logs                       = $wpdb->prefix . 'wpstorm_clean_admin_login_logs';
+			$this->login_logs                       = self::get_table_name('login_logs');
 		}
 
 		public function create_login_logs_table()

@@ -43,11 +43,26 @@ if (! class_exists('Activator')) {
       }
 
       $this->create_tables();
+
+      $this->run_crons();
     }
 
     private function create_tables(): void
     {
       Database::get_instance()->create_login_logs_table();
+    }
+
+    private function run_crons()
+    {
+      if (!wp_next_scheduled(WPSTORM_CLEAN_ADMIN_CRON_HOOK)) {
+        $recurrence = $this->sanitize_cron_recurrence(Options::get_option_item('generals', 'schedule', 'value'));
+        wp_schedule_event(time() + 60, $recurrence, WPSTORM_CLEAN_ADMIN_CRON_HOOK);
+      }
+    }
+
+    private function sanitize_cron_recurrence(string $r): string
+    {
+      return in_array($r, ['hourly', 'twicedaily', 'daily'], true) ? $r : 'daily';
     }
   }
 

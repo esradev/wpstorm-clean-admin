@@ -28,9 +28,7 @@ if (! class_exists('Deactivator')) {
 
     public function deactivate()
     {
-      // Clear scheduled events
-
-      // Clear cron jobs
+      wp_clear_scheduled_hook(WPSTORM_CLEAN_ADMIN_CRON_HOOK);
     }
   }
 

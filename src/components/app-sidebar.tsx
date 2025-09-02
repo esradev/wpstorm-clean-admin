@@ -53,7 +53,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 .filter((item) => item.isVisiable)
                 .map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton size="lg" asChild>
+                    <SidebarMenuButton asChild>
                       <NavLink to={item.url} className="font-medium">
                         {({ isActive }) => (
                           <li

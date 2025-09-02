@@ -64,6 +64,8 @@ if (! class_exists('WpstormCleanAdmin')) {
 			define('WPSTORM_CLEAN_ADMIN_WEB_MAIN', 'https://wpstorm.ir/');
 			define('WPSTORM_CLEAN_ADMIN_WEB_MAIN_DOC', WPSTORM_CLEAN_ADMIN_WEB_MAIN . 'clean-admin/');
 			define('WPSTORM_CLEAN_ADMIN_ASSETS_URL', plugin_dir_url(__FILE__) . 'assets/');
+			define('WPSTORM_CLEAN_ADMIN_CRON_HOOK', 'wsca_check_inactive_users_cron');
+			define('WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN', 'wsca_last_login');
 		}
 
 		public function require_files(): void
@@ -76,6 +78,8 @@ if (! class_exists('WpstormCleanAdmin')) {
 			require_once WPSTORM_CLEAN_ADMIN_DIR_PATH . 'includes/Core/Database.php';
 			require_once WPSTORM_CLEAN_ADMIN_DIR_PATH . 'includes/Core/Deactivator.php';
 			require_once WPSTORM_CLEAN_ADMIN_DIR_PATH . 'includes/Core/Options.php';
+
+			require_once WPSTORM_CLEAN_ADMIN_DIR_PATH . 'includes/Modules/Tracker.php';
 		}
 	}
 
