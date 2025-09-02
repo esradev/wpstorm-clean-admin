@@ -87,7 +87,7 @@ if (! class_exists('Settings')) {
 			<div class="wrap wpstorm-clean-admin-tw">
 				<div id="wpstorm-clean-admin-dashboard" class="wpstorm-clean-admin-tw"></div>
 			</div>
-			<?php
+		<?php
 		}
 
 		/**
@@ -98,6 +98,18 @@ if (! class_exists('Settings')) {
 		{
 			wp_register_style('wpstorm-clean-admin-fonts', WPSTORM_CLEAN_ADMIN_ASSETS_URL . 'fonts/fonts.css', [], WPSTORM_CLEAN_ADMIN_VERSION, 'all');
 			wp_enqueue_style('wpstorm-clean-admin-fonts');
+		?>
+			<style>
+				#wpfooter {
+					display: none;
+				}
+
+				#wpbody-content {
+					padding-bottom: 0px !important;
+				}
+			</style>
+
+			<?php
 
 			if (is_rtl()) {
 			?>

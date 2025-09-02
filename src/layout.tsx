@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <SidebarProvider>
         <div className="flex min-h-screen w-full bg-background text-foreground">
           <AppSidebar side="right" />
-          <SidebarInset className="flex flex-1">
+          <SidebarInset className="flex flex-1 lg:-mr-5 h-full">
             <AppHeader />
             {children}
             <Toaster

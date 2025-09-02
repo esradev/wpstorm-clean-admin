@@ -11,9 +11,6 @@ if (! class_exists('Options')) {
 	class Options
 	{
 		public static $username;
-		public static $password;
-		public static $admin_numbers;
-		public static $from;
 
 		public static $option_groups;
 
@@ -36,15 +33,12 @@ if (! class_exists('Options')) {
 			add_action('init', [$this, 'register_options']);
 
 			self::$username      = self::get_option_item('auth', 'username');
-			self::$password      = self::get_option_item('auth', 'password');
-			self::$from          = self::get_option_item('auth', 'from', 'value');
-			self::$admin_numbers = self::get_option_item('auth', 'admin_numbers');
 		}
 
 		public static function get_default_options()
 		{
 			return [
-				'auth'             => [],
+				'generals'             => [],
 			];
 		}
 
@@ -115,7 +109,9 @@ if (! class_exists('Options')) {
 		public static function get_options($group)
 		{
 			$option_name = 'wpstorm_clean_admin_' . $group . '_options';
-			add_option($option_name, wp_json_encode(self::$option_groups[$group]));
+			if (! get_option($option_name) && isset(self::$option_groups[$group])) {
+				add_option($option_name, wp_json_encode(self::$option_groups[$group]));
+			}
 
 			$group_options = get_option($option_name);
 

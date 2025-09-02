@@ -10,9 +10,9 @@ if (! class_exists('Database')) {
 
 	class Database
 	{
-		private $collate;
+		private $charset;
 
-		public $tracking_codes_table_name;
+		public $login_logs;
 
 		private static object $instance;
 
@@ -33,32 +33,32 @@ if (! class_exists('Database')) {
 		public function __construct()
 		{
 			global $wpdb;
-			$this->collate                                         = $wpdb->get_charset_collate();
-			$this->tracking_codes_table_name                       = $wpdb->prefix . 'payamito_tracking_codes';
+			$this->charset                          = $wpdb->get_charset_collate();
+			$this->login_logs                       = $wpdb->prefix . 'wpstorm_clean_admin_login_logs';
 		}
 
-		public function create_tracking_codes_table()
+		public function create_login_logs_table()
 		{
-			$table_exists = $this->table_exists('tracking_codes');
+			$table_exists = $this->table_exists('login_logs');
 			if ($table_exists) {
 				return;
 			}
 
-			$tracking_codes = "CREATE TABLE `$this->tracking_codes_table_name` (
-			`id` int(10) NOT NULL AUTO_INCREMENT,
-			`created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-			`user_id` mediumint(9) NOT NULL,
-			`order_id` mediumint(9) NOT NULL,
-			`tracking_code` varchar(255) NOT NULL,
-			`post_service_provider` varchar(255) NOT NULL,
-			`link` varchar(255) NOT NULL,   
-			`post_date` date NOT NULL,
-        	PRIMARY KEY  (id)
-		) $this->collate";
+			$login_logs = "CREATE TABLE " . $this->login_logs . " (
+				id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+				created_at DATETIME NOT NULL,
+				user_id BIGINT UNSIGNED NOT NULL,
+				action VARCHAR(32) NOT NULL,
+				actor_id BIGINT UNSIGNED NULL,
+				notes TEXT NULL,
+				PRIMARY KEY (id),
+				KEY user_id (user_id),
+				KEY created_at (created_at)
+			) $this->charset;";
 
 			require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 
-			dbDelta($tracking_codes);
+			dbDelta($login_logs);
 		}
 
 		/**

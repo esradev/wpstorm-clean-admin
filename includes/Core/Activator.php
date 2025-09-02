@@ -37,12 +37,17 @@ if (! class_exists('Activator')) {
 
       add_option('wpstorm_clean_admin_activated', true);
 
+      // Create minimal "Inactive" user role (no caps)
+      if (!get_role('inactive')) {
+        add_role('inactive', 'Inactive', []);
+      }
+
       $this->create_tables();
     }
 
     private function create_tables(): void
     {
-      Database::get_instance()->create_tracking_codes_table();
+      Database::get_instance()->create_login_logs_table();
     }
   }
 

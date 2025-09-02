@@ -30,7 +30,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
                   <Command className="size-4" />
                 </div>
-                <div className="grid flex-1 text-right text-sm leading-tight text-cream-700">
+                <div className="grid flex-1 text-right text-sm leading-tight text-sidebar-foreground">
                   <span className="truncate font-medium">
                     {__("Clean Admin", "payamito-plus")}
                   </span>
@@ -55,7 +55,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                       <NavLink to={item.url} className="font-medium">
                         {({ isActive }) => (
                           <li
-                            className={`flex items-center gap-2 w-full text-right text-sm font-medium p-4 pb-3 text-cream-700 ${
+                            className={`flex items-center gap-2 w-full text-right text-sm font-medium p-4 pb-3 text-sidebar-foreground ${
                               isActive ? "bg-payamito-plus-800" : ""
                             }`}
                           >

@@ -94,48 +94,50 @@ export function AdvancedForm<TFormValues extends FieldValues>({
   const handleSubmit = customOnSubmit ? customOnSubmit : defaultOnSubmit;
 
   return (
-    <>
-      <div className="flex h-full flex-1 flex-col relative justify-between">
-        {isFetching ? (
-          <LoadingSkeleton inputs={Object.values(fields)} />
-        ) : !hasAccess ? (
-          <AccessDenied link="/integration" />
-        ) : (
-          <div className="space-y-10 p-2 mb-4">
-            {route?.title && <FormHeader route={route} />}
-            {children && children}
-            <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(handleSubmit)}
-                className={className}
-              >
-                <div className="grid grid-cols-12 gap-6">
-                  {fields.map((field, index) => (
-                    <FieldRenderer
-                      key={`${String(field.name)}-${index}`}
-                      field={field}
-                      form={form}
-                    />
-                  ))}
-                </div>
-
-                {renderButtons ? (
-                  renderButtons(form.getValues(), () => form.reset())
-                ) : (
-                  <div className="flex items-center justify-end fixed bottom-5 left-8 z-10">
-                    <FormSubmitButton
-                      state={saveBtnState}
-                      onReset={() => form.reset()}
-                      submitButtonText={submitButtonText}
-                      resetButtonText={resetButtonText}
-                    />
+    <div className="flex w-full h-full flex-col relative justify-between">
+      <div className="@container/main flex flex-1 flex-col gap-2">
+        <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6 lg:px-6">
+          {isFetching ? (
+            <LoadingSkeleton inputs={Object.values(fields)} />
+          ) : !hasAccess ? (
+            <AccessDenied link="/integration" />
+          ) : (
+            <div className="space-y-10 p-2 mb-4">
+              {route?.title && <FormHeader route={route} />}
+              {children && children}
+              <Form {...form}>
+                <form
+                  onSubmit={form.handleSubmit(handleSubmit)}
+                  className={className}
+                >
+                  <div className="grid grid-cols-12 gap-6">
+                    {fields.map((field, index) => (
+                      <FieldRenderer
+                        key={`${String(field.name)}-${index}`}
+                        field={field}
+                        form={form}
+                      />
+                    ))}
                   </div>
-                )}
-              </form>
-            </Form>
-          </div>
-        )}
+
+                  {renderButtons ? (
+                    renderButtons(form.getValues(), () => form.reset())
+                  ) : (
+                    <div className="flex items-center justify-end fixed bottom-5 left-8 z-10">
+                      <FormSubmitButton
+                        state={saveBtnState}
+                        onReset={() => form.reset()}
+                        submitButtonText={submitButtonText}
+                        resetButtonText={resetButtonText}
+                      />
+                    </div>
+                  )}
+                </form>
+              </Form>
+            </div>
+          )}
+        </div>
       </div>
-    </>
+    </div>
   );
 }

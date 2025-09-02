@@ -6,74 +6,74 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --background: var(--color-cream-50);
+  --foreground: var(--color-cream-950);
+  --card: var(--color-cream-100);
+  --card-foreground: var(--color-cream-900);
+  --popover: var(--color-cream-50);
+  --popover-foreground: var(--color-cream-950);
+  --primary: var(--color-cream-500);
+  --primary-foreground: var(--color-cream-50);
+  --secondary: var(--color-cream-200);
+  --secondary-foreground: var(--color-cream-900);
+  --muted: var(--color-cream-100);
+  --muted-foreground: var(--color-cream-700);
+  --accent: var(--color-cream-300);
+  --accent-foreground: var(--color-cream-950);
+  --destructive: var(--color-cream-400);
+  --destructive-foreground: var(--color-cream-950);
+  --border: var(--color-cream-200);
+  --input: var(--color-cream-200);
+  --ring: var(--color-cream-400);
+  --chart-1: var(--color-cream-300);
+  --chart-2: var(--color-cream-400);
+  --chart-3: var(--color-cream-500);
+  --chart-4: var(--color-cream-600);
+  --chart-5: var(--color-cream-700);
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: var(--color-cream-100);
+  --sidebar-foreground: var(--color-cream-900);
+  --sidebar-primary: var(--color-cream-500);
+  --sidebar-primary-foreground: var(--color-cream-50);
+  --sidebar-accent: var(--color-cream-300);
+  --sidebar-accent-foreground: var(--color-cream-950);
+  --sidebar-border: var(--color-cream-200);
+  --sidebar-ring: var(--color-cream-400);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: var(--color-bunker-950);
+  --foreground: var(--color-bunker-50);
+  --card: var(--color-bunker-900);
+  --card-foreground: var(--color-bunker-100);
+  --popover: var(--color-bunker-950);
+  --popover-foreground: var(--color-bunker-50);
+  --primary: var(--color-bunker-700);
+  --primary-foreground: var(--color-bunker-50);
+  --secondary: var(--color-bunker-800);
+  --secondary-foreground: var(--color-bunker-100);
+  --muted: var(--color-bunker-900);
+  --muted-foreground: var(--color-bunker-200);
+  --accent: var(--color-bunker-700);
+  --accent-foreground: var(--color-bunker-50);
+  --destructive: var(--color-bunker-950);
+  --destructive-foreground: var(--color-bunker-100);
+  --border: var(--color-bunker-800);
+  --input: var(--color-bunker-800);
+  --ring: var(--color-bunker-700);
+  --chart-1: var(--color-bunker-700);
+  --chart-2: var(--color-bunker-800);
+  --chart-3: var(--color-bunker-900);
+  --chart-4: var(--color-bunker-950);
+  --chart-5: var(--color-bunker-600);
+  --sidebar: var(--color-bunker-900);
+  --sidebar-foreground: var(--color-bunker-100);
+  --sidebar-primary: var(--color-bunker-700);
+  --sidebar-primary-foreground: var(--color-bunker-50);
+  --sidebar-accent: var(--color-bunker-800);
+  --sidebar-accent-foreground: var(--color-bunker-100);
+  --sidebar-border: var(--color-bunker-800);
+  --sidebar-ring: var(--color-bunker-700);
 }
 
 @theme inline {
@@ -143,56 +143,80 @@
   --color-cream-900: #6c3822;
   --color-cream-950: #3a1b10;
 
-  --color-vivid-tangerine-50: #fef4f2;
-  --color-vivid-tangerine-100: #ffe6e1;
-  --color-vivid-tangerine-200: #ffd2c9;
-  --color-vivid-tangerine-300: #feb2a3;
-  --color-vivid-tangerine-400: #fc9581;
-  --color-vivid-tangerine-500: #f35d40;
-  --color-vivid-tangerine-600: #e14021;
-  --color-vivid-tangerine-700: #bd3318;
-  --color-vivid-tangerine-800: #9c2d18;
-  --color-vivid-tangerine-900: #822b1a;
-  --color-vivid-tangerine-950: #471208;
-
-  --color-swamp-green-50: #f4f7f2;
-  --color-swamp-green-100: #e7edde;
-  --color-swamp-green-200: #cedac0;
-  --color-swamp-green-300: #9db787;
-  --color-swamp-green-400: #7f9f68;
-  --color-swamp-green-500: #5f8247;
-  --color-swamp-green-600: #476734;
-  --color-swamp-green-700: #37522a;
-  --color-swamp-green-800: #2e4223;
-  --color-swamp-green-900: #26371d;
-  --color-swamp-green-950: #141e10;
-
-  --color-juniper-50: #f5f8f7;
-  --color-juniper-100: #dee9e9;
-  --color-juniper-200: #bcd3d2;
-  --color-juniper-300: #93b5b5;
-  --color-juniper-400: #6c9495;
-  --color-juniper-500: #5a8486;
-  --color-juniper-600: #405f61;
-  --color-juniper-700: #364d4f;
-  --color-juniper-800: #2e3f41;
-  --color-juniper-900: #293738;
-  --color-juniper-950: #141d1f;
-
-  --color-mandalay-50: #faf8ec;
-  --color-mandalay-100: #f4efcd;
-  --color-mandalay-200: #eadc9e;
-  --color-mandalay-300: #ddc467;
-  --color-mandalay-400: #d2ab3d;
-  --color-mandalay-500: #c3962f;
-  --color-mandalay-600: #a27225;
-  --color-mandalay-700: #865722;
-  --color-mandalay-800: #704723;
-  --color-mandalay-900: #613c22;
-  --color-mandalay-950: #381f10;
+  /* Bunker: black dark with very little cream */
+  --color-bunker-50: #f8f7f6;
+  --color-bunker-100: #eceae7;
+  --color-bunker-200: #d6d2cb;
+  --color-bunker-300: #b2ada3;
+  --color-bunker-400: #8d877c;
+  --color-bunker-500: #6e6a5e;
+  --color-bunker-600: #57534a;
+  --color-bunker-700: #454138;
+  --color-bunker-800: #35322a;
+  --color-bunker-900: #232017;
+  --color-bunker-950: #18150e;
 }
 
 /* === Important wrapper === */
 .wpstorm-clean-admin-tw {
   @apply contents;
+}
+
+@scope (.wpstorm-clean-admin-tw) {
+  @tailwind utilities;
+}
+
+@keyframes bounce2 {
+  0%,
+  100% {
+    translate: 0px 36px;
+  }
+  50% {
+    translate: 0px 46px;
+  }
+}
+@keyframes bounce3 {
+  0%,
+  100% {
+    translate: 0px 46px;
+  }
+  50% {
+    translate: 0px 56px;
+  }
+}
+@keyframes umbral {
+  0% {
+    stop-color: #d3a5102e;
+  }
+  50% {
+    stop-color: rgba(211, 165, 16, 0.519);
+  }
+  100% {
+    stop-color: #d3a5102e;
+  }
+}
+@keyframes partciles {
+  0%,
+  100% {
+    translate: 0px 16px;
+  }
+  50% {
+    translate: 0px 6px;
+  }
+}
+#particles {
+  animation: partciles 4s ease-in-out infinite;
+}
+#animatedStop {
+  animation: umbral 4s infinite;
+}
+#bounce {
+  animation: bounce2 4s ease-in-out infinite;
+  translate: 0px 36px;
+  animation-delay: 0s;
+}
+#bounce2 {
+  animation: bounce3 4s ease-in-out infinite;
+  translate: 0px 46px;
+  animation-delay: 0.5s;
 }
