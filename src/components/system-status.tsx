@@ -12,9 +12,10 @@ export function SystemStatus() {
   useEffect(() => {
     const interval = setInterval(() => {
       const random = Math.random();
-      if (random < 0.7) setStatus("online");
-      else if (random < 0.9) setStatus("warning");
-      else setStatus("offline");
+      // if (random < 0.7) setStatus("online");
+      // else if (random < 0.9) setStatus("warning");
+      // else setStatus("offline");
+      setStatus("online");
       setApiResponseTime(Math.floor(Math.random() * 300)); // ms
     }, 5000);
     return () => clearInterval(interval);

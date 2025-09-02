@@ -19,7 +19,9 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const isMobile = useIsMobile();
-  const { toggleSidebar } = useSidebar();
+  const { toggleSidebar, state } = useSidebar();
+  const isCollapsed = state === "collapsed";
+
   return (
     <Sidebar {...props}>
       <SidebarHeader>
@@ -51,7 +53,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 .filter((item) => item.isVisiable)
                 .map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild>
+                    <SidebarMenuButton size="lg" asChild>
                       <NavLink to={item.url} className="font-medium">
                         {({ isActive }) => (
                           <li
@@ -59,8 +61,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                               isActive ? "bg-payamito-plus-800" : ""
                             }`}
                           >
-                            {" "}
-                            <item.icon className="w-4 h-4" />
+                            <item.icon
+                              className={`w-4 h-4 ${
+                                isCollapsed
+                                  ? "text-sidebar-foreground block"
+                                  : ""
+                              }`}
+                            />
                             {item?.title}
                           </li>
                         )}
