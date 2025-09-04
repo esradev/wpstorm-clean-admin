@@ -26,13 +26,13 @@ if (! class_exists('Tracker')) {
 
         public function __construct()
         {
-            add_action('wp_login', [$this, 'track_last_login']);
+            add_action('wp_login', [$this, 'track_last_login'], 10, 1);
 
             // Cron Cleanup
             add_action(WPSTORM_CLEAN_ADMIN_CRON_HOOK, [$this, 'cron_cleanup']);
         }
 
-        public function track_last_login($user_login, $user)
+        public function track_last_login($user)
         {
             update_user_meta($user->ID, WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN, current_time('mysql', true));
         }
