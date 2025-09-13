@@ -51,7 +51,7 @@ if (! class_exists('Assets')) {
                 wp_set_script_translations('wpstorm-clean-admin-settings-script', 'wpstorm-clean-admin', WPSTORM_CLEAN_ADMIN_DIR_PATH . 'languages');
                 wp_localize_script(
                     'wpstorm-clean-admin-settings-script',
-                    'payamitoPlusJsObject',
+                    'wpstormCleanAdminJsObject',
                     [
                         'rootapiurl'     => esc_url_raw(rest_url()),
                         'nonce'          => wp_create_nonce('wp_rest'),

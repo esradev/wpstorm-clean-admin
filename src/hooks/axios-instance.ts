@@ -1,14 +1,14 @@
-import axios from 'axios'
+import axios from 'axios';
 
-declare const payamitoPlusJsObject: {
-  rootapiurl: string
-  nonce: string
-}
+declare const wpstormCleanAdminJsObject: {
+  rootapiurl: string;
+  nonce: string;
+};
 
 export const axiosInstance = axios.create({
-  baseURL: payamitoPlusJsObject.rootapiurl + 'wpstorm-clean-admin/v1/',
+  baseURL: wpstormCleanAdminJsObject.rootapiurl + 'wpstorm-clean-admin/v1/',
   headers: {
     'content-type': 'application/json',
-    'X-WP-Nonce': payamitoPlusJsObject.nonce
-  }
-})
+    'X-WP-Nonce': wpstormCleanAdminJsObject.nonce,
+  },
+});

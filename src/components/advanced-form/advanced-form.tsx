@@ -34,10 +34,8 @@ export function AdvancedForm<TFormValues extends FieldValues>({
   children = null,
   hasAccess = true,
   onSubmit: customOnSubmit,
-  localStorageKey,
 }: FormConfig<TFormValues> & {
   onSubmit?: (values: TFormValues) => void;
-  localStorageKey?: string;
 }) {
   const [saveBtnState, setSaveBtnState] = useState<
     "initial" | "loading" | "success" | "error"

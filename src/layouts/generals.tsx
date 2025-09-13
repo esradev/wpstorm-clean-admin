@@ -5,6 +5,7 @@ import { AdvancedForm } from "@/components/advanced-form/advanced-form";
 import { FieldConfig } from "@/components/advanced-form/types";
 import { useFetch } from "@/hooks/use-fetch";
 import { Route } from "@/types";
+import { useWpApiQuery } from "@/hooks/use-wp-api-query";
 
 type GeneralsValues = {
   inactivity_days: number;
@@ -20,6 +21,9 @@ type GeneralsValues = {
 };
 
 const Generals = ({ route }: { route: Route }) => {
+    const { data, isPending } = useWpApiQuery({
+        restRoute: route.restRoute
+    })
   const fields: FieldConfig<GeneralsValues>[] = [
     {
       type: "number",
@@ -86,10 +90,7 @@ const Generals = ({ route }: { route: Route }) => {
     },
   };
 
-  const [initialValues, setInitialValues] =
-    useState<GeneralsValues>(defaultValues);
-  const LOCAL_STORAGE_KEY = "wpstorm_clean_admin_generals_data";
-  const { data, isFetching } = useFetch(route.restRoute || "");
+  const [initialValues, setInitialValues] = useState<GeneralsValues>(defaultValues);
 
   useEffect(() => {
     if (data) {
@@ -104,9 +105,8 @@ const Generals = ({ route }: { route: Route }) => {
     <AdvancedForm
       fields={fields}
       defaultValues={initialValues}
-      isFetching={isFetching}
+      isFetching={isPending}
       route={route}
-      localStorageKey={LOCAL_STORAGE_KEY}
     />
   );
 };
