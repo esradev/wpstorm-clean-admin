@@ -55,7 +55,8 @@ if (! class_exists('Activator')) {
     private function run_crons()
     {
       if (!wp_next_scheduled(WPSTORM_CLEAN_ADMIN_CRON_HOOK)) {
-        $recurrence = $this->sanitize_cron_recurrence(Options::get_option_item('generals', 'schedule', 'value'));
+        $recurrence = Options::get_option_item('generals', 'schedule', 'default') ?? 'daily';
+        $recurrence = $this->sanitize_cron_recurrence($recurrence);
         wp_schedule_event(time() + 60, $recurrence, WPSTORM_CLEAN_ADMIN_CRON_HOOK);
       }
     }
