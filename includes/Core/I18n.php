@@ -1,4 +1,5 @@
 <?php
+
 namespace WpstormCleanAdmin\Includes\Core;
 
 if (!defined('ABSPATH')) {
@@ -28,9 +29,8 @@ if (!class_exists('I18n')) {
 
         public function load_textdomain()
         {
-            load_plugin_textdomain('wpstorm-clean-admin', false, WPSTORM_CLEAN_ADMIN_DIR_PATH . 'languages');
+            load_plugin_textdomain('wpstorm-clean-admin', false, dirname(plugin_basename(WPSTORM_CLEAN_ADMIN_FILE)) . '/languages');
         }
-
         /**
          * Loads the translation MO file for a specific domain.
          *

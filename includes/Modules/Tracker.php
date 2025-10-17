@@ -40,14 +40,12 @@ if (! class_exists('Tracker')) {
         public function cron_cleanup()
         {
             $list = Routes::get_instance()->get_inactive_users(new class {
-                // TODO: Learn how this works
-                // tiny fake request object to reuse logic
+                // Fake request object to reuse get_inactive_users logic
                 public function get_param($k)
                 {
                     return null;
                 }
             });
-
             if (!is_array($list) || empty($list['items'])) return;
 
             $actor = null; // cron

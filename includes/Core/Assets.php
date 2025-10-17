@@ -24,11 +24,14 @@ if (! class_exists('Assets')) {
 
         public function __construct()
         {
-            self::$current_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+            self::$current_link = esc_url_raw(
+                (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') .
+                    "://" . (isset($_SERVER['HTTP_HOST']) ? sanitize_text_field(wp_unslash($_SERVER['HTTP_HOST'])) : '') .
+                    (isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])) : '')
+            );
             add_action('admin_enqueue_scripts', [$this, 'admin_enqueue_scripts']);
             add_action('wp_enqueue_scripts', [$this, 'enqueue_scripts']);
         }
-
         public function admin_enqueue_scripts()
         {
             wp_enqueue_style('wpstorm-clean-admin-admin-extra-styles', WPSTORM_CLEAN_ADMIN_ASSETS_URL . 'css/admin-extra-styles.css', [], WPSTORM_CLEAN_ADMIN_VERSION, 'all');

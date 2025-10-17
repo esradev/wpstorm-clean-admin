@@ -27,7 +27,7 @@ if (! class_exists('Settings')) {
 			add_filter('plugin_action_links_' . WPSTORM_CLEAN_ADMIN_BASE, [$this, 'settings_link']);
 			add_filter('admin_menu', [$this, 'init_menu'], 999);
 			add_action('admin_head', [$this, 'admin_head'], 999);
-			if (isset($_GET['page']) && $_GET['page'] == WPSTORM_CLEAN_ADMIN_SLUG) {
+			if (isset($_GET['page']) && sanitize_text_field(wp_unslash($_GET['page'])) === WPSTORM_CLEAN_ADMIN_SLUG) {
 				add_action('admin_init', [$this, 'hide_all_admin_notices']);
 				// Add wpstorm-clean-admin-tw as a class to the body tag.
 				add_filter('admin_body_class', function ($classes) {
@@ -35,7 +35,6 @@ if (! class_exists('Settings')) {
 				});
 			}
 		}
-
 		/**
 		 * Plugin settings link on all plugins page.
 		 *

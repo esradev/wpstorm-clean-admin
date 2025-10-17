@@ -3,7 +3,7 @@
 /**
  * Plugin Name: WpstormCleanAdmin
  * Plugin URI: https://wpstorm.ir
- * Description: Wpstorm Clean Admin SMS Gateway. Send SMS from your WordPress site. Send SMS to your customers when they purchase a product or when their order status changes.
+ * Description: A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools.
  * Version: 1.0.1
  * Author: Wpstorm Clean Admin
  * Author URI: https://wpstorm.ir
@@ -12,7 +12,7 @@
  * Text Domain: wpstorm-clean-admin
  * Domain Path: /languages/
  * Requires at least: 5.0
- * Tested up to: 6.6.8
+ * Tested up to: 6.7
  * Requires PHP: 7.4
  */
 
