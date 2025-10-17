@@ -5,7 +5,7 @@
  * Plugin URI: https://wpstorm.ir
  * Description: A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools.
  * Version: 1.0.0
- * Author: esradev
+ * Author: wpstormdev
  * Author URI: https://wpstorm.ir
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html

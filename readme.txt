@@ -1,5 +1,5 @@
 === WpstormCleanAdmin ===
-Contributors: esradev
+Contributors: wpstormdev
 Tags: user management, inactive users, security, optimization, admin tools
 Requires at least: 5.0
 Tested up to: 6.8

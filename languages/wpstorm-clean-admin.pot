@@ -1,4 +1,4 @@
-# Copyright (C) 2025 esradev
+# Copyright (C) 2025 wpstormdev
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-10-17T18:34:48+00:00\n"
+"POT-Creation-Date: 2025-10-17T19:37:15+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: wpstorm-clean-admin\n"
@@ -32,28 +32,28 @@ msgstr ""
 
 #. Author of the plugin
 #: wpstorm-clean-admin.php
-msgid "esradev"
+msgid "wpstormdev"
 msgstr ""
 
-#: includes/Core/Settings.php:45
+#: includes/Core/Settings.php:70
 msgid "Settings"
 msgstr ""
 
-#: includes/Core/Settings.php:47
+#: includes/Core/Settings.php:72
 msgid "Docs"
 msgstr ""
 
-#: includes/Core/Settings.php:59
+#: includes/Core/Settings.php:84
 msgid "new"
 msgstr ""
 
-#: includes/Core/Settings.php:61
-#: includes/Core/Settings.php:62
-#: includes/Core/Settings.php:71
+#: includes/Core/Settings.php:86
+#: includes/Core/Settings.php:87
+#: includes/Core/Settings.php:96
 msgid "Wpstorm Clean Admin"
 msgstr ""
 
-#: includes/Core/Settings.php:72
+#: includes/Core/Settings.php:97
 msgid "Auth"
 msgstr ""
 
@@ -358,14 +358,6 @@ msgid "Delete"
 msgstr ""
 
 #: assets/build/index.js:1
-msgid "Clean Admin dashboard"
-msgstr ""
-
-#: assets/build/index.js:1
-msgid "Learn more"
-msgstr ""
-
-#: assets/build/index.js:1
 msgid "Generals"
 msgstr ""
 
@@ -411,10 +403,6 @@ msgstr ""
 
 #: assets/build/index.js:1
 msgid "Weekly"
-msgstr ""
-
-#: assets/build/index.js:1
-msgid "General settings for the plugin"
 msgstr ""
 
 #: assets/build/index.js:1

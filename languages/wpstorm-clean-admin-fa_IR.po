@@ -22,7 +22,7 @@ msgstr "مدیریت پاک"
 msgid "https://wpstorm.ir"
 msgstr "https://wpstorm.ir"
 
-#: includes/Core/Settings.php:47
+#: includes/Core/Settings.php:72
 msgid "Docs"
 msgstr "مستندات"
 
@@ -42,7 +42,7 @@ msgstr "این صفحه موجود نیست"
 msgid "Back to home"
 msgstr "برگشت به صفحه اصلی"
 
-#: includes/Core/Settings.php:72
+#: includes/Core/Settings.php:97
 msgid "Auth"
 msgstr "احراز هویت"
 
@@ -66,7 +66,7 @@ msgstr "404"
 msgid "Add Number"
 msgstr "افزودن شماره"
 
-#: includes/Core/Settings.php:59
+#: includes/Core/Settings.php:84
 msgid "new"
 msgstr "جدید"
 
@@ -87,10 +87,6 @@ msgid "Save your changes"
 msgstr "تنظیمات را ذخیره کنید."
 
 #: assets/build/index.js:1
-msgid "Learn more"
-msgstr "بیشتر بدانید"
-
-#: assets/build/index.js:1
 msgid "Sorry, we couldn't find the page you're looking for."
 msgstr "متأسفیم، صفحه ای که به دنبالش هستید را پیدا نمی کنیم."
 
@@ -98,9 +94,9 @@ msgstr "متأسفیم، صفحه ای که به دنبالش هستید را پ
 msgid "Toggle theme"
 msgstr "تغییر تِم"
 
-#: includes/Core/Settings.php:61
-#: includes/Core/Settings.php:62
-#: includes/Core/Settings.php:71
+#: includes/Core/Settings.php:86
+#: includes/Core/Settings.php:87
+#: includes/Core/Settings.php:96
 msgid "Wpstorm Clean Admin"
 msgstr "مدیریت پاک"
 
@@ -192,7 +188,7 @@ msgstr "در حال بارگذاری..."
 msgid "Sending data to the server."
 msgstr "در حال ارسال اطلاعات به سرور"
 
-#: includes/Core/Settings.php:45
+#: includes/Core/Settings.php:70
 msgid "Settings"
 msgstr "تنظیمات"
 
@@ -266,10 +262,6 @@ msgid "Registered"
 msgstr "ثبت نام کرد"
 
 #: assets/build/index.js:1
-msgid "Clean Admin dashboard"
-msgstr "داشبورد مدیریت پاک"
-
-#: assets/build/index.js:1
 msgid "Generals"
 msgstr "عمومی"
 
@@ -312,10 +304,6 @@ msgstr "دو بار در روز"
 #: assets/build/index.js:1
 msgid "Weekly"
 msgstr "هفتگی"
-
-#: assets/build/index.js:1
-msgid "General settings for the plugin"
-msgstr "تنظیمات عمومی برای افزونه"
 
 #: assets/build/index.js:1
 msgid "Operation completed successfully!"
@@ -363,8 +351,8 @@ msgstr "مدیریت پاک"
 
 #. Author of the plugin
 #: wpstorm-clean-admin.php
-msgid "esradev"
-msgstr "esradev"
+msgid "wpstormdev"
+msgstr "wpstormdev"
 
 #: assets/build/index.js:1
 msgid "Activity"
