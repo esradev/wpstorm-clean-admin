@@ -32,7 +32,6 @@ export const useFetch = (
   const [fetchCount, setFetchCount] = useState<number>(0);
 
   useEffect(() => {
-    console.log('Fetching data from:', url);
     if (immediate) {
       setIsFetching(true);
       setData(null);
@@ -41,12 +40,10 @@ export const useFetch = (
       axiosInstance
         .get(url, { cancelToken: source.token })
         .then((res) => {
-          console.log(res);
           res.data && setData(res.data);
           setIsSuccess(true);
         })
         .catch((err) => {
-          console.log(err);
           setError(err);
         })
         .finally(() => {

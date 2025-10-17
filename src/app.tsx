@@ -1,12 +1,12 @@
-import { __ } from "@wordpress/i18n";
-import { Route, Routes } from "react-router-dom";
-import { DirectionProvider } from "@radix-ui/react-direction";
+import { __ } from '@wordpress/i18n';
+import { Route, Routes } from 'react-router-dom';
+import { DirectionProvider } from '@radix-ui/react-direction';
 
-import NotFound from "@/layouts/not-found";
-import Layout from "@/layout";
-import { items } from "@/lib/utils";
+import NotFound from '@/layouts/not-found';
+import Layout from '@/layout';
+import { items } from '@/lib/utils';
 
-import { useCurrentMenu } from "./hooks/use-helpers";
+import { useCurrentMenu } from './hooks/use-helpers';
 
 const App = () => {
   useCurrentMenu();

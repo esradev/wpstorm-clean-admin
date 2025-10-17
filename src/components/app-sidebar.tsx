@@ -34,7 +34,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 </div>
                 <div className="grid flex-1 text-right text-sm leading-tight text-sidebar-foreground">
                   <span className="truncate font-medium">
-                    {__("Clean Admin", "payamito-plus")}
+                    {__("Clean Admin", "wpstorm-clean-admin")}
                   </span>
                   <span className="truncate text-xs">
                     {__("Wpstorm Genius")}
@@ -58,7 +58,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         {({ isActive }) => (
                           <li
                             className={`flex items-center gap-2 w-full text-right text-sm font-medium p-4 pb-3 text-sidebar-foreground ${
-                              isActive ? "bg-payamito-plus-800" : ""
+                              isActive ? "bg-wpstorm-clean-admin-800" : ""
                             }`}
                           >
                             <item.icon
