@@ -24,7 +24,8 @@
     "changelog.md",
     "readme.txt",
     "wpstorm-clean-admin.php",
-    "uninstall.php"
+    "uninstall.php",
+    "composer.json"
   ],
   "keywords": [],
   "author": "wpstorm",

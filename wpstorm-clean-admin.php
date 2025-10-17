@@ -2,7 +2,6 @@
 
 /**
  * Plugin Name: WpstormCleanAdmin
- * Plugin URI: https://wpstorm.ir
  * Description: A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools.
  * Version: 1.0.0
  * Author: wpstormdev
