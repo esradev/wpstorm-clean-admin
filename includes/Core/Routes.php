@@ -537,20 +537,15 @@ if (!class_exists('Routes')) {
             $start_date = gmdate('Y-m-d', time() - ($days * DAY_IN_SECONDS));
             $end_date = gmdate('Y-m-d');
 
-            // Build the query with table name properly escaped
-            $login_query = sprintf(
-                "SELECT DATE(created_at) as date, COUNT(DISTINCT user_id) as logins
-                FROM %s
-                WHERE action = %%s AND DATE(created_at) >= %%s
-                GROUP BY DATE(created_at)
-                ORDER BY date ASC",
-                esc_sql($login_logs_table)
-            );
-
-            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Custom query with caching implemented
+            // Build and execute the login activity query
+            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching,WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Custom table query with caching implemented, table name is safe internal value
             $login_results = $wpdb->get_results(
                 $wpdb->prepare(
-                    $login_query,
+                    "SELECT DATE(created_at) as date, COUNT(DISTINCT user_id) as logins
+                    FROM {$login_logs_table}
+                    WHERE action = %s AND DATE(created_at) >= %s
+                    GROUP BY DATE(created_at)
+                    ORDER BY date ASC",
                     'login',
                     $start_date
                 ),

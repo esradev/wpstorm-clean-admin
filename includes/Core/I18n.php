@@ -23,14 +23,9 @@ if (!class_exists('I18n')) {
 
         public function __construct()
         {
-            add_action('init', [$this, 'load_textdomain'], 999);
             add_filter('load_textdomain_mofile', [$this, 'load_textdomain_mofile'], 999, 2);
         }
 
-        public function load_textdomain()
-        {
-            load_plugin_textdomain('wpstorm-clean-admin', false, dirname(plugin_basename(WPSTORM_CLEAN_ADMIN_FILE)) . '/languages');
-        }
         /**
          * Loads the translation MO file for a specific domain.
          *
