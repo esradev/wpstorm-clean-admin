@@ -161,6 +161,7 @@ if (!class_exists('Routes')) {
 
             // Build user query:
             // Inactive if: (last_login < $threshold) or (no last_login AND registered < $threshold)
+            // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Meta query is necessary to find inactive users based on last_login meta field. Performance is acceptable for admin-only functionality with pagination.
             $meta_query = [
                 'relation' => 'OR',
                 [
@@ -180,7 +181,7 @@ if (!class_exists('Routes')) {
             ];
 
             $args = [
-                'number' => $per_page * 3,
+                'number' => $per_page * 3, // Fetch more than needed to account for role filtering
                 'offset' => 0,
                 'search' => $search_term ? '*' . $search_term . '*' : '',
                 'search_columns' => ['user_login', 'user_email', 'user_nicename', 'display_name'],
@@ -313,6 +314,7 @@ if (!class_exists('Routes')) {
         public function log_action(int $user_id, string $action, ?int $actor_id = null, string $notes = '')
         {
             global $wpdb;
+            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery -- Custom table insert for logging purposes
             $wpdb->insert(Database::get_table_name('login_logs'), [
                 'created_at' => current_time('mysql', true),
                 'user_id' => $user_id,
@@ -387,12 +389,21 @@ if (!class_exists('Routes')) {
         {
             global $wpdb;
 
+            // Check cache first
+            $cache_key = 'wpstorm_clean_admin_dashboard_stats';
+            $cached_stats = wp_cache_get($cache_key);
+
+            if ($cached_stats !== false) {
+                return $cached_stats;
+            }
+
             // Total users count
             $total_users = count_users();
             $total_users_count = $total_users['total_users'];
 
             // New users this month
             $first_day_of_month = gmdate('Y-m-01 00:00:00');
+            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Custom query with caching implemented
             $new_users_this_month = (int) $wpdb->get_var(
                 $wpdb->prepare(
                     "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered >= %s",
@@ -403,6 +414,7 @@ if (!class_exists('Routes')) {
             // New users last month
             $first_day_last_month = gmdate('Y-m-01 00:00:00', strtotime('-1 month'));
             $last_day_last_month = gmdate('Y-m-t 23:59:59', strtotime('-1 month'));
+            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Custom query with caching implemented
             $new_users_last_month = (int) $wpdb->get_var(
                 $wpdb->prepare(
                     "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered >= %s AND user_registered <= %s",
@@ -421,6 +433,7 @@ if (!class_exists('Routes')) {
 
             // Active users (logged in within last 30 days)
             $thirty_days_ago = gmdate('Y-m-d H:i:s', time() - (30 * DAY_IN_SECONDS));
+            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Custom query with caching implemented
             $active_users = (int) $wpdb->get_var(
                 $wpdb->prepare(
                     "SELECT COUNT(DISTINCT user_id) FROM {$wpdb->usermeta}
@@ -432,6 +445,7 @@ if (!class_exists('Routes')) {
 
             // Active users last period (30-60 days ago)
             $sixty_days_ago = gmdate('Y-m-d H:i:s', time() - (60 * DAY_IN_SECONDS));
+            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Custom query with caching implemented
             $active_users_last_period = (int) $wpdb->get_var(
                 $wpdb->prepare(
                     "SELECT COUNT(DISTINCT user_id) FROM {$wpdb->usermeta}
@@ -457,6 +471,7 @@ if (!class_exists('Routes')) {
             $sixty_days_start = gmdate('Y-m-d H:i:s', time() - (60 * DAY_IN_SECONDS));
             $thirty_days_start = gmdate('Y-m-d H:i:s', time() - (30 * DAY_IN_SECONDS));
 
+            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Custom query with caching implemented
             $users_at_sixty_days = (int) $wpdb->get_var(
                 $wpdb->prepare(
                     "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered < %s",
@@ -473,7 +488,7 @@ if (!class_exists('Routes')) {
                 $activity_rate_change = 100;
             }
 
-            return [
+            $stats = [
                 'total_users' => [
                     'value' => $total_users_count,
                     'change' => 0, // Total users doesn't have a meaningful percentage
@@ -495,6 +510,11 @@ if (!class_exists('Routes')) {
                     'trend' => $activity_rate_change > 0 ? 'up' : ($activity_rate_change < 0 ? 'down' : 'neutral'),
                 ],
             ];
+
+            // Cache the results for 5 minutes
+            wp_cache_set($cache_key, $stats, '', 300);
+
+            return $stats;
         }
 
         public function get_activity_chart($req)
@@ -502,20 +522,35 @@ if (!class_exists('Routes')) {
             global $wpdb;
 
             $days = min(90, max(7, (int)($req->get_param('days') ?? 90)));
+
+            // Check cache first
+            $cache_key = 'wpstorm_clean_admin_activity_chart_' . $days;
+            $cached_chart = wp_cache_get($cache_key);
+
+            if ($cached_chart !== false) {
+                return $cached_chart;
+            }
+
             $login_logs_table = Database::get_table_name('login_logs');
 
             // Get login activity for the specified period
             $start_date = gmdate('Y-m-d', time() - ($days * DAY_IN_SECONDS));
             $end_date = gmdate('Y-m-d');
 
-            // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Table name is internal (no user input) from Database::get_table_name()
+            // Build the query with table name properly escaped
+            $login_query = sprintf(
+                "SELECT DATE(created_at) as date, COUNT(DISTINCT user_id) as logins
+                FROM %s
+                WHERE action = %%s AND DATE(created_at) >= %%s
+                GROUP BY DATE(created_at)
+                ORDER BY date ASC",
+                esc_sql($login_logs_table)
+            );
+
+            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Custom query with caching implemented
             $login_results = $wpdb->get_results(
                 $wpdb->prepare(
-                    "SELECT DATE(created_at) as date, COUNT(DISTINCT user_id) as logins
-                    FROM {$login_logs_table}
-                    WHERE action = %s AND DATE(created_at) >= %s
-                    GROUP BY DATE(created_at)
-                    ORDER BY date ASC",
+                    $login_query,
                     'login',
                     $start_date
                 ),
@@ -523,6 +558,7 @@ if (!class_exists('Routes')) {
             );
 
             // Get new registrations for the specified period
+            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Custom query with caching implemented
             $registration_results = $wpdb->get_results(
                 $wpdb->prepare(
                     "SELECT DATE(user_registered) as date, COUNT(*) as registrations
@@ -560,6 +596,9 @@ if (!class_exists('Routes')) {
                 ];
                 $current_date += DAY_IN_SECONDS;
             }
+
+            // Cache the results for 10 minutes
+            wp_cache_set($cache_key, $chart_data, '', 600);
 
             return $chart_data;
         }
