@@ -23,7 +23,8 @@
     "vendor/**",
     "changelog.md",
     "readme.md",
-    "wpstorm-clean-admin.php"
+    "wpstorm-clean-admin.php",
+    "uninstall.php"
   ],
   "keywords": [],
   "author": "wpstorm",
