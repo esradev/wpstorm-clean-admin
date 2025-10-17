@@ -22,7 +22,7 @@
     "languages/**",
     "vendor/**",
     "changelog.md",
-    "readme.md",
+    "readme.txt",
     "wpstorm-clean-admin.php",
     "uninstall.php"
   ],

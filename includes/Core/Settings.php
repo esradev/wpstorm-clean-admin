@@ -27,7 +27,32 @@ if (! class_exists('Settings')) {
 			add_filter('plugin_action_links_' . WPSTORM_CLEAN_ADMIN_BASE, [$this, 'settings_link']);
 			add_filter('admin_menu', [$this, 'init_menu'], 999);
 			add_action('admin_head', [$this, 'admin_head'], 999);
-			if (isset($_GET['page']) && sanitize_text_field(wp_unslash($_GET['page'])) === WPSTORM_CLEAN_ADMIN_SLUG) {
+			// Apply page-specific behaviors using current_screen (avoids direct $_GET access).
+			add_action('current_screen', [$this, 'maybe_setup_page']);
+		}
+
+		/**
+		 * Conditionally hooks page-specific behaviors when the current admin screen matches
+		 * our plugin page. This avoids relying on $_GET and satisfies nonce verification warnings.
+		 */
+		public function maybe_setup_page($screen)
+		{
+			if (! function_exists('get_current_screen')) {
+				return;
+			}
+
+			$screen_obj = is_object($screen) ? $screen : get_current_screen();
+			if (! $screen_obj) {
+				return;
+			}
+
+			$target_ids = [
+				'toplevel_page_' . WPSTORM_CLEAN_ADMIN_SLUG,
+				// Some setups may generate this format for submenu screens.
+				WPSTORM_CLEAN_ADMIN_SLUG . '_page_' . WPSTORM_CLEAN_ADMIN_SLUG,
+			];
+
+			if (in_array($screen_obj->id, $target_ids, true)) {
 				add_action('admin_init', [$this, 'hide_all_admin_notices']);
 				// Add wpstorm-clean-admin-tw as a class to the body tag.
 				add_filter('admin_body_class', function ($classes) {

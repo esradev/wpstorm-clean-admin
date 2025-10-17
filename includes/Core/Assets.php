@@ -70,7 +70,7 @@ if (! class_exists('Assets')) {
             // Check if we are on the plugins.php page
             $current_screen = get_current_screen();
             if ($current_screen && $current_screen->id === 'plugins') {
-                wp_enqueue_style('wpstorm-clean-admin-plugins-styles', WPSTORM_CLEAN_ADMIN_ASSETS_URL . 'css/plugins-page-links.css');
+                wp_enqueue_style('wpstorm-clean-admin-plugins-styles', WPSTORM_CLEAN_ADMIN_ASSETS_URL . 'css/plugins-page-links.css', [], WPSTORM_CLEAN_ADMIN_VERSION, 'all');
             }
         }
 

@@ -1,8 +1,8 @@
 === WpstormCleanAdmin ===
 Contributors: esradev
-Tags: user management, inactive users, analytics, cleanup, security, optimization, admin tools
+Tags: user management, inactive users, security, optimization, admin tools
 Requires at least: 5.0
-Tested up to: 6.8.3
+Tested up to: 6.8
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPL-2.0-or-later

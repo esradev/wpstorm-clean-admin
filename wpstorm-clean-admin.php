@@ -12,7 +12,7 @@
  * Text Domain: wpstorm-clean-admin
  * Domain Path: /languages/
  * Requires at least: 5.0
- * Tested up to: 6.8.3
+ * Tested up to: 6.8
  * Requires PHP: 7.4
  */
 

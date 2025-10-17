@@ -393,21 +393,23 @@ if (!class_exists('Routes')) {
 
             // New users this month
             $first_day_of_month = gmdate('Y-m-01 00:00:00');
-            $new_users_query = $wpdb->prepare(
-                "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered >= %s",
-                $first_day_of_month
+            $new_users_this_month = (int) $wpdb->get_var(
+                $wpdb->prepare(
+                    "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered >= %s",
+                    $first_day_of_month
+                )
             );
-            $new_users_this_month = (int)$wpdb->get_var($new_users_query);
 
             // New users last month
             $first_day_last_month = gmdate('Y-m-01 00:00:00', strtotime('-1 month'));
             $last_day_last_month = gmdate('Y-m-t 23:59:59', strtotime('-1 month'));
-            $new_users_last_month_query = $wpdb->prepare(
-                "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered >= %s AND user_registered <= %s",
-                $first_day_last_month,
-                $last_day_last_month
+            $new_users_last_month = (int) $wpdb->get_var(
+                $wpdb->prepare(
+                    "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered >= %s AND user_registered <= %s",
+                    $first_day_last_month,
+                    $last_day_last_month
+                )
             );
-            $new_users_last_month = (int)$wpdb->get_var($new_users_last_month_query);
 
             // Calculate new users percentage change
             $new_users_change = 0;
@@ -419,24 +421,26 @@ if (!class_exists('Routes')) {
 
             // Active users (logged in within last 30 days)
             $thirty_days_ago = gmdate('Y-m-d H:i:s', time() - (30 * DAY_IN_SECONDS));
-            $active_users_query = $wpdb->prepare(
-                "SELECT COUNT(DISTINCT user_id) FROM {$wpdb->usermeta}
-                WHERE meta_key = %s AND meta_value >= %s",
-                WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN,
-                $thirty_days_ago
+            $active_users = (int) $wpdb->get_var(
+                $wpdb->prepare(
+                    "SELECT COUNT(DISTINCT user_id) FROM {$wpdb->usermeta}
+                    WHERE meta_key = %s AND meta_value >= %s",
+                    WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN,
+                    $thirty_days_ago
+                )
             );
-            $active_users = (int)$wpdb->get_var($active_users_query);
 
             // Active users last period (30-60 days ago)
             $sixty_days_ago = gmdate('Y-m-d H:i:s', time() - (60 * DAY_IN_SECONDS));
-            $active_users_last_period_query = $wpdb->prepare(
-                "SELECT COUNT(DISTINCT user_id) FROM {$wpdb->usermeta}
-                WHERE meta_key = %s AND meta_value >= %s AND meta_value < %s",
-                WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN,
-                $sixty_days_ago,
-                $thirty_days_ago
+            $active_users_last_period = (int) $wpdb->get_var(
+                $wpdb->prepare(
+                    "SELECT COUNT(DISTINCT user_id) FROM {$wpdb->usermeta}
+                    WHERE meta_key = %s AND meta_value >= %s AND meta_value < %s",
+                    WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN,
+                    $sixty_days_ago,
+                    $thirty_days_ago
+                )
             );
-            $active_users_last_period = (int)$wpdb->get_var($active_users_last_period_query);
 
             // Calculate active users percentage change
             $active_users_change = 0;
@@ -453,11 +457,12 @@ if (!class_exists('Routes')) {
             $sixty_days_start = gmdate('Y-m-d H:i:s', time() - (60 * DAY_IN_SECONDS));
             $thirty_days_start = gmdate('Y-m-d H:i:s', time() - (30 * DAY_IN_SECONDS));
 
-            $users_at_sixty_days_query = $wpdb->prepare(
-                "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered < %s",
-                $sixty_days_start
+            $users_at_sixty_days = (int) $wpdb->get_var(
+                $wpdb->prepare(
+                    "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered < %s",
+                    $sixty_days_start
+                )
             );
-            $users_at_sixty_days = (int)$wpdb->get_var($users_at_sixty_days_query);
 
             $previous_activity_rate = $users_at_sixty_days > 0 ? ($active_users_last_period / $users_at_sixty_days) * 100 : 0;
 
@@ -503,28 +508,32 @@ if (!class_exists('Routes')) {
             $start_date = gmdate('Y-m-d', time() - ($days * DAY_IN_SECONDS));
             $end_date = gmdate('Y-m-d');
 
-            $login_query = $wpdb->prepare(
-                "SELECT DATE(created_at) as date, COUNT(DISTINCT user_id) as logins
-                FROM {$login_logs_table}
-                WHERE action = 'login' AND DATE(created_at) >= %s
-                GROUP BY DATE(created_at)
-                ORDER BY date ASC",
-                $start_date
+            // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Table name is internal (no user input) from Database::get_table_name()
+            $login_results = $wpdb->get_results(
+                $wpdb->prepare(
+                    "SELECT DATE(created_at) as date, COUNT(DISTINCT user_id) as logins
+                    FROM {$login_logs_table}
+                    WHERE action = %s AND DATE(created_at) >= %s
+                    GROUP BY DATE(created_at)
+                    ORDER BY date ASC",
+                    'login',
+                    $start_date
+                ),
+                ARRAY_A
             );
-
-            $login_results = $wpdb->get_results($login_query, ARRAY_A);
 
             // Get new registrations for the specified period
-            $registration_query = $wpdb->prepare(
-                "SELECT DATE(user_registered) as date, COUNT(*) as registrations
-                FROM {$wpdb->users}
-                WHERE DATE(user_registered) >= %s
-                GROUP BY DATE(user_registered)
-                ORDER BY date ASC",
-                $start_date
+            $registration_results = $wpdb->get_results(
+                $wpdb->prepare(
+                    "SELECT DATE(user_registered) as date, COUNT(*) as registrations
+                    FROM {$wpdb->users}
+                    WHERE DATE(user_registered) >= %s
+                    GROUP BY DATE(user_registered)
+                    ORDER BY date ASC",
+                    $start_date
+                ),
+                ARRAY_A
             );
-
-            $registration_results = $wpdb->get_results($registration_query, ARRAY_A);
 
             // Create a map for quick lookup
             $login_map = [];

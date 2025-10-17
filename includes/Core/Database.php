@@ -83,5 +83,4 @@ if (! class_exists('Database')) {
 	}
 
 	Database::get_instance();
-	Database::get_instance();
 }
