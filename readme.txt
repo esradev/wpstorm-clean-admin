@@ -1,6 +1,6 @@
 === WpstormCleanAdmin ===
 Contributors: esradev
-Tags: user management, inactive users, analytics, security, optimization
+Tags: user management, inactive users, analytics, cleanup, security, optimization, admin tools
 Requires at least: 5.0
 Tested up to: 6.8.3
 Requires PHP: 7.4
@@ -12,7 +12,41 @@ A modern WordPress plugin for managing inactive users, monitoring site activity,
 
 == Description ==
 
-**Clean Admin** is a modern WordPress plugin designed to help site owners and administrators keep their websites optimized, secure, and user-friendly. With a minimal yet powerful dashboard, Clean Admin provides smart tools for monitoring, communication, recovery, and user management.
+**WpstormCleanAdmin** is a modern, performance-focused WordPress plugin that helps you manage inactive users, monitor activity, and keep your WordPress dashboard clean and optimized.
+
+Built with a React-powered interface and following WordPress coding standards, it delivers a seamless and efficient experience for both administrators and site managers.
+
+### 🧠 Key Highlights
+
+- 🚀 **Lightweight & Fast:** Designed with performance in mind, using native WordPress APIs.
+- 🧍‍♂️ **Smart User Management:** Automatically detect, deactivate, or delete inactive users.
+- 📊 **Advanced Analytics:** Visualize user login activity, registrations, and engagement patterns.
+- ⚙️ **Customizable Automation:** Schedule cleanups and inactivity checks that fit your workflow.
+- 🔒 **Security First:** Protects admin and critical roles from accidental removal.
+- 🎨 **Modern React UI:** Sleek, responsive dashboard that feels native to WordPress.
+
+### 💡 Why Use WpstormCleanAdmin?
+
+Over time, inactive users can clutter your database, pose security risks, and affect performance.
+**WpstormCleanAdmin** helps you:
+- Keep your user list clean and efficient
+- Identify dormant or risky accounts
+- Automate repetitive maintenance tasks
+- Improve login and engagement visibility
+- Stay compliant with GDPR by removing unused accounts
+
+### 🧰 Built For Developers and Admins
+
+- 100% compatible with WordPress coding and security standards
+- Fully translatable and ready for localization
+- Uses WordPress REST API for scalability and speed
+
+### 🌍 Compatibility
+
+- Works with WordPress 5.0+
+- Tested up to 6.8.3
+- Compatible with classic and block themes
+- Translation-ready (`.pot` file included)
 
 = Features =
 
@@ -121,10 +155,25 @@ Initial release of WpstormCleanAdmin.
 
 WpstormCleanAdmin tracks user login times locally in your database. No data is sent to external servers. All data remains on your WordPress installation.
 
+== Roadmap ==
+
+* Add multisite compatibility
+* Add email notifications for inactive users
+* Add export/import for cleanup logs
+* Integration with WooCommerce user activity
+
 == Support ==
 
-For support and documentation, visit: https://wpstorm.ir/clean-admin/
+For documentation, FAQs, and support, visit:
+👉 [https://wpstorm.ir/clean-admin/](https://wpstorm.ir/clean-admin/)
+
+== Feedback & Contribution ==
+
+We welcome feedback and contributions!
+Share your ideas or report issues at:
+👉 [https://wpstorm.ir/support](https://wpstorm.ir/support)
 
 == Credits ==
 
-Developed by Wpstorm Team
+Developed by the **Wpstorm Team**
+Website: [https://wpstorm.ir](https://wpstorm.ir)
