@@ -122,6 +122,12 @@ if (!class_exists('Routes')) {
                     ],
                 ],
             ]);
+
+            register_rest_route($namespace, 'roles', [
+                'methods' => 'GET',
+                'callback' => [$this, 'get_roles'],
+                'permission_callback' => [$this, 'admin_permissions_check'],
+            ]);
         }
 
         public function get_options($req)
@@ -191,6 +197,11 @@ if (!class_exists('Routes')) {
                 is_array($exclude_roles_option) ? $exclude_roles_option : []
             );
 
+            // Always exclude administrator role
+            if (!in_array('administrator', $exclude_roles)) {
+                $exclude_roles[] = 'administrator';
+            }
+
             $items = [];
             $total = 0;
 
@@ -247,7 +258,17 @@ if (!class_exists('Routes')) {
                 return new WP_Error('wsca_bad_request', 'Missing user_ids or invalid action.', ['status' => 400]);
             }
 
-            $exclude_roles = array_map('strtolower', Options::get_option_item('generals', 'exclude_roles') ?: []);
+            $exclude_roles_option = Options::get_option_item('generals', 'exclude_roles');
+            $exclude_roles = array_map(
+                fn($role) => isset($role['value']) ? strtolower($role['value']) : strtolower($role),
+                is_array($exclude_roles_option) ? $exclude_roles_option : []
+            );
+
+            // Always exclude administrator role
+            if (!in_array('administrator', $exclude_roles)) {
+                $exclude_roles[] = 'administrator';
+            }
+
             $actor = get_current_user_id() ?: null;
 
             $results = ['processed' => [], 'skipped' => []];
@@ -324,6 +345,11 @@ if (!class_exists('Routes')) {
                 fn($role) => isset($role['value']) ? strtolower($role['value']) : '',
                 is_array($exclude_roles_option) ? $exclude_roles_option : []
             );
+
+            // Always exclude administrator role
+            if (!in_array('administrator', $exclude_roles)) {
+                $exclude_roles[] = 'administrator';
+            }
 
             $items = [];
             $total = (int)$q->get_total();
@@ -527,6 +553,25 @@ if (!class_exists('Routes')) {
             }
 
             return $chart_data;
+        }
+
+        public function get_roles($req)
+        {
+            global $wp_roles;
+
+            if (!isset($wp_roles)) {
+                $wp_roles = new \WP_Roles();
+            }
+
+            $roles = [];
+            foreach ($wp_roles->roles as $role_key => $role_data) {
+                $roles[] = [
+                    'value' => $role_key,
+                    'label' => translate_user_role($role_data['name']),
+                ];
+            }
+
+            return $roles;
         }
     }
 

@@ -62,7 +62,12 @@ if (! class_exists('Tracker')) {
                     is_array($exclude_roles_option) ? $exclude_roles_option : []
                 );
 
-                if (array_intersect(array_map('strtolower', $user->roles), array_map('strtolower', $exclude_roles))) {
+                // Always exclude administrator role
+                if (!in_array('administrator', $exclude_roles)) {
+                    $exclude_roles[] = 'administrator';
+                }
+
+                if (array_intersect(array_map('strtolower', $user->roles), $exclude_roles)) {
                     continue;
                 }
 
