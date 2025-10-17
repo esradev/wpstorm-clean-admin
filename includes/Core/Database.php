@@ -27,7 +27,7 @@ if (! class_exists('Database')) {
 
 		/**
 		 * Database constructor.
-		 * 
+		 *
 		 * @deprecated 3.0.0 use get_table_name() instead to get table names.
 		 */
 		public function __construct()

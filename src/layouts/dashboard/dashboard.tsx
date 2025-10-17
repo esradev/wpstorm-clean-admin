@@ -12,6 +12,7 @@ import { MoreHorizontal, Trash } from 'lucide-react';
 import { __ } from '@wordpress/i18n';
 import { ColumnDef } from '@tanstack/react-table';
 import { DataTable } from '@/components/data-table';
+import { useState } from '@wordpress/element';
 
 interface user {
   id: number;
@@ -23,7 +24,13 @@ interface user {
 }
 
 export default function Dashboard() {
+  const [chartDays, setChartDays] = useState(90);
   const { data, isFetching } = useFetch('users');
+  const { data: statsData, isFetching: statsLoading } =
+    useFetch('dashboard-stats');
+  const { data: chartData, isFetching: chartLoading } = useFetch(
+    `activity-chart?days=${chartDays}`,
+  );
 
   const columns: ColumnDef<user>[] = [
     {
@@ -81,9 +88,13 @@ export default function Dashboard() {
     <div className="flex w-full h-full flex-col relative justify-between">
       <div className="@container/main flex flex-1 flex-col gap-2">
         <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
-          <SectionCards />
+          <SectionCards data={statsData} loading={statsLoading} />
           <div className="px-4 lg:px-6">
-            <ChartAreaInteractive />
+            <ChartAreaInteractive
+              data={chartData}
+              loading={chartLoading}
+              onTimeRangeChange={(days) => setChartDays(days)}
+            />
           </div>
           {!isFetching && (
             <DataTable

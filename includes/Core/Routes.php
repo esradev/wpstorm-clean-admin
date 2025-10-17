@@ -102,6 +102,26 @@ if (!class_exists('Routes')) {
                 'callback' => [$this, 'bulk_action'],
                 'permission_callback' => [$this, 'admin_permissions_check'],
             ]);
+
+            register_rest_route($namespace, 'dashboard-stats', [
+                'methods' => 'GET',
+                'callback' => [$this, 'get_dashboard_stats'],
+                'permission_callback' => [$this, 'admin_permissions_check'],
+            ]);
+
+            register_rest_route($namespace, 'activity-chart', [
+                'methods' => 'GET',
+                'callback' => [$this, 'get_activity_chart'],
+                'permission_callback' => [$this, 'admin_permissions_check'],
+                'args' => [
+                    'days' => [
+                        'type' => 'integer',
+                        'required' => false,
+                        'default' => 90,
+                        'description' => 'Number of days to fetch (7, 30, or 90)',
+                    ],
+                ],
+            ]);
         }
 
         public function get_options($req)
@@ -335,6 +355,178 @@ if (!class_exists('Routes')) {
                 'per_page' => $per_page,
                 'items' => $items,
             ];
+        }
+
+        public function get_dashboard_stats($req)
+        {
+            global $wpdb;
+
+            // Total users count
+            $total_users = count_users();
+            $total_users_count = $total_users['total_users'];
+
+            // New users this month
+            $first_day_of_month = gmdate('Y-m-01 00:00:00');
+            $new_users_query = $wpdb->prepare(
+                "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered >= %s",
+                $first_day_of_month
+            );
+            $new_users_this_month = (int)$wpdb->get_var($new_users_query);
+
+            // New users last month
+            $first_day_last_month = gmdate('Y-m-01 00:00:00', strtotime('-1 month'));
+            $last_day_last_month = gmdate('Y-m-t 23:59:59', strtotime('-1 month'));
+            $new_users_last_month_query = $wpdb->prepare(
+                "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered >= %s AND user_registered <= %s",
+                $first_day_last_month,
+                $last_day_last_month
+            );
+            $new_users_last_month = (int)$wpdb->get_var($new_users_last_month_query);
+
+            // Calculate new users percentage change
+            $new_users_change = 0;
+            if ($new_users_last_month > 0) {
+                $new_users_change = (($new_users_this_month - $new_users_last_month) / $new_users_last_month) * 100;
+            } elseif ($new_users_this_month > 0) {
+                $new_users_change = 100;
+            }
+
+            // Active users (logged in within last 30 days)
+            $thirty_days_ago = gmdate('Y-m-d H:i:s', time() - (30 * DAY_IN_SECONDS));
+            $active_users_query = $wpdb->prepare(
+                "SELECT COUNT(DISTINCT user_id) FROM {$wpdb->usermeta}
+                WHERE meta_key = %s AND meta_value >= %s",
+                WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN,
+                $thirty_days_ago
+            );
+            $active_users = (int)$wpdb->get_var($active_users_query);
+
+            // Active users last period (30-60 days ago)
+            $sixty_days_ago = gmdate('Y-m-d H:i:s', time() - (60 * DAY_IN_SECONDS));
+            $active_users_last_period_query = $wpdb->prepare(
+                "SELECT COUNT(DISTINCT user_id) FROM {$wpdb->usermeta}
+                WHERE meta_key = %s AND meta_value >= %s AND meta_value < %s",
+                WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN,
+                $sixty_days_ago,
+                $thirty_days_ago
+            );
+            $active_users_last_period = (int)$wpdb->get_var($active_users_last_period_query);
+
+            // Calculate active users percentage change
+            $active_users_change = 0;
+            if ($active_users_last_period > 0) {
+                $active_users_change = (($active_users - $active_users_last_period) / $active_users_last_period) * 100;
+            } elseif ($active_users > 0) {
+                $active_users_change = 100;
+            }
+
+            // User activity rate (active users / total users)
+            $activity_rate = $total_users_count > 0 ? ($active_users / $total_users_count) * 100 : 0;
+
+            // Get previous month activity rate
+            $sixty_days_start = gmdate('Y-m-d H:i:s', time() - (60 * DAY_IN_SECONDS));
+            $thirty_days_start = gmdate('Y-m-d H:i:s', time() - (30 * DAY_IN_SECONDS));
+
+            $users_at_sixty_days_query = $wpdb->prepare(
+                "SELECT COUNT(*) FROM {$wpdb->users} WHERE user_registered < %s",
+                $sixty_days_start
+            );
+            $users_at_sixty_days = (int)$wpdb->get_var($users_at_sixty_days_query);
+
+            $previous_activity_rate = $users_at_sixty_days > 0 ? ($active_users_last_period / $users_at_sixty_days) * 100 : 0;
+
+            $activity_rate_change = 0;
+            if ($previous_activity_rate > 0) {
+                $activity_rate_change = (($activity_rate - $previous_activity_rate) / $previous_activity_rate) * 100;
+            } elseif ($activity_rate > 0) {
+                $activity_rate_change = 100;
+            }
+
+            return [
+                'total_users' => [
+                    'value' => $total_users_count,
+                    'change' => 0, // Total users doesn't have a meaningful percentage
+                    'trend' => 'neutral',
+                ],
+                'new_users' => [
+                    'value' => $new_users_this_month,
+                    'change' => round($new_users_change, 1),
+                    'trend' => $new_users_change > 0 ? 'up' : ($new_users_change < 0 ? 'down' : 'neutral'),
+                ],
+                'active_users' => [
+                    'value' => $active_users,
+                    'change' => round($active_users_change, 1),
+                    'trend' => $active_users_change > 0 ? 'up' : ($active_users_change < 0 ? 'down' : 'neutral'),
+                ],
+                'activity_rate' => [
+                    'value' => round($activity_rate, 1),
+                    'change' => round($activity_rate_change, 1),
+                    'trend' => $activity_rate_change > 0 ? 'up' : ($activity_rate_change < 0 ? 'down' : 'neutral'),
+                ],
+            ];
+        }
+
+        public function get_activity_chart($req)
+        {
+            global $wpdb;
+
+            $days = min(90, max(7, (int)($req->get_param('days') ?? 90)));
+            $login_logs_table = Database::get_table_name('login_logs');
+
+            // Get login activity for the specified period
+            $start_date = gmdate('Y-m-d', time() - ($days * DAY_IN_SECONDS));
+            $end_date = gmdate('Y-m-d');
+
+            $login_query = $wpdb->prepare(
+                "SELECT DATE(created_at) as date, COUNT(DISTINCT user_id) as logins
+                FROM {$login_logs_table}
+                WHERE action = 'login' AND DATE(created_at) >= %s
+                GROUP BY DATE(created_at)
+                ORDER BY date ASC",
+                $start_date
+            );
+
+            $login_results = $wpdb->get_results($login_query, ARRAY_A);
+
+            // Get new registrations for the specified period
+            $registration_query = $wpdb->prepare(
+                "SELECT DATE(user_registered) as date, COUNT(*) as registrations
+                FROM {$wpdb->users}
+                WHERE DATE(user_registered) >= %s
+                GROUP BY DATE(user_registered)
+                ORDER BY date ASC",
+                $start_date
+            );
+
+            $registration_results = $wpdb->get_results($registration_query, ARRAY_A);
+
+            // Create a map for quick lookup
+            $login_map = [];
+            foreach ($login_results as $row) {
+                $login_map[$row['date']] = (int)$row['logins'];
+            }
+
+            $registration_map = [];
+            foreach ($registration_results as $row) {
+                $registration_map[$row['date']] = (int)$row['registrations'];
+            }
+
+            // Generate data for all days in the range
+            $chart_data = [];
+            $current_date = strtotime($start_date);
+            $end_timestamp = strtotime($end_date);
+
+            while ($current_date <= $end_timestamp) {
+                $date_str = gmdate('Y-m-d', $current_date);
+                $chart_data[] = [
+                    'date' => $date_str,
+                    'logins' => $login_map[$date_str] ?? 0,
+                    'registrations' => $registration_map[$date_str] ?? 0,
+                ];
+                $current_date += DAY_IN_SECONDS;
+            }
+
+            return $chart_data;
         }
     }
 

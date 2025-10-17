@@ -1,6 +1,6 @@
-import { IconTrendingDown, IconTrendingUp } from "@tabler/icons-react";
+import { IconTrendingDown, IconTrendingUp } from '@tabler/icons-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 import {
   Card,
   CardAction,
@@ -8,93 +8,174 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
+import { Skeleton } from '@/components/ui/skeleton';
 
-export function SectionCards() {
+interface SectionCardsProps {
+  data?: {
+    total_users: { value: number; change: number; trend: string };
+    new_users: { value: number; change: number; trend: string };
+    active_users: { value: number; change: number; trend: string };
+    activity_rate: { value: number; change: number; trend: string };
+  };
+  loading?: boolean;
+}
+
+export function SectionCards({ data, loading = false }: SectionCardsProps) {
+  if (loading || !data) {
+    return (
+      <div className="*:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <Card key={i} className="@container/card">
+            <CardHeader>
+              <Skeleton className="h-4 w-24 mb-2" />
+              <Skeleton className="h-8 w-32" />
+            </CardHeader>
+            <CardFooter>
+              <Skeleton className="h-4 w-full" />
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div className="*:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Total Revenue</CardDescription>
+          <CardDescription>Total Users</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            $1,250.00
+            {data.total_users.value.toLocaleString()}
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
-              <IconTrendingUp />
-              +12.5%
+              {data.total_users.trend === 'up' ? (
+                <IconTrendingUp />
+              ) : (
+                <IconTrendingDown />
+              )}
+              {data.total_users.change > 0 ? '+' : ''}
+              {data.total_users.change}%
             </Badge>
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Trending up this month <IconTrendingUp className="size-4" />
+            All registered users{' '}
+            {data.total_users.trend === 'up' ? (
+              <IconTrendingUp className="size-4" />
+            ) : (
+              <IconTrendingDown className="size-4" />
+            )}
+          </div>
+          <div className="text-muted-foreground">Total users in the system</div>
+        </CardFooter>
+      </Card>
+      <Card className="@container/card">
+        <CardHeader>
+          <CardDescription>New Users This Month</CardDescription>
+          <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
+            {data.new_users.value.toLocaleString()}
+          </CardTitle>
+          <CardAction>
+            <Badge variant="outline">
+              {data.new_users.trend === 'up' ? (
+                <IconTrendingUp />
+              ) : data.new_users.trend === 'down' ? (
+                <IconTrendingDown />
+              ) : null}
+              {data.new_users.change > 0 ? '+' : ''}
+              {data.new_users.change}%
+            </Badge>
+          </CardAction>
+        </CardHeader>
+        <CardFooter className="flex-col items-start gap-1.5 text-sm">
+          <div className="line-clamp-1 flex gap-2 font-medium">
+            {data.new_users.trend === 'up'
+              ? 'Growth in new registrations'
+              : data.new_users.trend === 'down'
+              ? 'Decrease in registrations'
+              : 'Stable registrations'}{' '}
+            {data.new_users.trend === 'up' ? (
+              <IconTrendingUp className="size-4" />
+            ) : data.new_users.trend === 'down' ? (
+              <IconTrendingDown className="size-4" />
+            ) : null}
+          </div>
+          <div className="text-muted-foreground">Compared to last month</div>
+        </CardFooter>
+      </Card>
+      <Card className="@container/card">
+        <CardHeader>
+          <CardDescription>Active Users (30 days)</CardDescription>
+          <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
+            {data.active_users.value.toLocaleString()}
+          </CardTitle>
+          <CardAction>
+            <Badge variant="outline">
+              {data.active_users.trend === 'up' ? (
+                <IconTrendingUp />
+              ) : data.active_users.trend === 'down' ? (
+                <IconTrendingDown />
+              ) : null}
+              {data.active_users.change > 0 ? '+' : ''}
+              {data.active_users.change}%
+            </Badge>
+          </CardAction>
+        </CardHeader>
+        <CardFooter className="flex-col items-start gap-1.5 text-sm">
+          <div className="line-clamp-1 flex gap-2 font-medium">
+            {data.active_users.trend === 'up'
+              ? 'Strong user retention'
+              : data.active_users.trend === 'down'
+              ? 'Declining activity'
+              : 'Stable activity'}{' '}
+            {data.active_users.trend === 'up' ? (
+              <IconTrendingUp className="size-4" />
+            ) : data.active_users.trend === 'down' ? (
+              <IconTrendingDown className="size-4" />
+            ) : null}
           </div>
           <div className="text-muted-foreground">
-            Visitors for the last 6 months
+            Users logged in last 30 days
           </div>
         </CardFooter>
       </Card>
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>New Customers</CardDescription>
+          <CardDescription>Activity Rate</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            1,234
+            {data.activity_rate.value}%
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
-              <IconTrendingDown />
-              -20%
+              {data.activity_rate.trend === 'up' ? (
+                <IconTrendingUp />
+              ) : data.activity_rate.trend === 'down' ? (
+                <IconTrendingDown />
+              ) : null}
+              {data.activity_rate.change > 0 ? '+' : ''}
+              {data.activity_rate.change}%
             </Badge>
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Down 20% this period <IconTrendingDown className="size-4" />
+            {data.activity_rate.trend === 'up'
+              ? 'Increasing engagement'
+              : data.activity_rate.trend === 'down'
+              ? 'Declining engagement'
+              : 'Steady engagement'}{' '}
+            {data.activity_rate.trend === 'up' ? (
+              <IconTrendingUp className="size-4" />
+            ) : data.activity_rate.trend === 'down' ? (
+              <IconTrendingDown className="size-4" />
+            ) : null}
           </div>
           <div className="text-muted-foreground">
-            Acquisition needs attention
+            Active vs total users ratio
           </div>
-        </CardFooter>
-      </Card>
-      <Card className="@container/card">
-        <CardHeader>
-          <CardDescription>Active Accounts</CardDescription>
-          <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            45,678
-          </CardTitle>
-          <CardAction>
-            <Badge variant="outline">
-              <IconTrendingUp />
-              +12.5%
-            </Badge>
-          </CardAction>
-        </CardHeader>
-        <CardFooter className="flex-col items-start gap-1.5 text-sm">
-          <div className="line-clamp-1 flex gap-2 font-medium">
-            Strong user retention <IconTrendingUp className="size-4" />
-          </div>
-          <div className="text-muted-foreground">Engagement exceed targets</div>
-        </CardFooter>
-      </Card>
-      <Card className="@container/card">
-        <CardHeader>
-          <CardDescription>Growth Rate</CardDescription>
-          <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            4.5%
-          </CardTitle>
-          <CardAction>
-            <Badge variant="outline">
-              <IconTrendingUp />
-              +4.5%
-            </Badge>
-          </CardAction>
-        </CardHeader>
-        <CardFooter className="flex-col items-start gap-1.5 text-sm">
-          <div className="line-clamp-1 flex gap-2 font-medium">
-            Steady performance increase <IconTrendingUp className="size-4" />
-          </div>
-          <div className="text-muted-foreground">Meets growth projections</div>
         </CardFooter>
       </Card>
     </div>
