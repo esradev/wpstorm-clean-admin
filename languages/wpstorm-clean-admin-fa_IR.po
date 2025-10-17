@@ -217,148 +217,148 @@ msgstr "افزودن آیتم"
 #. Description of the plugin
 #: wpstorm-clean-admin.php
 msgid "A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools."
-msgstr ""
+msgstr "یک افزونه مدرن وردپرس برای مدیریت کاربران غیرفعال، نظارت بر فعالیت سایت و حفظ بهینه‌سازی و امنیت سایت وردپرس شما با ابزارهای هوشمند خودکارسازی."
 
 #: assets/build/index.js:1
 msgid "Search..."
-msgstr ""
+msgstr "جستجو..."
 
 #: assets/build/index.js:1
 msgid "No data available to display."
-msgstr ""
+msgstr "هیچ داده‌ای برای نمایش موجود نیست."
 
 #: assets/build/index.js:1
 msgid "Select all"
-msgstr ""
+msgstr "انتخاب همه"
 
 #: assets/build/index.js:1
 msgid "Select row"
-msgstr ""
+msgstr "انتخاب ردیف"
 
 #: assets/build/index.js:1
 msgid "selected"
-msgstr ""
+msgstr "انتخاب شده"
 
 #: assets/build/index.js:1
 msgid "Save Changes"
-msgstr ""
+msgstr "ذخیره تغییرات"
 
 #: assets/build/index.js:1
 msgid "Error saving changes"
-msgstr ""
+msgstr "خطا در ذخیره تغییرات"
 
 #: assets/build/index.js:1
 msgid "Dashboard"
-msgstr ""
+msgstr "داشبورد"
 
 #: assets/build/index.js:1
 msgid "Email"
-msgstr ""
+msgstr "ایمیل"
 
 #: assets/build/index.js:1
 msgid "Roles"
-msgstr ""
+msgstr "نقش ها"
 
 #: assets/build/index.js:1
 msgid "Last Login"
-msgstr ""
+msgstr "آخرین ورود"
 
 #: assets/build/index.js:1
 msgid "Registered"
-msgstr ""
+msgstr "ثبت نام کرده
 
 #: assets/build/index.js:1
 msgid "Clean Admin dashboard"
-msgstr ""
+msgstr "داشبورد مدیریت تمیز"
 
 #: assets/build/index.js:1
 msgid "Generals"
-msgstr ""
+msgstr "عمومی"
 
 #: assets/build/index.js:1
 msgid "Inactivity Days"
-msgstr ""
+msgstr "روزهای غیرفعال بودن"
 
 #: assets/build/index.js:1
 msgid "Enter inactivity days, e.g. 30"
-msgstr ""
+msgstr "روزهای غیرفعال بودن را وارد کنید، به عنوان مثال 30"
 
 #: assets/build/index.js:1
 msgid "Action"
-msgstr ""
+msgstr "عملیات"
 
 #: assets/build/index.js:1
 msgid "Deactivate"
-msgstr ""
+msgstr "غیرفعال کردن"
 
 #: assets/build/index.js:1
 msgid "Exclude Roles"
-msgstr ""
+msgstr "استثنا کردن نقش ها"
 
 #: assets/build/index.js:1
 msgid "Select roles to exclude from the action. Administrator role is always excluded."
-msgstr ""
+msgstr "نقش هایی را برای استثنا از عملیات انتخاب کنید. نقش مدیر همیشه مستثنی است."
 
 #: assets/build/index.js:1
 msgid "Select how often the scan and action should be performed."
-msgstr ""
+msgstr "انتخاب کنید که اسکن و عملیات چند وقت یکبار انجام شود."
 
 #: assets/build/index.js:1
 msgid "Daily"
-msgstr ""
+msgstr "روزانه"
 
 #: assets/build/index.js:1
 msgid "Twice Daily"
-msgstr ""
+msgstr "دو بار در روز"
 
 #: assets/build/index.js:1
 msgid "Weekly"
-msgstr ""
+msgstr "هفتگی"
 
 #: assets/build/index.js:1
 msgid "General settings for the plugin"
-msgstr ""
+msgstr "تنظیمات عمومی برای افزونه"
 
 #: assets/build/index.js:1
 msgid "Operation completed successfully!"
-msgstr ""
+msgstr "عملیات با موفقیت انجام شد!"
 
 #: assets/build/index.js:1
 msgid "An error occurred during processing"
-msgstr ""
+msgstr "خطایی در حین پردازش رخ داد"
 
 #: assets/build/index.js:1
 msgid "Warning: Check your settings"
-msgstr ""
+msgstr "هشدار: تنظیمات خود را بررسی کنید"
 
 #: assets/build/index.js:1
 msgid "Information: New update available"
-msgstr ""
+msgstr "اطلاعات: به‌روزرسانی جدید در دسترس است"
 
 #: assets/build/index.js:1
 msgid "Open notifications"
-msgstr ""
+msgstr "باز کردن اعلان‌ها"
 
 #: assets/build/index.js:1
 msgid "View all"
-msgstr ""
+msgstr "مشاهده همه"
 
 #: assets/build/index.js:1
 msgid "Online"
-msgstr ""
+msgstr "آنلاین"
 
 #: assets/build/index.js:1
 msgid "Degraded"
-msgstr ""
+msgstr "کاهش یافته"
 
 #: assets/build/index.js:1
 msgid "Offline"
-msgstr ""
+msgstr "آفلاین"
 
 #: assets/build/index.js:1
 msgid "Current Version: 1.0.0"
-msgstr ""
+msgstr "نسخه کنونی: 1.0.0"
 
 #: assets/build/index.js:1
 msgid "Clean Admin"
-msgstr ""
+msgstr "مدیریت تمیز"
