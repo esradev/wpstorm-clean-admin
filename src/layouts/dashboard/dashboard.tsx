@@ -12,7 +12,7 @@ import { MoreHorizontal, Trash } from 'lucide-react';
 import { __ } from '@wordpress/i18n';
 import { ColumnDef } from '@tanstack/react-table';
 import { DataTable } from '@/components/data-table';
-import { useState } from '@wordpress/element';
+import { useEffect, useState } from '@wordpress/element';
 
 interface user {
   id: number;
@@ -31,6 +31,11 @@ export default function Dashboard() {
   const { data: chartData, isFetching: chartLoading } = useFetch(
     `activity-chart?days=${chartDays}`,
   );
+
+  useEffect(() => {
+    document.title = __('Dashboard', 'wpstorm-clean-admin');
+    console.log(chartData);
+  }, [chartData]);
 
   const columns: ColumnDef<user>[] = [
     {

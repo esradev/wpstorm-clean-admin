@@ -1,4 +1,5 @@
 import { IconTrendingDown, IconTrendingUp } from '@tabler/icons-react';
+import { __ } from '@wordpress/i18n';
 
 import { Badge } from '@/components/ui/badge';
 import {
@@ -44,7 +45,9 @@ export function SectionCards({ data, loading = false }: SectionCardsProps) {
     <div className="*:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Total Users</CardDescription>
+          <CardDescription>
+            {__('Total Users', 'wpstorm-clean-admin')}
+          </CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             {data.total_users.value.toLocaleString()}
           </CardTitle>
@@ -62,19 +65,23 @@ export function SectionCards({ data, loading = false }: SectionCardsProps) {
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            All registered users{' '}
+            {__('All registered users', 'wpstorm-clean-admin')}{' '}
             {data.total_users.trend === 'up' ? (
               <IconTrendingUp className="size-4" />
             ) : (
               <IconTrendingDown className="size-4" />
             )}
           </div>
-          <div className="text-muted-foreground">Total users in the system</div>
+          <div className="text-muted-foreground">
+            {__('Total users in the system', 'wpstorm-clean-admin')}
+          </div>
         </CardFooter>
       </Card>
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>New Users This Month</CardDescription>
+          <CardDescription>
+            {__('New Users This Month', 'wpstorm-clean-admin')}
+          </CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             {data.new_users.value.toLocaleString()}
           </CardTitle>
@@ -93,22 +100,26 @@ export function SectionCards({ data, loading = false }: SectionCardsProps) {
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
             {data.new_users.trend === 'up'
-              ? 'Growth in new registrations'
+              ? __('Growth in new registrations', 'wpstorm-clean-admin')
               : data.new_users.trend === 'down'
-              ? 'Decrease in registrations'
-              : 'Stable registrations'}{' '}
+              ? __('Decrease in registrations', 'wpstorm-clean-admin')
+              : __('Stable registrations', 'wpstorm-clean-admin')}{' '}
             {data.new_users.trend === 'up' ? (
               <IconTrendingUp className="size-4" />
             ) : data.new_users.trend === 'down' ? (
               <IconTrendingDown className="size-4" />
             ) : null}
           </div>
-          <div className="text-muted-foreground">Compared to last month</div>
+          <div className="text-muted-foreground">
+            {__('Compared to last month', 'wpstorm-clean-admin')}
+          </div>
         </CardFooter>
       </Card>
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Active Users (30 days)</CardDescription>
+          <CardDescription>
+            {__('Active Users (30 days)', 'wpstorm-clean-admin')}
+          </CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             {data.active_users.value.toLocaleString()}
           </CardTitle>
@@ -127,10 +138,10 @@ export function SectionCards({ data, loading = false }: SectionCardsProps) {
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
             {data.active_users.trend === 'up'
-              ? 'Strong user retention'
+              ? __('Strong user retention', 'wpstorm-clean-admin')
               : data.active_users.trend === 'down'
-              ? 'Declining activity'
-              : 'Stable activity'}{' '}
+              ? __('Declining activity', 'wpstorm-clean-admin')
+              : __('Stable activity', 'wpstorm-clean-admin')}{' '}
             {data.active_users.trend === 'up' ? (
               <IconTrendingUp className="size-4" />
             ) : data.active_users.trend === 'down' ? (
@@ -138,13 +149,15 @@ export function SectionCards({ data, loading = false }: SectionCardsProps) {
             ) : null}
           </div>
           <div className="text-muted-foreground">
-            Users logged in last 30 days
+            {__('Users logged in last 30 days', 'wpstorm-clean-admin')}
           </div>
         </CardFooter>
       </Card>
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Activity Rate</CardDescription>
+          <CardDescription>
+            {__('Activity Rate', 'wpstorm-clean-admin')}
+          </CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             {data.activity_rate.value}%
           </CardTitle>
@@ -163,10 +176,10 @@ export function SectionCards({ data, loading = false }: SectionCardsProps) {
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
             {data.activity_rate.trend === 'up'
-              ? 'Increasing engagement'
+              ? __('Increasing engagement', 'wpstorm-clean-admin')
               : data.activity_rate.trend === 'down'
-              ? 'Declining engagement'
-              : 'Steady engagement'}{' '}
+              ? __('Declining engagement', 'wpstorm-clean-admin')
+              : __('Steady engagement', 'wpstorm-clean-admin')}{' '}
             {data.activity_rate.trend === 'up' ? (
               <IconTrendingUp className="size-4" />
             ) : data.activity_rate.trend === 'down' ? (
@@ -174,7 +187,7 @@ export function SectionCards({ data, loading = false }: SectionCardsProps) {
             ) : null}
           </div>
           <div className="text-muted-foreground">
-            Active vs total users ratio
+            {__('Active vs total users ratio', 'wpstorm-clean-admin')}
           </div>
         </CardFooter>
       </Card>

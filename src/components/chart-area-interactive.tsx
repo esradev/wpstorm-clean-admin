@@ -1,7 +1,6 @@
-'use client';
-
 import * as React from 'react';
 import { Area, AreaChart, CartesianGrid, XAxis } from 'recharts';
+import { __ } from '@wordpress/i18n';
 
 import { useIsMobile } from '@/hooks/use-mobile';
 import {
@@ -32,14 +31,14 @@ export const description = 'An interactive area chart';
 
 const chartConfig = {
   activity: {
-    label: 'Activity',
+    label: __('Activity', 'wpstorm-clean-admin'),
   },
   logins: {
-    label: 'Logins',
+    label: __('Logins', 'wpstorm-clean-admin'),
     color: 'var(--primary)',
   },
   registrations: {
-    label: 'Registrations',
+    label: __('Registrations', 'wpstorm-clean-admin'),
     color: 'var(--primary)',
   },
 } satisfies ChartConfig;
@@ -80,7 +79,7 @@ export function ChartAreaInteractive({
     }
   };
 
-  if (loading || !data) {
+  if (loading) {
     return (
       <Card className="@container/card">
         <CardHeader>
@@ -89,6 +88,27 @@ export function ChartAreaInteractive({
         </CardHeader>
         <CardContent className="px-2 pt-4 sm:px-6 sm:pt-6">
           <Skeleton className="h-[250px] w-full" />
+        </CardContent>
+      </Card>
+    );
+  }
+
+  if (!data || data.length === 0) {
+    return (
+      <Card className="@container/card">
+        <CardHeader>
+          <CardTitle>{__('User Activity', 'wpstorm-clean-admin')}</CardTitle>
+          <CardDescription>
+            {__('No activity data available yet', 'wpstorm-clean-admin')}
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="px-2 pt-4 sm:px-6 sm:pt-6">
+          <div className="flex items-center justify-center h-[250px] text-muted-foreground">
+            {__(
+              'Start tracking user activity by enabling login tracking',
+              'wpstorm-clean-admin',
+            )}
+          </div>
         </CardContent>
       </Card>
     );
@@ -111,12 +131,17 @@ export function ChartAreaInteractive({
   return (
     <Card className="@container/card">
       <CardHeader>
-        <CardTitle>User Activity</CardTitle>
+        <CardTitle>{__('User Activity', 'wpstorm-clean-admin')}</CardTitle>
         <CardDescription>
           <span className="hidden @[540px]/card:block">
-            Logins and registrations for the last 3 months
+            {__(
+              'Logins and registrations for the last 3 months',
+              'wpstorm-clean-admin',
+            )}
           </span>
-          <span className="@[540px]/card:hidden">Last 3 months</span>
+          <span className="@[540px]/card:hidden">
+            {__('Last 3 months', 'wpstorm-clean-admin')}
+          </span>
         </CardDescription>
         <CardAction>
           <ToggleGroup
@@ -126,27 +151,35 @@ export function ChartAreaInteractive({
             variant="outline"
             className="hidden *:data-[slot=toggle-group-item]:!px-4 @[767px]/card:flex"
           >
-            <ToggleGroupItem value="90d">Last 3 months</ToggleGroupItem>
-            <ToggleGroupItem value="30d">Last 30 days</ToggleGroupItem>
-            <ToggleGroupItem value="7d">Last 7 days</ToggleGroupItem>
+            <ToggleGroupItem value="90d">
+              {__('Last 3 months', 'wpstorm-clean-admin')}
+            </ToggleGroupItem>
+            <ToggleGroupItem value="30d">
+              {__('Last 30 days', 'wpstorm-clean-admin')}
+            </ToggleGroupItem>
+            <ToggleGroupItem value="7d">
+              {__('Last 7 days', 'wpstorm-clean-admin')}
+            </ToggleGroupItem>
           </ToggleGroup>
           <Select value={timeRange} onValueChange={handleTimeRangeChange}>
             <SelectTrigger
               className="flex w-40 **:data-[slot=select-value]:block **:data-[slot=select-value]:truncate @[767px]/card:hidden"
               size="sm"
-              aria-label="Select a value"
+              aria-label={__('Select a value', 'wpstorm-clean-admin')}
             >
-              <SelectValue placeholder="Last 3 months" />
+              <SelectValue
+                placeholder={__('Last 3 months', 'wpstorm-clean-admin')}
+              />
             </SelectTrigger>
             <SelectContent className="rounded-xl">
               <SelectItem value="90d" className="rounded-lg">
-                Last 3 months
+                {__('Last 3 months', 'wpstorm-clean-admin')}
               </SelectItem>
               <SelectItem value="30d" className="rounded-lg">
-                Last 30 days
+                {__('Last 30 days', 'wpstorm-clean-admin')}
               </SelectItem>
               <SelectItem value="7d" className="rounded-lg">
-                Last 7 days
+                {__('Last 7 days', 'wpstorm-clean-admin')}
               </SelectItem>
             </SelectContent>
           </Select>

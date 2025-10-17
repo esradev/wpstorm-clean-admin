@@ -1,10 +1,10 @@
 === WpstormCleanAdmin ===
-Contributors: wpstorm
+Contributors: esradev
 Tags: user management, inactive users, analytics, security, optimization
 Requires at least: 5.0
-Tested up to: 6.7
+Tested up to: 6.8.3
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,12 +103,6 @@ Once users are deleted, they cannot be restored through the plugin. Always backu
 
 == Changelog ==
 
-= 1.0.1 =
-* Fixed plugin description
-* Added security improvements for input sanitization
-* Improved SQL query security
-* Code cleanup and optimization
-
 = 1.0.0 =
 * Initial release
 * Inactive user detection and management
@@ -119,9 +113,6 @@ Once users are deleted, they cannot be restored through the plugin. Always backu
 * Bulk user actions
 
 == Upgrade Notice ==
-
-= 1.0.1 =
-Security improvements and bug fixes. Recommended update for all users.
 
 = 1.0.0 =
 Initial release of WpstormCleanAdmin.

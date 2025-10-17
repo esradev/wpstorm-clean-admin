@@ -32,6 +32,7 @@ if (! class_exists('Assets')) {
             add_action('admin_enqueue_scripts', [$this, 'admin_enqueue_scripts']);
             add_action('wp_enqueue_scripts', [$this, 'enqueue_scripts']);
         }
+
         public function admin_enqueue_scripts()
         {
             wp_enqueue_style('wpstorm-clean-admin-admin-extra-styles', WPSTORM_CLEAN_ADMIN_ASSETS_URL . 'css/admin-extra-styles.css', [], WPSTORM_CLEAN_ADMIN_VERSION, 'all');
@@ -51,6 +52,7 @@ if (! class_exists('Assets')) {
                     WPSTORM_CLEAN_ADMIN_VERSION,
                     true
                 );
+                wp_register_script('wpstorm-clean-admin-settings-script', WPSTORM_CLEAN_ADMIN_ASSETS_URL . 'build/index.js', ['wp-element', 'wp-i18n', 'react-jsx-runtime'], WPSTORM_CLEAN_ADMIN_VERSION, true);
                 wp_set_script_translations('wpstorm-clean-admin-settings-script', 'wpstorm-clean-admin', WPSTORM_CLEAN_ADMIN_DIR_PATH . 'languages');
                 wp_localize_script(
                     'wpstorm-clean-admin-settings-script',

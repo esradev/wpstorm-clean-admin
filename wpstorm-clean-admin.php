@@ -4,15 +4,15 @@
  * Plugin Name: WpstormCleanAdmin
  * Plugin URI: https://wpstorm.ir
  * Description: A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools.
- * Version: 1.0.1
- * Author: Wpstorm Clean Admin
+ * Version: 1.0.0
+ * Author: esradev
  * Author URI: https://wpstorm.ir
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: wpstorm-clean-admin
  * Domain Path: /languages/
  * Requires at least: 5.0
- * Tested up to: 6.7
+ * Tested up to: 6.8.3
  * Requires PHP: 7.4
  */
 
@@ -55,7 +55,7 @@ if (! class_exists('WpstormCleanAdmin')) {
 
 		public function define_constants(): void
 		{
-			define('WPSTORM_CLEAN_ADMIN_VERSION', '1.0.1');
+			define('WPSTORM_CLEAN_ADMIN_VERSION', '1.0.0');
 			define('WPSTORM_CLEAN_ADMIN_FILE', __FILE__);
 			define('WPSTORM_CLEAN_ADMIN_DIR_PATH', plugin_dir_path(__FILE__));
 			define('WPSTORM_CLEAN_ADMIN_SLUG', 'wpstorm_clean_admin_settings');

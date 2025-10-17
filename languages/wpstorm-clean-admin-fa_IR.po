@@ -98,8 +98,6 @@ msgstr "متأسفیم، صفحه ای که به دنبالش هستید را پ
 msgid "Toggle theme"
 msgstr "تغییر تِم"
 
-#. Author of the plugin
-#: wpstorm-clean-admin.php
 #: includes/Core/Settings.php:61
 #: includes/Core/Settings.php:62
 #: includes/Core/Settings.php:71
@@ -265,11 +263,11 @@ msgstr "آخرین ورود"
 
 #: assets/build/index.js:1
 msgid "Registered"
-msgstr "ثبت نام کرده
+msgstr "ثبت نام کرد"
 
 #: assets/build/index.js:1
 msgid "Clean Admin dashboard"
-msgstr "داشبورد مدیریت تمیز"
+msgstr "داشبورد مدیریت پاک"
 
 #: assets/build/index.js:1
 msgid "Generals"
@@ -361,4 +359,125 @@ msgstr "نسخه کنونی: 1.0.0"
 
 #: assets/build/index.js:1
 msgid "Clean Admin"
-msgstr "مدیریت تمیز"
+msgstr "مدیریت پاک"
+
+#. Author of the plugin
+#: wpstorm-clean-admin.php
+msgid "esradev"
+msgstr "esradev"
+
+#: assets/build/index.js:1
+msgid "Activity"
+msgstr "فعالیت"
+
+#: assets/build/index.js:1
+msgid "Logins"
+msgstr "ورودها"
+
+#: assets/build/index.js:1
+msgid "Registrations"
+msgstr "ثبت نام ها"
+
+#: assets/build/index.js:1
+msgid "User Activity"
+msgstr "فعالیت کاربر"
+
+#: assets/build/index.js:1
+msgid "No activity data available yet"
+msgstr "هنوز داده‌ای برای فعالیت موجود نیست"
+
+#: assets/build/index.js:1
+msgid "Start tracking user activity by enabling login tracking"
+msgstr "برای شروع ردیابی فعالیت کاربر، ردیابی ورود را فعال کنید"
+
+#: assets/build/index.js:1
+msgid "Logins and registrations for the last 3 months"
+msgstr "ورودها و ثبت نام ها در 3 ماه گذشته"
+
+#: assets/build/index.js:1
+msgid "Last 3 months"
+msgstr "3 ماه گذشته"
+
+#: assets/build/index.js:1
+msgid "Last 30 days"
+msgstr "30 روز گذشته"
+
+#: assets/build/index.js:1
+msgid "Last 7 days"
+msgstr "7 روز گذشته"
+
+#: assets/build/index.js:1
+msgid "Select a value"
+msgstr "یک مقدار را انتخاب کنید"
+
+#: assets/build/index.js:1
+msgid "Total Users"
+msgstr "کاربران کل"
+
+#: assets/build/index.js:1
+msgid "All registered users"
+msgstr "تمام کاربران ثبت نام کرده"
+
+#: assets/build/index.js:1
+msgid "Total users in the system"
+msgstr "کل کاربران در سیستم"
+
+#: assets/build/index.js:1
+msgid "New Users This Month"
+msgstr "کاربران جدید این ماه"
+
+#: assets/build/index.js:1
+msgid "Growth in new registrations"
+msgstr "رشد در ثبت نام های جدید"
+
+#: assets/build/index.js:1
+msgid "Decrease in registrations"
+msgstr "کاهش در ثبت نام ها"
+
+#: assets/build/index.js:1
+msgid "Stable registrations"
+msgstr "ثبت نام های پایدار"
+
+#: assets/build/index.js:1
+msgid "Compared to last month"
+msgstr "در مقایسه با ماه گذشته"
+
+#: assets/build/index.js:1
+msgid "Active Users (30 days)"
+msgstr "کاربران فعال (30 روز)"
+
+#: assets/build/index.js:1
+msgid "Strong user retention"
+msgstr "نگهداری قوی کاربران"
+
+#: assets/build/index.js:1
+msgid "Declining activity"
+msgstr "کاهش فعالیت"
+
+#: assets/build/index.js:1
+msgid "Stable activity"
+msgstr "فعالیت پایدار"
+
+#: assets/build/index.js:1
+msgid "Users logged in last 30 days"
+msgstr "کاربرانی که در 30 روز گذشته وارد شده‌اند"
+
+#: assets/build/index.js:1
+msgid "Activity Rate"
+msgstr "نرخ فعالیت"
+
+#: assets/build/index.js:1
+msgid "Increasing engagement"
+msgstr "افزایش تعامل"
+
+#: assets/build/index.js:1
+msgid "Declining engagement"
+msgstr "کاهش تعامل"
+
+#: assets/build/index.js:1
+msgid "Steady engagement"
+msgstr "تعامل پایدار"
+
+#: assets/build/index.js:1
+msgid "Active vs total users ratio"
+msgstr "نسبت کاربران فعال به کل"
