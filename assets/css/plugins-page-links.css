@@ -1,29 +1,29 @@
-#wpstorm-clean-admin-settings-link {
+#storm-clean-admin-settings-link {
   color: white !important;
   background-color: #d30161;
 }
 
-#wpstorm-clean-admin-docs-link {
+#storm-clean-admin-docs-link {
   background-color: #6c35be;
 }
 
-#wpstorm-clean-admin-settings-link:hover {
+#storm-clean-admin-settings-link:hover {
   color: white !important;
   background-color: #88043e;
 }
 
-#wpstorm-clean-admin-docs-link:hover {
+#storm-clean-admin-docs-link:hover {
   background-color: #531bb2;
 }
 
-.wpstorm-clean-admin-plugin-link {
+.storm-clean-admin-plugin-link {
   color: white !important;
   padding: 5px;
   border-radius: 5px;
 }
 
-.wpstorm-clean-admin-plugin-link:hover,
-.wpstorm-clean-admin-plugin-link:active {
+.storm-clean-admin-plugin-link:hover,
+.storm-clean-admin-plugin-link:active {
   color: white !important;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }

@@ -1,36 +1,36 @@
-import { useEffect, useState } from "@wordpress/element";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm, type FieldValues, type DefaultValues } from "react-hook-form";
-import { __ } from "@wordpress/i18n";
+import { useEffect, useState } from '@wordpress/element';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm, type FieldValues, type DefaultValues } from 'react-hook-form';
+import { __ } from '@wordpress/i18n';
 
-import { Form } from "@/components/ui/form";
+import { Form } from '@/components/ui/form';
 
-import { FieldRenderer } from "./field-renderer";
-import type { FormConfig } from "./types";
-import { buildZodSchema } from "./schema-builder";
-import { usePostData } from "@/hooks/use-post-data";
-import { toast } from "sonner";
-import LoadingSkeleton from "../loading-skeleton";
-import AccessDenied from "../access-denied";
-import { FormHeader } from "../form-header";
-import FormSubmitButton from "../form-submit-button";
+import { FieldRenderer } from './field-renderer';
+import type { FormConfig } from './types';
+import { buildZodSchema } from './schema-builder';
+import { usePostData } from '@/hooks/use-post-data';
+import { toast } from 'sonner';
+import LoadingSkeleton from '../loading-skeleton';
+import AccessDenied from '../access-denied';
+import { FormHeader } from '../form-header';
+import FormSubmitButton from '../form-submit-button';
 
 export function AdvancedForm<TFormValues extends FieldValues>({
   fields,
   defaultValues,
   schema: customSchema,
-  successMessage = __("Settings saved", "wpstorm-clean-admin"),
+  successMessage = __('Settings saved', 'storm-clean-admin'),
   successDescription = __(
-    "Your settings have been updated",
-    "wpstorm-clean-admin"
+    'Your settings have been updated',
+    'storm-clean-admin',
   ),
-  submitButtonText = __("Save Settings", "wpstorm-clean-admin"),
-  resetButtonText = __("Reset", "wpstorm-clean-admin"),
+  submitButtonText = __('Save Settings', 'storm-clean-admin'),
+  resetButtonText = __('Reset', 'storm-clean-admin'),
   hideResetButton = false,
-  className = "space-y-8",
+  className = 'space-y-8',
   renderButtons,
   isFetching = false,
-  route = { title: "", url: "" },
+  route = { title: '', url: '' },
   children = null,
   hasAccess = true,
   onSubmit: customOnSubmit,
@@ -38,8 +38,8 @@ export function AdvancedForm<TFormValues extends FieldValues>({
   onSubmit?: (values: TFormValues) => void;
 }) {
   const [saveBtnState, setSaveBtnState] = useState<
-    "initial" | "loading" | "success" | "error"
-  >("initial");
+    'initial' | 'loading' | 'success' | 'error'
+  >('initial');
 
   // If no custom schema is provided, build one from the field configurations
   const schema = customSchema || buildZodSchema(fields);
@@ -59,32 +59,32 @@ export function AdvancedForm<TFormValues extends FieldValues>({
     }
   }, [defaultValues]);
 
-  const { postData } = usePostData(route.restRoute || "", {
+  const { postData } = usePostData(route.restRoute || '', {
     onSuccess: (res, { toastId }) => {
-      setSaveBtnState("success");
+      setSaveBtnState('success');
       toast.success(successMessage, {
         description: successDescription,
         id: toastId,
       });
     },
     onError: (err, { toastId }) => {
-      setSaveBtnState("error");
-      toast.error(__("Error saving options", "wpstorm-clean-admin"), {
+      setSaveBtnState('error');
+      toast.error(__('Error saving options', 'storm-clean-admin'), {
         description: __(
-          "There was an error saving your options.",
-          "wpstorm-clean-admin"
+          'There was an error saving your options.',
+          'storm-clean-admin',
         ),
         id: toastId,
       });
     },
     onFinally: () => {
-      setSaveBtnState("initial");
+      setSaveBtnState('initial');
     },
   });
   const defaultOnSubmit = (values: TFormValues) => {
-    setSaveBtnState("loading");
-    const toastId = toast.loading(__("Loading...", "wpstorm-clean-admin"), {
-      description: __("Sending data to the server.", "wpstorm-clean-admin"),
+    setSaveBtnState('loading');
+    const toastId = toast.loading(__('Loading...', 'storm-clean-admin'), {
+      description: __('Sending data to the server.', 'storm-clean-admin'),
       id: undefined, // ensure toastId is generated
     });
     postData({ ...values, toastId });

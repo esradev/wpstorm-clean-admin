@@ -1,9 +1,15 @@
-import { Link } from 'react-router-dom'
-import { __ } from '@wordpress/i18n'
-import { SearchX } from 'lucide-react'
+import { Link } from 'react-router-dom';
+import { __ } from '@wordpress/i18n';
+import { SearchX } from 'lucide-react';
 
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button';
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 
 const NotFound: React.FC = () => {
   return (
@@ -12,24 +18,33 @@ const NotFound: React.FC = () => {
         <CardHeader>
           <CardTitle className="flex flex-col items-center gap-4">
             <SearchX className="w-16 h-16 text-primary" />
-            <span className="text-2xl font-bold text-primary">{__('404', 'wpstorm-clean-admin')}</span>
+            <span className="text-2xl font-bold text-primary">
+              {__('404', 'storm-clean-admin')}
+            </span>
           </CardTitle>
         </CardHeader>
         <CardContent className="text-center space-y-4">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-5xl">{__('This page does not exist', 'wpstorm-clean-admin')}</h1>
-          <p className="text-muted-foreground sm:text-lg">{__("Sorry, we couldn't find the page you're looking for.", 'wpstorm-clean-admin')}</p>
+          <h1 className="text-3xl font-bold tracking-tight sm:text-5xl">
+            {__('This page does not exist', 'storm-clean-admin')}
+          </h1>
+          <p className="text-muted-foreground sm:text-lg">
+            {__(
+              "Sorry, we couldn't find the page you're looking for.",
+              'storm-clean-admin',
+            )}
+          </p>
         </CardContent>
         <CardFooter className="justify-center">
           <Button variant="outline" asChild>
             <Link to="/" className="flex items-center gap-x-1">
               <span aria-hidden="true">&larr;</span>
-              {__('Back to home', 'wpstorm-clean-admin')}
+              {__('Back to home', 'storm-clean-admin')}
             </Link>
           </Button>
         </CardFooter>
       </Card>
     </div>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

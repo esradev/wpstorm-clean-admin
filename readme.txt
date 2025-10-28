@@ -1,4 +1,4 @@
-=== WpstormCleanAdmin ===
+=== Storm Clean Admin ===
 Contributors: wpstormdev
 Tags: user management, inactive users, security, optimization, admin tools
 Requires at least: 5.0
@@ -8,132 +8,106 @@ Stable tag: 1.0.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure.
+A modern WordPress plugin to manage inactive users, monitor site activity, and keep your site optimized and secure.
 
 == Description ==
 
-**WpstormCleanAdmin** is a modern, performance-focused WordPress plugin that helps you manage inactive users, monitor activity, and keep your WordPress dashboard clean and optimized.
+**Storm Clean Admin** is a lightweight and performance-focused WordPress plugin that helps site administrators manage inactive users, track activity, and maintain a clean, secure dashboard.
 
-Built with a React-powered interface and following WordPress coding standards, it delivers a seamless and efficient experience for both administrators and site managers.
+Built with a modern React-powered interface and adhering to WordPress coding standards, it provides a seamless experience for both administrators and site managers.
 
-### 🧠 Key Highlights
+### Key Features
 
-- 🚀 **Lightweight & Fast:** Designed with performance in mind, using native WordPress APIs.
-- 🧍‍♂️ **Smart User Management:** Automatically detect, deactivate, or delete inactive users.
-- 📊 **Advanced Analytics:** Visualize user login activity, registrations, and engagement patterns.
-- ⚙️ **Customizable Automation:** Schedule cleanups and inactivity checks that fit your workflow.
-- 🔒 **Security First:** Protects admin and critical roles from accidental removal.
-- 🎨 **Modern React UI:** Sleek, responsive dashboard that feels native to WordPress.
+- 🚀 **Fast & Lightweight** – Uses native WordPress APIs for optimal performance.
+- 🧍‍♂️ **Smart User Management** – Detect, deactivate, or delete inactive users automatically.
+- 📊 **Analytics Dashboard** – Monitor user login activity, registrations, and engagement.
+- ⚙️ **Custom Automation** – Schedule cleanups and inactivity checks.
+- 🔒 **Security Focused** – Protects admin and critical roles from accidental removal.
+- 🎨 **Modern UI** – Clean, responsive React interface integrated with WordPress.
 
-### 💡 Why Use WpstormCleanAdmin?
+### Why Use Storm Clean Admin?
 
-Over time, inactive users can clutter your database, pose security risks, and affect performance.
-**WpstormCleanAdmin** helps you:
-- Keep your user list clean and efficient
+- Keep your user database clean and efficient
 - Identify dormant or risky accounts
-- Automate repetitive maintenance tasks
-- Improve login and engagement visibility
-- Stay compliant with GDPR by removing unused accounts
+- Automate routine maintenance tasks
+- Improve visibility on user activity
+- Maintain GDPR compliance by removing unused accounts
 
-### 🧰 Built For Developers and Admins
+### Built For Admins and Developers
 
-- 100% compatible with WordPress coding and security standards
-- Fully translatable and ready for localization
+- Fully compatible with WordPress coding and security standards
+- Translation-ready and fully localizable
 - Uses WordPress REST API for scalability and speed
 
-### 🌍 Compatibility
+### Compatibility
 
 - Works with WordPress 5.0+
 - Tested up to 6.8.3
-- Compatible with classic and block themes
-- Translation-ready (`.pot` file included)
+- Supports classic and block themes
+- Translation-ready with included `.pot` file
 
-= Features =
+== Features ==
 
-* **Inactive Users Management** – Automatically detect and manage inactive user accounts
-* **User Activity Tracking** – Track user login activities and last login times
-* **Automated Cleanup** – Schedule automatic cleanup of inactive users with customizable criteria
-* **Analytics Dashboard** – View comprehensive site activity, user engagement, and statistics
+* **Inactive Users Management** – Automatically detect and manage inactive accounts
+* **User Activity Tracking** – Track login times and last activity
+* **Automated Cleanup** – Schedule automatic cleanup of inactive users
+* **Analytics Dashboard** – View site and user activity trends
 * **Role-Based Exclusions** – Exclude specific user roles from inactivity checks
-* **Flexible Actions** – Choose to deactivate or delete inactive users
-* **Activity Charts** – Visualize user registration and login patterns over time
-* **Bulk Actions** – Perform actions on multiple users at once
-* **Security-Focused** – Built with WordPress security best practices
-* **Modern UI** – Clean, responsive interface built with React
+* **Flexible Actions** – Deactivate or delete inactive users
+* **Activity Charts** – Visualize login and registration patterns
+* **Bulk Actions** – Apply actions to multiple users simultaneously
+* **Security-Focused** – Built with WordPress best practices
+* **Modern UI** – Responsive React dashboard
 
-= Use Cases =
+== Getting Started ==
 
-* Keep your user database clean and optimized
-* Identify and manage dormant accounts for security
-* Monitor user activity and engagement patterns
-* Automate routine user management tasks
-* Maintain GDPR compliance by removing inactive accounts
-
-= Getting Started =
-
-1. Install and activate the plugin
-2. Navigate to **Clean Admin** in your WordPress admin menu
-3. Configure your inactivity threshold and exclusion rules
-4. Choose automatic cleanup schedule or manage users manually
-5. Monitor your users through the analytics dashboard
+1. Install and activate the plugin.
+2. Navigate to **Storm Clean Admin** in the WordPress admin menu.
+3. Configure inactivity thresholds and exclusion rules.
+4. Enable automatic cleanup or manage users manually.
+5. Monitor user activity and manage accounts from the dashboard.
 
 == Installation ==
 
 = Automatic Installation =
 
-1. Log in to your WordPress admin panel
-2. Navigate to Plugins → Add New
-3. Search for "WpstormCleanAdmin"
-4. Click "Install Now" and then "Activate"
+1. Log in to WordPress admin.
+2. Go to Plugins → Add New.
+3. Search for "Storm Clean Admin".
+4. Click "Install Now" and then "Activate".
 
 = Manual Installation =
 
-1. Download the plugin ZIP file
-2. Log in to your WordPress admin panel
-3. Navigate to Plugins → Add New → Upload Plugin
-4. Choose the ZIP file and click "Install Now"
-5. Activate the plugin through the Plugins menu
-
-= After Activation =
-
-1. Go to **Clean Admin** in the dashboard sidebar
-2. Configure your settings under the Settings tab
-3. Set up your inactivity criteria and excluded roles
-4. Optionally, enable automatic cleanup scheduling
+1. Download the plugin ZIP file.
+2. Log in to WordPress admin.
+3. Go to Plugins → Add New → Upload Plugin.
+4. Select the ZIP file and click "Install Now".
+5. Activate the plugin.
 
 == Frequently Asked Questions ==
 
 = What happens to inactive users? =
+You can deactivate them (assign "inactive" role) or permanently delete them.
 
-You can choose to either deactivate users (assign them an "inactive" role) or permanently delete them. This is configurable in the plugin settings.
-
-= Can I exclude certain user roles? =
-
-Yes, you can exclude specific user roles from inactivity checks. Administrator role is always excluded by default for safety.
+= Can I exclude certain roles? =
+Yes, specific roles can be excluded. Administrators are always excluded for safety.
 
 = How is inactivity determined? =
+Based on last login time. Users inactive past your defined threshold are flagged.
 
-Inactivity is based on the last login time. If a user hasn't logged in within your specified number of days, they're considered inactive.
+= Is it safe to delete users automatically? =
+Yes, but backup your database. Role exclusions and admin protections are included.
 
-= Does this work with multisite? =
-
-The current version is designed for single-site installations. Multisite compatibility is planned for future releases.
-
-= Is it safe to automatically delete users? =
-
-The plugin includes safeguards like role exclusions and administrator protection. However, we recommend reviewing inactive users before enabling automatic deletion.
-
-= Can I restore deleted users? =
-
-Once users are deleted, they cannot be restored through the plugin. Always backup your database before performing bulk deletions.
+= Can deleted users be restored? =
+No. Always backup before performing bulk deletions.
 
 == Screenshots ==
 
-1. Main dashboard showing user statistics and activity
+1. Dashboard showing user statistics and activity
 2. Inactive users management interface
-3. Settings panel for configuring inactivity criteria
-4. Activity chart showing login and registration patterns
-5. User action logs and history
+3. Settings panel
+4. Activity charts
+5. User action logs
 
 == Changelog ==
 
@@ -149,31 +123,28 @@ Once users are deleted, they cannot be restored through the plugin. Always backu
 == Upgrade Notice ==
 
 = 1.0.0 =
-Initial release of WpstormCleanAdmin.
+Initial release.
 
 == Privacy Policy ==
 
-WpstormCleanAdmin tracks user login times locally in your database. No data is sent to external servers. All data remains on your WordPress installation.
+All user login times are tracked locally in your database. No external data transmission occurs. Data remains on your WordPress installation.
 
 == Roadmap ==
 
-* Add multisite compatibility
-* Add email notifications for inactive users
-* Add export/import for cleanup logs
-* Integration with WooCommerce user activity
+* Multisite compatibility
+* Email notifications for inactive users
+* Export/import cleanup logs
+* WooCommerce integration for user activity
 
 == Support ==
 
-For documentation, FAQs, and support, visit:
-👉 [https://wpstorm.ir/clean-admin/](https://wpstorm.ir/clean-admin/)
+Documentation, FAQs, and support: [https://wpstorm.ir/clean-admin/](https://wpstorm.ir/clean-admin/)
 
 == Feedback & Contribution ==
 
-We welcome feedback and contributions!
-Share your ideas or report issues at:
-👉 [https://wpstorm.ir/support](https://wpstorm.ir/support)
+Report issues or share ideas: [https://wpstorm.ir/support](https://wpstorm.ir/support)
 
 == Credits ==
 
-Developed by the **Wpstorm Team**
+Developed by **Wpstorm Team**
 Website: [https://wpstorm.ir](https://wpstorm.ir)

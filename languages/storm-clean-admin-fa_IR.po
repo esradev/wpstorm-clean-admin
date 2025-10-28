@@ -1,38 +1,37 @@
-# Copyright (C) 2025 wpstormdev
-# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WpstormCleanAdmin 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpstorm-clean-admin\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-10-17T19:37:15+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
-"X-Domain: wpstorm-clean-admin\n"
+"POT-Creation-Date: 2025-10-28T20:20:32+00:00\n"
+"PO-Revision-Date: 2025-10-28T20:20:32+00:00\n"
+"Language: \n"
 
 #. Plugin Name of the plugin
-#: wpstorm-clean-admin.php
-msgid "WpstormCleanAdmin"
-msgstr ""
-
-#. Plugin URI of the plugin
-#. Author URI of the plugin
-#: wpstorm-clean-admin.php
-msgid "https://wpstorm.ir"
+#: storm-clean-admin.php
+#: includes/Core/Settings.php:86
+#: includes/Core/Settings.php:87
+#: includes/Core/Settings.php:96
+msgid "Storm Clean Admin"
 msgstr ""
 
 #. Description of the plugin
-#: wpstorm-clean-admin.php
-msgid "A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools."
+#: storm-clean-admin.php
+msgid "A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools, not affiliated with WordPress.org."
 msgstr ""
 
 #. Author of the plugin
-#: wpstorm-clean-admin.php
+#: storm-clean-admin.php
 msgid "wpstormdev"
+msgstr ""
+
+#. Author URI of the plugin
+#: storm-clean-admin.php
+msgid "https://wpstorm.ir"
 msgstr ""
 
 #: includes/Core/Settings.php:70
@@ -45,12 +44,6 @@ msgstr ""
 
 #: includes/Core/Settings.php:84
 msgid "new"
-msgstr ""
-
-#: includes/Core/Settings.php:86
-#: includes/Core/Settings.php:87
-#: includes/Core/Settings.php:96
-msgid "Wpstorm Clean Admin"
 msgstr ""
 
 #: includes/Core/Settings.php:97

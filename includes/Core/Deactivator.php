@@ -1,6 +1,6 @@
 <?php
 
-namespace WpstormCleanAdmin\Includes\Core;
+namespace StormCleanAdmin\Includes\Core;
 
 if (! defined('ABSPATH')) {
   exit;
@@ -23,12 +23,12 @@ if (! class_exists('Deactivator')) {
 
     public function __construct()
     {
-      register_deactivation_hook(WPSTORM_CLEAN_ADMIN_FILE, [$this, 'deactivate']);
+      register_deactivation_hook(STORM_CLEAN_ADMIN_FILE, [$this, 'deactivate']);
     }
 
     public function deactivate()
     {
-      wp_clear_scheduled_hook(WPSTORM_CLEAN_ADMIN_CRON_HOOK);
+      wp_clear_scheduled_hook(STORM_CLEAN_ADMIN_CRON_HOOK);
     }
   }
 

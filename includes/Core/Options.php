@@ -1,6 +1,6 @@
 <?php
 
-namespace WpstormCleanAdmin\Includes\Core;
+namespace StormCleanAdmin\Includes\Core;
 
 if (! defined('ABSPATH')) {
 	exit;
@@ -48,7 +48,7 @@ if (! class_exists('Options')) {
 		private function load_options()
 		{
 			foreach (self::$option_groups as $group => $options) {
-				$option_name   = 'wpstorm_clean_admin_' . $group . '_options';
+				$option_name   = 'storm_clean_admin_' . $group . '_options';
 				$group_options = get_option($option_name);
 				if ($group_options) {
 					if (! is_array($group_options)) {
@@ -65,7 +65,7 @@ if (! class_exists('Options')) {
 		public function register_options()
 		{
 			foreach (self::$option_groups as $group => $options) {
-				$option_name = 'wpstorm_clean_admin_' . $group . '_options';
+				$option_name = 'storm_clean_admin_' . $group . '_options';
 				if (! get_option($option_name)) {
 					add_option($option_name, wp_json_encode($options));
 				}
@@ -83,7 +83,7 @@ if (! class_exists('Options')) {
 		public static function update_options($group, $options)
 		{
 			if (isset(self::$option_groups[$group])) {
-				$option_name = 'wpstorm_clean_admin_' . $group . '_options';
+				$option_name = 'storm_clean_admin_' . $group . '_options';
 
 				if ($options) {
 					if (is_array($options)) {
@@ -108,7 +108,7 @@ if (! class_exists('Options')) {
 		 */
 		public static function get_options($group)
 		{
-			$option_name = 'wpstorm_clean_admin_' . $group . '_options';
+			$option_name = 'storm_clean_admin_' . $group . '_options';
 			if (! get_option($option_name) && isset(self::$option_groups[$group])) {
 				add_option($option_name, wp_json_encode(self::$option_groups[$group]));
 			}

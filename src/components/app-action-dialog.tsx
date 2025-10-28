@@ -1,19 +1,30 @@
-import { __ } from '@wordpress/i18n'
-import { BadgeAlert, X } from 'lucide-react'
-import { Button } from './ui/button'
-import { Card, CardContent, CardFooter, CardHeader } from './ui/card'
+import { __ } from '@wordpress/i18n';
+import { BadgeAlert, X } from 'lucide-react';
+import { Button } from './ui/button';
+import { Card, CardContent, CardFooter, CardHeader } from './ui/card';
 
 interface AppActionDialogProps {
-  title: string
-  desc: string
-  handleYes: () => void
-  handleCancel: () => void
-  handleClose: () => void
+  title: string;
+  desc: string;
+  handleYes: () => void;
+  handleCancel: () => void;
+  handleClose: () => void;
 }
 
-const AppActionDialog: React.FC<AppActionDialogProps> = ({ title, desc, handleYes, handleCancel, handleClose }) => {
+const AppActionDialog: React.FC<AppActionDialogProps> = ({
+  title,
+  desc,
+  handleYes,
+  handleCancel,
+  handleClose,
+}) => {
   return (
-    <div className="relative z-50" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div
+      className="relative z-50"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
       <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
       <div className="fixed inset-0 z-10 overflow-y-auto">
@@ -29,7 +40,10 @@ const AppActionDialog: React.FC<AppActionDialogProps> = ({ title, desc, handleYe
                 <BadgeAlert className="h-6 w-6 text-rose-600" />
               </div>
               <div className="mt-3 text-center sm:mr-4 sm:mt-0 sm:text-right">
-                <h3 className="text-base font-sans font-semibold leading-6 text-gray-900" id="modal-title">
+                <h3
+                  className="text-base font-sans font-semibold leading-6 text-gray-900"
+                  id="modal-title"
+                >
                   {title}
                 </h3>
                 <div className="mt-2">
@@ -39,18 +53,22 @@ const AppActionDialog: React.FC<AppActionDialogProps> = ({ title, desc, handleYe
             </CardContent>
             <CardFooter className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse gap-x-2">
               <Button onClick={handleYes} variant="destructive">
-                {__('Yes', 'wpstorm-clean-admin')}
+                {__('Yes', 'storm-clean-admin')}
               </Button>
 
-              <Button onClick={handleCancel} variant="ghost" className="mt-3 sm:mt-0 sm:mr-3">
-                {__('Cancel', 'wpstorm-clean-admin')}
+              <Button
+                onClick={handleCancel}
+                variant="ghost"
+                className="mt-3 sm:mt-0 sm:mr-3"
+              >
+                {__('Cancel', 'storm-clean-admin')}
               </Button>
             </CardFooter>
           </Card>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AppActionDialog
+export default AppActionDialog;

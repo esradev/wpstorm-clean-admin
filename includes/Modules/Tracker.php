@@ -1,9 +1,9 @@
 <?php
 
-namespace WpstormCleanAdmin\Includes\Modules;
+namespace StormCleanAdmin\Includes\Modules;
 
-use WpstormCleanAdmin\Includes\Core\Options;
-use WpstormCleanAdmin\Includes\Core\Routes;
+use StormCleanAdmin\Includes\Core\Options;
+use StormCleanAdmin\Includes\Core\Routes;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -29,12 +29,12 @@ if (! class_exists('Tracker')) {
             add_action('wp_login', [$this, 'track_last_login'], 10, 1);
 
             // Cron Cleanup
-            add_action(WPSTORM_CLEAN_ADMIN_CRON_HOOK, [$this, 'cron_cleanup']);
+            add_action(STORM_CLEAN_ADMIN_CRON_HOOK, [$this, 'cron_cleanup']);
         }
 
         public function track_last_login($user)
         {
-            update_user_meta($user->ID, WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN, current_time('mysql', true));
+            update_user_meta($user->ID, STORM_CLEAN_ADMIN_META_LAST_LOGIN, current_time('mysql', true));
         }
 
         public function cron_cleanup()

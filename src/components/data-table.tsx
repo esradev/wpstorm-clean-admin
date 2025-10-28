@@ -70,13 +70,13 @@ export function DataTable<TData, TValue>({
   data,
   loading = false,
   searchKey,
-  searchPlaceholder = __('Search...', 'wpstorm-clean-admin'),
+  searchPlaceholder = __('Search...', 'storm-clean-admin'),
   filterOptions = [],
   onRowClick,
   bulkActions = [],
   emptyState = {
-    title: __('No Results', 'wpstorm-clean-admin'),
-    description: __('No data available to display.', 'wpstorm-clean-admin'),
+    title: __('No Results', 'storm-clean-admin'),
+    description: __('No data available to display.', 'storm-clean-admin'),
   },
   enableRowSelection = true,
   enableColumnVisibility = true,
@@ -102,14 +102,14 @@ export function DataTable<TData, TValue>({
               onCheckedChange={(value) =>
                 table.toggleAllPageRowsSelected(!!value)
               }
-              aria-label={__('Select all', 'wpstorm-clean-admin')}
+              aria-label={__('Select all', 'storm-clean-admin')}
             />
           ),
           cell: ({ row }: any) => (
             <Checkbox
               checked={row.getIsSelected()}
               onCheckedChange={(value) => row.toggleSelected(!!value)}
-              aria-label={__('Select row', 'wpstorm-clean-admin')}
+              aria-label={__('Select row', 'storm-clean-admin')}
               onClick={(e) => e.stopPropagation()}
             />
           ),
@@ -203,18 +203,18 @@ export function DataTable<TData, TValue>({
         </div>
 
         <div className="flex items-center gap-2">
-          {/* {__("Bulk Actions", "wpstorm-clean-admin")} */}
+          {/* {__("Bulk Actions", "storm-clean-admin")} */}
           {enableRowSelection &&
             selectedCount > 0 &&
             bulkActions.length > 0 && (
               <div className="flex items-center gap-2">
                 <span className="text-sm text-muted-foreground">
-                  {selectedCount} {__('selected', 'wpstorm-clean-admin')}
+                  {selectedCount} {__('selected', 'storm-clean-admin')}
                 </span>
                 <DropdownMenu modal={false}>
                   <DropdownMenuTrigger asChild>
                     <Button variant="outline" size="sm">
-                      {__('Bulk Actions', 'wpstorm-clean-admin')}
+                      {__('Bulk Actions', 'storm-clean-admin')}
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
@@ -367,7 +367,7 @@ export function DataTable<TData, TValue>({
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage()}
           >
-            {__('Previous', 'wpstorm-clean-admin')}
+            {__('Previous', 'storm-clean-admin')}
           </Button>
           <Button
             variant="outline"
@@ -375,7 +375,7 @@ export function DataTable<TData, TValue>({
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage()}
           >
-            {__('Next', 'wpstorm-clean-admin')}
+            {__('Next', 'storm-clean-admin')}
           </Button>
         </div>
       </div>
@@ -410,7 +410,7 @@ export function createActionColumn<T>(
 ) {
   return {
     id: 'actions',
-    header: __('Actions', 'wpstorm-clean-admin'),
+    header: __('Actions', 'storm-clean-admin'),
     cell: ({ row }: any) => {
       const data = row.original as T;
       return (

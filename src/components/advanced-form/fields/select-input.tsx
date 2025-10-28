@@ -88,7 +88,7 @@ export function SelectInput({
           isLoading={field.isLoading}
           onChange={handleChange}
           placeholder={
-            field.placeholder || __('Select an option', 'wpstorm-clean-admin')
+            field.placeholder || __('Select an option', 'storm-clean-admin')
           }
           isDisabled={isDisabled}
           className="react-select-container"
@@ -101,7 +101,7 @@ export function SelectInput({
                       className={`inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-xs font-medium  ${
                         option.status === '1'
                           ? ' text-green-600 bg-green-100'
-                          : ' text-wpstorm-clean-admin-600 bg-wpstorm-clean-admin-100'
+                          : ' text-storm-clean-admin-600 bg-storm-clean-admin-100'
                       }`}
                     >
                       {option?.value}

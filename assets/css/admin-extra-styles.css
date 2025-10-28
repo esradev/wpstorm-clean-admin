@@ -1,12 +1,12 @@
 [x-cloak] {
-    display: none !important;
+  display: none !important;
 }
 
-.wpstorm-clean-admin-new-section {
-    background-color: #e11d48;
-    padding-left: 4px;
-    padding-right: 4px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    color: whitesmoke;
+.storm-clean-admin-new-section {
+  background-color: #e11d48;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  color: whitesmoke;
 }

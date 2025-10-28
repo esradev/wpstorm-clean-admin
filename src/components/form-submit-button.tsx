@@ -1,64 +1,64 @@
-import { __ } from "@wordpress/i18n";
-import { Check, Info, Loader, Trash } from "lucide-react";
-import { Button } from "./ui/button";
+import { __ } from '@wordpress/i18n';
+import { Check, Info, Loader, Trash } from 'lucide-react';
+import { Button } from './ui/button';
 
 interface FormSubmitButtonProps {
-  state: "initial" | "loading" | "success" | "error";
+  state: 'initial' | 'loading' | 'success' | 'error';
   onReset?: () => void;
   submitButtonText?: string;
   resetButtonText?: string;
 }
 
 export default function FormSubmitButton({
-  state = "initial",
+  state = 'initial',
   onReset,
-  submitButtonText = __("Save Changes", "wpstorm-clean-admin"),
-  resetButtonText = __("Reset", "wpstorm-clean-admin"),
+  submitButtonText = __('Save Changes', 'storm-clean-admin'),
+  resetButtonText = __('Reset', 'storm-clean-admin'),
 }: FormSubmitButtonProps) {
   return (
     <div className="w-full flex items-center justify-between gap-3 p-3 rounded-2xl bg-bunker-900 shadow-md border border-bunker-700">
       {/* Left: Status Messages */}
       <div className="flex items-center gap-2">
-        {state === "loading" && (
+        {state === 'loading' && (
           <>
             <Loader className="animate-spin w-5 h-5 text-cream-400" />
             <span className="text-cream-100 text-sm font-medium">
-              {__("Saving Settings, wait...", "wpstorm-clean-admin")}
+              {__('Saving Settings, wait...', 'storm-clean-admin')}
             </span>
           </>
         )}
-        {state === "success" && (
+        {state === 'success' && (
           <>
             <div className="p-1 bg-cream-500 rounded-full shadow-sm">
               <Check className="w-4 h-4 text-white" />
             </div>
             <span className="text-cream-200 text-sm font-medium">
-              {__("Changes Saved", "wpstorm-clean-admin")}
+              {__('Changes Saved', 'storm-clean-admin')}
             </span>
           </>
         )}
-        {state === "error" && (
+        {state === 'error' && (
           <>
             <div className="p-1 bg-cream-700 rounded-full shadow-sm">
               <Info className="w-4 h-4 text-white" />
             </div>
             <span className="text-cream-100 text-sm font-medium">
-              {__("Error saving changes", "wpstorm-clean-admin")}
+              {__('Error saving changes', 'storm-clean-admin')}
             </span>
           </>
         )}
-        {state === "initial" && (
+        {state === 'initial' && (
           <>
             <Info className="w-5 h-5 text-cream-400" />
             <span className="text-cream-100 text-sm font-medium">
-              {__("Save your changes", "wpstorm-clean-admin")}
+              {__('Save your changes', 'storm-clean-admin')}
             </span>
           </>
         )}
       </div>
 
       {/* Right: Buttons */}
-      {state === "initial" && (
+      {state === 'initial' && (
         <div className="flex items-center gap-2">
           {/* Reset Button */}
           <Button

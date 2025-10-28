@@ -1,6 +1,6 @@
 <?php
 
-namespace WpstormCleanAdmin\Includes\Core;
+namespace StormCleanAdmin\Includes\Core;
 
 if (! defined('ABSPATH')) {
 	exit;
@@ -64,13 +64,13 @@ if (! class_exists('Database')) {
 		/**
 		 * Get full table name with correct prefix and _plus suffix.
 		 *
-		 * @param string $base_name Table name after 'wpstorm_clean_admin_' (e.g., 'tracking_codes')
-		 * @return string Full table name (e.g., wp_wpstorm_clean_admin_tracking_codes)
+		 * @param string $base_name Table name after 'storm_clean_admin_' (e.g., 'tracking_codes')
+		 * @return string Full table name (e.g., wp_storm_clean_admin_tracking_codes)
 		 */
 		public static function get_table_name(string $base_name): string
 		{
 			global $wpdb;
-			return $wpdb->prefix . 'wpstorm_clean_admin_' . $base_name;
+			return $wpdb->prefix . 'storm_clean_admin_' . $base_name;
 		}
 
 		private function table_exists(string $table_name): bool

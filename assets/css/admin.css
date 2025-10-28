@@ -7,6 +7,6 @@
 }
 
 /* RTL-specific rule (automatically loaded with rtl.css if you prefer) */
-html[dir='rtl'] tr[data-plugin*='wpstorm-clean-admin/wpstorm-clean-admin.php'] {
-  font-family: var(--wpstorm-clean-admin-font-family), Tahoma, Arial, sans-serif;
+html[dir='rtl'] tr[data-plugin*='storm-clean-admin/storm-clean-admin.php'] {
+  font-family: var(--storm-clean-admin-font-family), Tahoma, Arial, sans-serif;
 }

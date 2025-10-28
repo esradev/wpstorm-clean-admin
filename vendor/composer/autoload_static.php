@@ -6,31 +6,31 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit1fca8f602918972caff3dc0c3f0392b0
 {
-    public static $prefixLengthsPsr4 = array (
-        'W' => 
-        array (
-            'WpstormCleanAdmin\\Includes\\' => 27,
+    public static $prefixLengthsPsr4 = array(
+        'W' =>
+        array(
+            'StormCleanAdmin\\Includes\\' => 27,
         ),
     );
 
-    public static $prefixDirsPsr4 = array (
-        'WpstormCleanAdmin\\Includes\\' => 
-        array (
+    public static $prefixDirsPsr4 = array(
+        'StormCleanAdmin\\Includes\\' =>
+        array(
             0 => __DIR__ . '/../..' . '/includes',
         ),
     );
 
-    public static $classMap = array (
+    public static $classMap = array(
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'WpstormCleanAdmin\\Includes\\Core\\Activator' => __DIR__ . '/../..' . '/includes/Core/Activator.php',
-        'WpstormCleanAdmin\\Includes\\Core\\Assets' => __DIR__ . '/../..' . '/includes/Core/Assets.php',
-        'WpstormCleanAdmin\\Includes\\Core\\Database' => __DIR__ . '/../..' . '/includes/Core/Database.php',
-        'WpstormCleanAdmin\\Includes\\Core\\Deactivator' => __DIR__ . '/../..' . '/includes/Core/Deactivator.php',
-        'WpstormCleanAdmin\\Includes\\Core\\I18n' => __DIR__ . '/../..' . '/includes/Core/I18n.php',
-        'WpstormCleanAdmin\\Includes\\Core\\Options' => __DIR__ . '/../..' . '/includes/Core/Options.php',
-        'WpstormCleanAdmin\\Includes\\Core\\Routes' => __DIR__ . '/../..' . '/includes/Core/Routes.php',
-        'WpstormCleanAdmin\\Includes\\Core\\Settings' => __DIR__ . '/../..' . '/includes/Core/Settings.php',
-        'WpstormCleanAdmin\\Includes\\Modules\\Tracker' => __DIR__ . '/../..' . '/includes/Modules/Tracker.php',
+        'StormCleanAdmin\\Includes\\Core\\Activator' => __DIR__ . '/../..' . '/includes/Core/Activator.php',
+        'StormCleanAdmin\\Includes\\Core\\Assets' => __DIR__ . '/../..' . '/includes/Core/Assets.php',
+        'StormCleanAdmin\\Includes\\Core\\Database' => __DIR__ . '/../..' . '/includes/Core/Database.php',
+        'StormCleanAdmin\\Includes\\Core\\Deactivator' => __DIR__ . '/../..' . '/includes/Core/Deactivator.php',
+        'StormCleanAdmin\\Includes\\Core\\I18n' => __DIR__ . '/../..' . '/includes/Core/I18n.php',
+        'StormCleanAdmin\\Includes\\Core\\Options' => __DIR__ . '/../..' . '/includes/Core/Options.php',
+        'StormCleanAdmin\\Includes\\Core\\Routes' => __DIR__ . '/../..' . '/includes/Core/Routes.php',
+        'StormCleanAdmin\\Includes\\Core\\Settings' => __DIR__ . '/../..' . '/includes/Core/Settings.php',
+        'StormCleanAdmin\\Includes\\Modules\\Tracker' => __DIR__ . '/../..' . '/includes/Modules/Tracker.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -39,7 +39,6 @@ class ComposerStaticInit1fca8f602918972caff3dc0c3f0392b0
             $loader->prefixLengthsPsr4 = ComposerStaticInit1fca8f602918972caff3dc0c3f0392b0::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit1fca8f602918972caff3dc0c3f0392b0::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit1fca8f602918972caff3dc0c3f0392b0::$classMap;
-
         }, null, ClassLoader::class);
     }
 }

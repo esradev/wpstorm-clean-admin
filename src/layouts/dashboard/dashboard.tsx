@@ -33,35 +33,35 @@ export default function Dashboard() {
   );
 
   useEffect(() => {
-    document.title = __('Dashboard', 'wpstorm-clean-admin');
+    document.title = __('Dashboard', 'storm-clean-admin');
     console.log(chartData);
   }, [chartData]);
 
   const columns: ColumnDef<user>[] = [
     {
       accessorKey: 'username',
-      header: __('Username', 'wpstorm-clean-admin'),
+      header: __('Username', 'storm-clean-admin'),
     },
     {
       accessorKey: 'email',
-      header: __('Email', 'wpstorm-clean-admin'),
+      header: __('Email', 'storm-clean-admin'),
     },
     {
       accessorKey: 'roles',
-      header: __('Roles', 'wpstorm-clean-admin'),
+      header: __('Roles', 'storm-clean-admin'),
       cell: ({ row }) => row.original.roles.join(', '),
     },
     {
       accessorKey: 'last_login',
-      header: __('Last Login', 'wpstorm-clean-admin'),
+      header: __('Last Login', 'storm-clean-admin'),
     },
     {
       accessorKey: 'registered',
-      header: __('Registered', 'wpstorm-clean-admin'),
+      header: __('Registered', 'storm-clean-admin'),
     },
     {
       id: 'actions',
-      header: __('Actions', 'wpstorm-clean-admin'),
+      header: __('Actions', 'storm-clean-admin'),
       cell: ({ row }) => {
         const item = row.original;
         return (
@@ -69,7 +69,7 @@ export default function Dashboard() {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon">
                 <span className="sr-only">
-                  {__('Actions', 'wpstorm-clean-admin')}
+                  {__('Actions', 'storm-clean-admin')}
                 </span>
                 <MoreHorizontal className="w-4 h-4" />
               </Button>
@@ -80,7 +80,7 @@ export default function Dashboard() {
                 className="text-rose-600 hover:text-rose-900"
               >
                 <Trash className="w-4 h-4 mr-2 inline" />
-                {__('Delete', 'wpstorm-clean-admin')}
+                {__('Delete', 'storm-clean-admin')}
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

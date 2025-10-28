@@ -1,6 +1,6 @@
 <?php
 
-namespace WpstormCleanAdmin\Includes\Core;
+namespace StormCleanAdmin\Includes\Core;
 
 if (! defined('ABSPATH')) {
   exit;
@@ -23,19 +23,19 @@ if (! class_exists('Activator')) {
 
     public function __construct()
     {
-      register_activation_hook(WPSTORM_CLEAN_ADMIN_FILE, [$this, 'plugin_activate']);
+      register_activation_hook(STORM_CLEAN_ADMIN_FILE, [$this, 'plugin_activate']);
     }
 
     public function plugin_activate(): void
     {
-      $stored_version = get_option('wpstorm_clean_admin_version');
+      $stored_version = get_option('storm_clean_admin_version');
 
-      if ($stored_version !== WPSTORM_CLEAN_ADMIN_VERSION) {
+      if ($stored_version !== STORM_CLEAN_ADMIN_VERSION) {
         // If the plugin version has changed, update the version option.
-        update_option('wpstorm_clean_admin_version', WPSTORM_CLEAN_ADMIN_VERSION);
+        update_option('storm_clean_admin_version', STORM_CLEAN_ADMIN_VERSION);
       }
 
-      add_option('wpstorm_clean_admin_activated', true);
+      add_option('storm_clean_admin_activated', true);
 
       // Create minimal "Inactive" user role (no caps)
       if (!get_role('inactive')) {
@@ -54,10 +54,10 @@ if (! class_exists('Activator')) {
 
     private function run_crons()
     {
-      if (!wp_next_scheduled(WPSTORM_CLEAN_ADMIN_CRON_HOOK)) {
+      if (!wp_next_scheduled(STORM_CLEAN_ADMIN_CRON_HOOK)) {
         $recurrence = Options::get_option_item('generals', 'schedule', 'default') ?? 'daily';
         $recurrence = $this->sanitize_cron_recurrence($recurrence);
-        wp_schedule_event(time() + 60, $recurrence, WPSTORM_CLEAN_ADMIN_CRON_HOOK);
+        wp_schedule_event(time() + 60, $recurrence, STORM_CLEAN_ADMIN_CRON_HOOK);
       }
     }
 

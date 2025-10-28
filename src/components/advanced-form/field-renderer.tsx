@@ -1,8 +1,8 @@
-import { useState } from "@wordpress/element";
-import { __ } from "@wordpress/i18n";
-import { format } from "date-fns";
-import { CalendarIcon, ExternalLink, Settings } from "lucide-react";
-import type { FieldValues, UseFormReturn } from "react-hook-form";
+import { useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
+import { format } from 'date-fns';
+import { CalendarIcon, ExternalLink, Settings } from 'lucide-react';
+import type { FieldValues, UseFormReturn } from 'react-hook-form';
 
 import {
   FormControl,
@@ -11,32 +11,32 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Switch } from "@/components/ui/switch";
-import { Checkbox } from "@/components/ui/checkbox";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Switch } from '@/components/ui/switch';
+import { Checkbox } from '@/components/ui/checkbox';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
-import { Calendar } from "@/components/ui/calendar";
-import { Button } from "@/components/ui/button";
+} from '@/components/ui/popover';
+import { Calendar } from '@/components/ui/calendar';
+import { Button } from '@/components/ui/button';
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible";
-import { cn } from "@/lib/utils";
+} from '@/components/ui/collapsible';
+import { cn } from '@/lib/utils';
 
-import type { FieldConfig } from "./types";
-import { PhoneInput } from "./fields/phone-input";
-import { SelectInput } from "./fields/select-input";
-import { TextareaPattern } from "./fields/textarea-pattern-input";
-import { TextareaInput } from "./fields/textarea-input";
-import { Link } from "react-router-dom";
-import TextWithAddon from "@/components/advanced-form/fields/text-with-addon";
+import type { FieldConfig } from './types';
+import { PhoneInput } from './fields/phone-input';
+import { SelectInput } from './fields/select-input';
+import { TextareaPattern } from './fields/textarea-pattern-input';
+import { TextareaInput } from './fields/textarea-input';
+import { Link } from 'react-router-dom';
+import TextWithAddon from '@/components/advanced-form/fields/text-with-addon';
 
 interface FieldRendererProps<TFormValues extends FieldValues> {
   field: FieldConfig<TFormValues>;
@@ -56,7 +56,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
   // Handle conditional visibility
   if (field.hidden) {
     const isHidden =
-      typeof field.hidden === "function"
+      typeof field.hidden === 'function'
         ? field.hidden(form.getValues())
         : field.hidden;
     if (isHidden) return null;
@@ -64,22 +64,22 @@ export function FieldRenderer<TFormValues extends FieldValues>({
 
   // Handle conditional disabling
   const isDisabled = field.disabled
-    ? typeof field.disabled === "function"
+    ? typeof field.disabled === 'function'
       ? field.disabled(form.getValues())
       : field.disabled
     : false;
 
   // Handle width classes
-  let widthClass = "col-span-12"; // Default to full width
+  let widthClass = 'col-span-12'; // Default to full width
   if (field.width) {
-    if (field.width === "half") widthClass = "col-span-12 md:col-span-6";
-    else if (field.width === "third") widthClass = "col-span-12 md:col-span-4";
-    else if (typeof field.width === "number")
+    if (field.width === 'half') widthClass = 'col-span-12 md:col-span-6';
+    else if (field.width === 'third') widthClass = 'col-span-12 md:col-span-4';
+    else if (typeof field.width === 'number')
       widthClass = `col-span-12 md:col-span-${field.width}`;
   }
 
   // Section type has special rendering
-  if (field.type === "section") {
+  if (field.type === 'section') {
     const setIsOpen = (open: boolean) => {
       setIsOpenState((prevState) => ({
         ...prevState,
@@ -88,7 +88,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
     };
 
     return (
-      <div className={cn("col-span-12", field.className)}>
+      <div className={cn('col-span-12', field.className)}>
         {field.collapsible ? (
           <Collapsible
             open={isOpen}
@@ -104,8 +104,8 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className={cn(
-                      "h-4 w-4 transition-transform",
-                      isOpen ? "rotate-180" : ""
+                      'h-4 w-4 transition-transform',
+                      isOpen ? 'rotate-180' : '',
                     )}
                     viewBox="0 0 24 24"
                   >
@@ -119,7 +119,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                     />
                   </svg>
                   <span className="sr-only">
-                    {__("Toggle", "wpstorm-clean-admin")}
+                    {__('Toggle', 'storm-clean-admin')}
                   </span>
                 </Button>
               </CollapsibleTrigger>
@@ -175,9 +175,9 @@ export function FieldRenderer<TFormValues extends FieldValues>({
           {/* Render different field types */}
           {(() => {
             switch (field.type) {
-              case "text":
-              case "email":
-              case "password":
+              case 'text':
+              case 'email':
+              case 'password':
                 return (
                   <>
                     <FormLabel>{field.label}</FormLabel>
@@ -195,7 +195,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                     <FormMessage />
                   </>
                 );
-              case "phone_number":
+              case 'phone_number':
                 return (
                   <>
                     <FormLabel>{field.label}</FormLabel>
@@ -214,10 +214,10 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   </>
                 );
 
-              case "phone":
+              case 'phone':
                 return <PhoneInput field={field} formField={formField} />;
 
-              case "number":
+              case 'number':
                 return (
                   <>
                     <FormLabel>{field.label}</FormLabel>
@@ -242,7 +242,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   </>
                 );
 
-              case "textarea":
+              case 'textarea':
                 return (
                   <TextareaInput
                     field={field}
@@ -251,7 +251,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   />
                 );
 
-              case "textarea-pattern":
+              case 'textarea-pattern':
                 return (
                   <TextareaPattern
                     field={field}
@@ -260,7 +260,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   />
                 );
 
-              case "text-addon":
+              case 'text-addon':
                 return (
                   <TextWithAddon
                     input={{
@@ -278,7 +278,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   />
                 );
 
-              case "select":
+              case 'select':
                 return (
                   <SelectInput
                     field={field}
@@ -288,8 +288,8 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   />
                 );
 
-              case "switch":
-                return field.layout === "card" ? (
+              case 'switch':
+                return field.layout === 'card' ? (
                   <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4">
                     <div className="space-y-0.5">
                       <FormLabel className="text-base">{field.label}</FormLabel>
@@ -343,8 +343,8 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   </>
                 );
 
-              case "checkbox":
-                return field.layout === "card" ? (
+              case 'checkbox':
+                return field.layout === 'card' ? (
                   <FormItem className="flex flex-row items-center space-x-3 space-y-0 rounded-md border p-4">
                     <FormControl>
                       <Checkbox
@@ -379,7 +379,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   </div>
                 );
 
-              case "radio":
+              case 'radio':
                 return (
                   <>
                     <FormLabel>{field.label}</FormLabel>
@@ -388,9 +388,9 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                         onValueChange={formField.onChange}
                         defaultValue={formField.value}
                         className={
-                          field.layout === "horizontal"
-                            ? "flex flex-row space-x-4"
-                            : "flex flex-col space-y-2"
+                          field.layout === 'horizontal'
+                            ? 'flex flex-row space-x-4'
+                            : 'flex flex-col space-y-2'
                         }
                         disabled={isDisabled}
                       >
@@ -416,17 +416,17 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   </>
                 );
 
-              case "checkbox-group":
+              case 'checkbox-group':
                 return (
                   <>
                     <FormLabel>{field.label}</FormLabel>
                     <div
                       className={
-                        field.layout === "horizontal"
-                          ? "flex flex-row flex-wrap gap-4"
-                          : field.layout === "grid"
-                          ? "grid grid-cols-2 md:grid-cols-3 gap-4"
-                          : "flex flex-col space-y-2"
+                        field.layout === 'horizontal'
+                          ? 'flex flex-row flex-wrap gap-4'
+                          : field.layout === 'grid'
+                          ? 'grid grid-cols-2 md:grid-cols-3 gap-4'
+                          : 'flex flex-col space-y-2'
                       }
                     >
                       {field.options.map((option) => (
@@ -442,7 +442,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                                 const newValue = checked
                                   ? [...currentValue, option.value]
                                   : currentValue.filter(
-                                      (value: string) => value !== option.value
+                                      (value: string) => value !== option.value,
                                     );
                                 formField.onChange(newValue);
                               }}
@@ -462,7 +462,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   </>
                 );
 
-              case "date":
+              case 'date':
                 return (
                   <>
                     <FormLabel>{field.label}</FormLabel>
@@ -470,19 +470,19 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                       <PopoverTrigger asChild>
                         <FormControl>
                           <Button
-                            variant={"outline"}
+                            variant={'outline'}
                             className={cn(
-                              "w-full pl-3 text-left font-normal",
-                              !formField.value && "text-muted-foreground"
+                              'w-full pl-3 text-left font-normal',
+                              !formField.value && 'text-muted-foreground',
                             )}
                             disabled={isDisabled}
                           >
                             {formField.value ? (
-                              format(formField.value, "PPP")
+                              format(formField.value, 'PPP')
                             ) : (
                               <span>
                                 {field.placeholder ||
-                                  __("Pick a date", "wpstorm-clean-admin")}
+                                  __('Pick a date', 'storm-clean-admin')}
                               </span>
                             )}
                             <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
@@ -506,7 +506,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   </>
                 );
 
-              case "time":
+              case 'time':
                 return (
                   <>
                     <FormLabel>{field.label}</FormLabel>
@@ -525,7 +525,7 @@ export function FieldRenderer<TFormValues extends FieldValues>({
                   </>
                 );
 
-              case "hidden":
+              case 'hidden':
                 return (
                   <Input type="hidden" {...formField} disabled={isDisabled} />
                 );

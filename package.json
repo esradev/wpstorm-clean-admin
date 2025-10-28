@@ -1,7 +1,7 @@
 {
-  "name": "wpstorm-clean-admin",
+  "name": "storm-clean-admin",
   "version": "1.0.0",
-  "description": "Wpstorm Clean Admin",
+  "description": "Storm Clean Admin",
   "main": "index.jsx",
   "scripts": {
     "preview": "npm-run-all --parallel sync wpstart tailwindwatch",
@@ -23,7 +23,7 @@
     "vendor/**",
     "changelog.md",
     "readme.txt",
-    "wpstorm-clean-admin.php",
+    "storm-clean-admin.php",
     "uninstall.php",
     "composer.json"
   ],

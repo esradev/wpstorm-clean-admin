@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 /* @config "./tailwind.config.js"; */
 
@@ -158,11 +158,11 @@
 }
 
 /* === Important wrapper === */
-.wpstorm-clean-admin-tw {
+.storm-clean-admin-tw {
   @apply contents;
 }
 
-@scope (.wpstorm-clean-admin-tw) {
+@scope (.storm-clean-admin-tw) {
   @tailwind utilities;
 }
 

@@ -7,13 +7,13 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'WpstormCleanAdmin\\Includes\\Core\\Activator' => $baseDir . '/includes/Core/Activator.php',
-    'WpstormCleanAdmin\\Includes\\Core\\Assets' => $baseDir . '/includes/Core/Assets.php',
-    'WpstormCleanAdmin\\Includes\\Core\\Database' => $baseDir . '/includes/Core/Database.php',
-    'WpstormCleanAdmin\\Includes\\Core\\Deactivator' => $baseDir . '/includes/Core/Deactivator.php',
-    'WpstormCleanAdmin\\Includes\\Core\\I18n' => $baseDir . '/includes/Core/I18n.php',
-    'WpstormCleanAdmin\\Includes\\Core\\Options' => $baseDir . '/includes/Core/Options.php',
-    'WpstormCleanAdmin\\Includes\\Core\\Routes' => $baseDir . '/includes/Core/Routes.php',
-    'WpstormCleanAdmin\\Includes\\Core\\Settings' => $baseDir . '/includes/Core/Settings.php',
-    'WpstormCleanAdmin\\Includes\\Modules\\Tracker' => $baseDir . '/includes/Modules/Tracker.php',
+    'StormCleanAdmin\\Includes\\Core\\Activator' => $baseDir . '/includes/Core/Activator.php',
+    'StormCleanAdmin\\Includes\\Core\\Assets' => $baseDir . '/includes/Core/Assets.php',
+    'StormCleanAdmin\\Includes\\Core\\Database' => $baseDir . '/includes/Core/Database.php',
+    'StormCleanAdmin\\Includes\\Core\\Deactivator' => $baseDir . '/includes/Core/Deactivator.php',
+    'StormCleanAdmin\\Includes\\Core\\I18n' => $baseDir . '/includes/Core/I18n.php',
+    'StormCleanAdmin\\Includes\\Core\\Options' => $baseDir . '/includes/Core/Options.php',
+    'StormCleanAdmin\\Includes\\Core\\Routes' => $baseDir . '/includes/Core/Routes.php',
+    'StormCleanAdmin\\Includes\\Core\\Settings' => $baseDir . '/includes/Core/Settings.php',
+    'StormCleanAdmin\\Includes\\Modules\\Tracker' => $baseDir . '/includes/Modules/Tracker.php',
 );

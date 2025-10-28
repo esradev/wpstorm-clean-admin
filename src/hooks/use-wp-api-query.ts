@@ -7,7 +7,7 @@ type UseWpApiOptions<T> = {
   select?: (data: any) => T;
 };
 
-declare const wpstormCleanAdminJsObject: {
+declare const stormCleanAdminJsObject: {
   rootapiurl: string;
   nonce: string;
 };
@@ -17,11 +17,11 @@ export function useWpApiQuery<T = unknown>({
   enabled = true,
   select,
 }: UseWpApiOptions<T>) {
-  const url = `${wpstormCleanAdminJsObject.rootapiurl}wpstorm-clean-admin/v1/${restRoute}`;
+  const url = `${stormCleanAdminJsObject.rootapiurl}storm-clean-admin/v1/${restRoute}`;
 
   const headers = {
     'Content-Type': 'application/json',
-    'X-WP-Nonce': wpstormCleanAdminJsObject.nonce,
+    'X-WP-Nonce': stormCleanAdminJsObject.nonce,
   };
 
   return useQuery({

@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-declare const wpstormCleanAdminJsObject: {
+declare const stormCleanAdminJsObject: {
   rootapiurl: string;
   nonce: string;
 };
 
 export const axiosInstance = axios.create({
-  baseURL: wpstormCleanAdminJsObject.rootapiurl + 'wpstorm-clean-admin/v1/',
+  baseURL: stormCleanAdminJsObject.rootapiurl + 'storm-clean-admin/v1/',
   headers: {
     'content-type': 'application/json',
-    'X-WP-Nonce': wpstormCleanAdminJsObject.nonce,
+    'X-WP-Nonce': stormCleanAdminJsObject.nonce,
   },
 });

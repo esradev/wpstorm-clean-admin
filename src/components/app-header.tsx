@@ -1,10 +1,10 @@
-import { __ } from "@wordpress/i18n";
-import { SidebarTrigger } from "@/components/ui/sidebar";
-import { ModeToggle } from "./mode-toggle";
-import { NotificationCenter } from "./notification-center";
-import { Menu, Rocket } from "lucide-react";
-import { SystemStatus } from "./system-status";
-import { useIsMobile } from "@/hooks/use-mobile";
+import { __ } from '@wordpress/i18n';
+import { SidebarTrigger } from '@/components/ui/sidebar';
+import { ModeToggle } from './mode-toggle';
+import { NotificationCenter } from './notification-center';
+import { Menu, Rocket } from 'lucide-react';
+import { SystemStatus } from './system-status';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 export default function AppHeader() {
   const isMobile = useIsMobile();
@@ -21,7 +21,7 @@ export default function AppHeader() {
             dark:bg-green-900 dark:text-green-200 dark:border-green-900 rounded-md"
               >
                 <Rocket className="inline size-4 ml-1" />
-                {__("Current Version: 1.0.0", "wpstorm-clean-admin")}
+                {__('Current Version: 1.0.0', 'storm-clean-admin')}
               </span>
             </div>
           )}

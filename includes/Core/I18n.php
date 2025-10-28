@@ -1,6 +1,6 @@
 <?php
 
-namespace WpstormCleanAdmin\Includes\Core;
+namespace StormCleanAdmin\Includes\Core;
 
 if (!defined('ABSPATH')) {
     exit;
@@ -34,8 +34,8 @@ if (!class_exists('I18n')) {
          */
         public function load_textdomain_mofile($mofile, $domain)
         {
-            if ('wpstorm-clean-admin' === $domain) {
-                $mofile = WPSTORM_CLEAN_ADMIN_DIR_PATH . 'languages/wpstorm-clean-admin-' . get_locale() . '.mo';
+            if ('storm-clean-admin' === $domain) {
+                $mofile = STORM_CLEAN_ADMIN_DIR_PATH . 'languages/storm-clean-admin-' . get_locale() . '.mo';
             }
 
             return $mofile;

@@ -31,14 +31,14 @@ export const description = 'An interactive area chart';
 
 const chartConfig = {
   activity: {
-    label: __('Activity', 'wpstorm-clean-admin'),
+    label: __('Activity', 'storm-clean-admin'),
   },
   logins: {
-    label: __('Logins', 'wpstorm-clean-admin'),
+    label: __('Logins', 'storm-clean-admin'),
     color: 'var(--primary)',
   },
   registrations: {
-    label: __('Registrations', 'wpstorm-clean-admin'),
+    label: __('Registrations', 'storm-clean-admin'),
     color: 'var(--primary)',
   },
 } satisfies ChartConfig;
@@ -97,16 +97,16 @@ export function ChartAreaInteractive({
     return (
       <Card className="@container/card">
         <CardHeader>
-          <CardTitle>{__('User Activity', 'wpstorm-clean-admin')}</CardTitle>
+          <CardTitle>{__('User Activity', 'storm-clean-admin')}</CardTitle>
           <CardDescription>
-            {__('No activity data available yet', 'wpstorm-clean-admin')}
+            {__('No activity data available yet', 'storm-clean-admin')}
           </CardDescription>
         </CardHeader>
         <CardContent className="px-2 pt-4 sm:px-6 sm:pt-6">
           <div className="flex items-center justify-center h-[250px] text-muted-foreground">
             {__(
               'Start tracking user activity by enabling login tracking',
-              'wpstorm-clean-admin',
+              'storm-clean-admin',
             )}
           </div>
         </CardContent>
@@ -131,16 +131,16 @@ export function ChartAreaInteractive({
   return (
     <Card className="@container/card">
       <CardHeader>
-        <CardTitle>{__('User Activity', 'wpstorm-clean-admin')}</CardTitle>
+        <CardTitle>{__('User Activity', 'storm-clean-admin')}</CardTitle>
         <CardDescription>
           <span className="hidden @[540px]/card:block">
             {__(
               'Logins and registrations for the last 3 months',
-              'wpstorm-clean-admin',
+              'storm-clean-admin',
             )}
           </span>
           <span className="@[540px]/card:hidden">
-            {__('Last 3 months', 'wpstorm-clean-admin')}
+            {__('Last 3 months', 'storm-clean-admin')}
           </span>
         </CardDescription>
         <CardAction>
@@ -152,34 +152,34 @@ export function ChartAreaInteractive({
             className="hidden *:data-[slot=toggle-group-item]:!px-4 @[767px]/card:flex"
           >
             <ToggleGroupItem value="90d">
-              {__('Last 3 months', 'wpstorm-clean-admin')}
+              {__('Last 3 months', 'storm-clean-admin')}
             </ToggleGroupItem>
             <ToggleGroupItem value="30d">
-              {__('Last 30 days', 'wpstorm-clean-admin')}
+              {__('Last 30 days', 'storm-clean-admin')}
             </ToggleGroupItem>
             <ToggleGroupItem value="7d">
-              {__('Last 7 days', 'wpstorm-clean-admin')}
+              {__('Last 7 days', 'storm-clean-admin')}
             </ToggleGroupItem>
           </ToggleGroup>
           <Select value={timeRange} onValueChange={handleTimeRangeChange}>
             <SelectTrigger
               className="flex w-40 **:data-[slot=select-value]:block **:data-[slot=select-value]:truncate @[767px]/card:hidden"
               size="sm"
-              aria-label={__('Select a value', 'wpstorm-clean-admin')}
+              aria-label={__('Select a value', 'storm-clean-admin')}
             >
               <SelectValue
-                placeholder={__('Last 3 months', 'wpstorm-clean-admin')}
+                placeholder={__('Last 3 months', 'storm-clean-admin')}
               />
             </SelectTrigger>
             <SelectContent className="rounded-xl">
               <SelectItem value="90d" className="rounded-lg">
-                {__('Last 3 months', 'wpstorm-clean-admin')}
+                {__('Last 3 months', 'storm-clean-admin')}
               </SelectItem>
               <SelectItem value="30d" className="rounded-lg">
-                {__('Last 30 days', 'wpstorm-clean-admin')}
+                {__('Last 30 days', 'storm-clean-admin')}
               </SelectItem>
               <SelectItem value="7d" className="rounded-lg">
-                {__('Last 7 days', 'wpstorm-clean-admin')}
+                {__('Last 7 days', 'storm-clean-admin')}
               </SelectItem>
             </SelectContent>
           </Select>

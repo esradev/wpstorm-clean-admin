@@ -1,6 +1,6 @@
-import * as React from "react";
-import { __ } from "@wordpress/i18n";
-import { Command } from "lucide-react";
+import * as React from 'react';
+import { __ } from '@wordpress/i18n';
+import { Command } from 'lucide-react';
 import {
   Sidebar,
   SidebarContent,
@@ -12,15 +12,15 @@ import {
   SidebarHeader,
   SidebarRail,
   useSidebar,
-} from "@/components/ui/sidebar";
-import { items } from "@/lib/utils";
-import { NavLink } from "react-router-dom";
-import { useIsMobile } from "@/hooks/use-mobile";
+} from '@/components/ui/sidebar';
+import { items } from '@/lib/utils';
+import { NavLink } from 'react-router-dom';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const isMobile = useIsMobile();
   const { toggleSidebar, state } = useSidebar();
-  const isCollapsed = state === "collapsed";
+  const isCollapsed = state === 'collapsed';
 
   return (
     <Sidebar {...props}>
@@ -34,10 +34,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 </div>
                 <div className="grid flex-1 text-right text-sm leading-tight text-sidebar-foreground">
                   <span className="truncate font-medium">
-                    {__("Clean Admin", "wpstorm-clean-admin")}
+                    {__('Clean Admin', 'storm-clean-admin')}
                   </span>
                   <span className="truncate text-xs">
-                    {__("Wpstorm Genius")}
+                    {__('Wpstorm Genius')}
                   </span>
                 </div>
               </a>
@@ -58,14 +58,14 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         {({ isActive }) => (
                           <li
                             className={`flex items-center gap-2 w-full text-right text-sm font-medium p-4 pb-3 text-sidebar-foreground ${
-                              isActive ? "bg-wpstorm-clean-admin-800" : ""
+                              isActive ? 'bg-storm-clean-admin-800' : ''
                             }`}
                           >
                             <item.icon
                               className={`w-4 h-4 ${
                                 isCollapsed
-                                  ? "text-sidebar-foreground block"
-                                  : ""
+                                  ? 'text-sidebar-foreground block'
+                                  : ''
                               }`}
                             />
                             {item?.title}

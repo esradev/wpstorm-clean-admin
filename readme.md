@@ -1,6 +1,6 @@
-# Wpstorm Clean Admin
+# Storm Clean Admin
 
-**Wpstorm Clean Admin** is a modern WordPress plugin developed by **Wpstorm Dev** to help administrators keep their websites optimized, secure, and user-friendly.
+**Storm Clean Admin** is a modern WordPress plugin developed by **Wpstorm Dev** to help administrators keep their websites optimized, secure, and user-friendly.
 With a lightweight yet powerful dashboard, it provides smart tools for monitoring, communication, recovery, and user management — all in one place.
 
 ---
@@ -19,14 +19,14 @@ With a lightweight yet powerful dashboard, it provides smart tools for monitorin
 ## 📦 Installation
 
 1. Download the plugin ZIP file or install it directly from your WordPress dashboard.
-2. Activate **Wpstorm Clean Admin** through the **Plugins** menu in WordPress.
-3. Navigate to **Wpstorm Clean Admin** in your dashboard to configure your settings.
+2. Activate **Storm Clean Admin** through the **Plugins** menu in WordPress.
+3. Navigate to **Storm Clean Admin** in your dashboard to configure your settings.
 
 ---
 
 ## 🛠️ Usage
 
-- Go to **Wpstorm Clean Admin → Settings** to configure plugin options.
+- Go to **Storm Clean Admin → Settings** to configure plugin options.
 - Use the **Analytics** tab for insights into site and user activity.
 - Manage **Inactive Users** to keep your database optimized and secure.
 
@@ -34,7 +34,7 @@ With a lightweight yet powerful dashboard, it provides smart tools for monitorin
 
 ## 🔒 Security
 
-**Wpstorm Clean Admin** follows WordPress coding standards and best security practices to help keep your site and data safe.
+**Storm Clean Admin** follows WordPress coding standards and best security practices to help keep your site and data safe.
 Regular updates and built-in monitoring tools help prevent issues before they impact your system.
 
 ---
@@ -66,7 +66,7 @@ Developed and maintained by **Wpstorm Dev**
 
 ## ⚠️ Disclaimer
 
-**Wpstorm Clean Admin** is developed by **Wpstorm Dev** and is **not affiliated with or endorsed by WordPress.org or Automattic Inc.**
+**Storm Clean Admin** is developed by **Wpstorm Dev** and is **not affiliated with or endorsed by WordPress.org or Automattic Inc.**
 
 ---
 

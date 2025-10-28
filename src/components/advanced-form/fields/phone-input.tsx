@@ -1,17 +1,17 @@
-import { useState } from "@wordpress/element";
-import { __ } from "@wordpress/i18n";
-import { ControllerRenderProps } from "react-hook-form";
-import { PlusCircle, X } from "lucide-react";
+import { useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
+import { ControllerRenderProps } from 'react-hook-form';
+import { PlusCircle, X } from 'lucide-react';
 
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { PhoneFieldConfig } from "../types";
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { PhoneFieldConfig } from '../types';
 import {
   FormControl,
   FormDescription,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
+} from '@/components/ui/form';
 
 interface PhonesListProps {
   numbers: string[];
@@ -44,31 +44,31 @@ interface PhoneInputProps {
 }
 
 export function PhoneInput({ field, formField }: PhoneInputProps) {
-  const [newNumber, setNewNumber] = useState("");
-  const [error, setError] = useState("");
+  const [newNumber, setNewNumber] = useState('');
+  const [error, setError] = useState('');
 
   const value: string[] = Array.isArray(formField.value) ? formField.value : [];
 
   const handleNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setNewNumber(value);
-    setError("");
+    setError('');
 
     const regex = /^09\d{9}$/;
     if (value && !regex.test(value)) {
-      setError(__("Invalid phone number format.", "wpstorm-clean-admin"));
+      setError(__('Invalid phone number format.', 'storm-clean-admin'));
     }
   };
 
   const addNumber = () => {
     if (newNumber && !error) {
       if (value.includes(newNumber)) {
-        setError(__("Phone number already exists", "wpstorm-clean-admin"));
+        setError(__('Phone number already exists', 'storm-clean-admin'));
         return;
       }
 
       formField.onChange([...value, newNumber]);
-      setNewNumber("");
+      setNewNumber('');
     }
   };
 
@@ -98,7 +98,7 @@ export function PhoneInput({ field, formField }: PhoneInputProps) {
           variant="outline"
         >
           <PlusCircle className="mr-2 h-4 w-4" />
-          {__("Add Number", "wpstorm-clean-admin")}
+          {__('Add Number', 'storm-clean-admin')}
         </Button>
       </div>
       {error && <p className="text-sm text-destructive">{error}</p>}

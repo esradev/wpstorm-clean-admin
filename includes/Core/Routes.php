@@ -1,6 +1,6 @@
 <?php
 
-namespace WpstormCleanAdmin\Includes\Core;
+namespace StormCleanAdmin\Includes\Core;
 
 use WP_Error;
 use WP_User;
@@ -33,7 +33,7 @@ if (!class_exists('Routes')) {
 
         public function register_routes()
         {
-            $namespace = 'wpstorm-clean-admin/v1';
+            $namespace = 'storm-clean-admin/v1';
 
             foreach (Options::$option_groups as $group => $options) {
                 $route_name = $group . '_options';
@@ -165,7 +165,7 @@ if (!class_exists('Routes')) {
             $meta_query = [
                 'relation' => 'OR',
                 [
-                    'key' => WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN,
+                    'key' => STORM_CLEAN_ADMIN_META_LAST_LOGIN,
                     'value' => $threshold_gmt,
                     'compare' => '<',
                     'type' => 'DATETIME',
@@ -173,7 +173,7 @@ if (!class_exists('Routes')) {
                 [
                     'relation' => 'AND',
                     [
-                        'key' => WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN,
+                        'key' => STORM_CLEAN_ADMIN_META_LAST_LOGIN,
                         'compare' => 'NOT EXISTS',
                     ],
                     // We'll filter by registered date after query since WP_User_Query can't compare user_registered in meta_query
@@ -214,7 +214,7 @@ if (!class_exists('Routes')) {
                         continue;
                     }
                     // Registered threshold check for users without last_login
-                    $last_login = get_user_meta($user->ID, WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN, true);
+                    $last_login = get_user_meta($user->ID, STORM_CLEAN_ADMIN_META_LAST_LOGIN, true);
                     $inactive_by_registered = false;
 
                     if (empty($last_login)) {
@@ -364,7 +364,7 @@ if (!class_exists('Routes')) {
                         continue;
                     }
 
-                    $last_login = get_user_meta($user->ID, WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN, true);
+                    $last_login = get_user_meta($user->ID, STORM_CLEAN_ADMIN_META_LAST_LOGIN, true);
 
                     $items[] = [
                         'id' => (int)$user->ID,
@@ -390,7 +390,7 @@ if (!class_exists('Routes')) {
             global $wpdb;
 
             // Check cache first
-            $cache_key = 'wpstorm_clean_admin_dashboard_stats';
+            $cache_key = 'storm_clean_admin_dashboard_stats';
             $cached_stats = wp_cache_get($cache_key);
 
             if ($cached_stats !== false) {
@@ -438,7 +438,7 @@ if (!class_exists('Routes')) {
                 $wpdb->prepare(
                     "SELECT COUNT(DISTINCT user_id) FROM {$wpdb->usermeta}
                     WHERE meta_key = %s AND meta_value >= %s",
-                    WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN,
+                    STORM_CLEAN_ADMIN_META_LAST_LOGIN,
                     $thirty_days_ago
                 )
             );
@@ -450,7 +450,7 @@ if (!class_exists('Routes')) {
                 $wpdb->prepare(
                     "SELECT COUNT(DISTINCT user_id) FROM {$wpdb->usermeta}
                     WHERE meta_key = %s AND meta_value >= %s AND meta_value < %s",
-                    WPSTORM_CLEAN_ADMIN_META_LAST_LOGIN,
+                    STORM_CLEAN_ADMIN_META_LAST_LOGIN,
                     $sixty_days_ago,
                     $thirty_days_ago
                 )
@@ -524,7 +524,7 @@ if (!class_exists('Routes')) {
             $days = min(90, max(7, (int)($req->get_param('days') ?? 90)));
 
             // Check cache first
-            $cache_key = 'wpstorm_clean_admin_activity_chart_' . $days;
+            $cache_key = 'storm_clean_admin_activity_chart_' . $days;
             $cached_chart = wp_cache_get($cache_key);
 
             if ($cached_chart !== false) {

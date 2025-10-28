@@ -31,18 +31,18 @@ const Generals = ({ route }: { route: Route }) => {
     {
       type: 'number',
       name: 'inactivity_days',
-      label: __('Inactivity Days', 'wpstorm-clean-admin'),
-      placeholder: __('Enter inactivity days, e.g. 30', 'wpstorm-clean-admin'),
+      label: __('Inactivity Days', 'storm-clean-admin'),
+      placeholder: __('Enter inactivity days, e.g. 30', 'storm-clean-admin'),
       required: true,
       width: 'half',
     },
     {
       type: 'select',
       name: 'action',
-      label: __('Action', 'wpstorm-clean-admin'),
+      label: __('Action', 'storm-clean-admin'),
       options: [
-        { value: 'deactivate', label: __('Deactivate', 'wpstorm-clean-admin') },
-        { value: 'delete', label: __('Delete', 'wpstorm-clean-admin') },
+        { value: 'deactivate', label: __('Deactivate', 'storm-clean-admin') },
+        { value: 'delete', label: __('Delete', 'storm-clean-admin') },
       ],
       required: false,
       width: 'half',
@@ -50,10 +50,10 @@ const Generals = ({ route }: { route: Route }) => {
     {
       type: 'select',
       name: 'exclude_roles',
-      label: __('Exclude Roles', 'wpstorm-clean-admin'),
+      label: __('Exclude Roles', 'storm-clean-admin'),
       description: __(
         'Select roles to exclude from the action. Administrator role is always excluded.',
-        'wpstorm-clean-admin',
+        'storm-clean-admin',
       ),
       isMulti: true,
       options: rolesData || [],
@@ -62,18 +62,18 @@ const Generals = ({ route }: { route: Route }) => {
     {
       type: 'select',
       name: 'schedule',
-      label: __('Schedule', 'wpstorm-clean-admin'),
+      label: __('Schedule', 'storm-clean-admin'),
       description: __(
         'Select how often the scan and action should be performed.',
-        'wpstorm-clean-admin',
+        'storm-clean-admin',
       ),
       options: [
-        { value: 'daily', label: __('Daily', 'wpstorm-clean-admin') },
+        { value: 'daily', label: __('Daily', 'storm-clean-admin') },
         {
           value: 'twicedaily',
-          label: __('Twice Daily', 'wpstorm-clean-admin'),
+          label: __('Twice Daily', 'storm-clean-admin'),
         },
-        { value: 'weekly', label: __('Weekly', 'wpstorm-clean-admin') },
+        { value: 'weekly', label: __('Weekly', 'storm-clean-admin') },
       ],
       required: true,
       width: 'half',
@@ -84,12 +84,12 @@ const Generals = ({ route }: { route: Route }) => {
     inactivity_days: 30,
     action: {
       value: 'deactivate',
-      label: __('Deactivate', 'wpstorm-clean-admin'),
+      label: __('Deactivate', 'storm-clean-admin'),
     },
     exclude_roles: [],
     schedule: {
       value: 'daily',
-      label: __('Daily', 'wpstorm-clean-admin'),
+      label: __('Daily', 'storm-clean-admin'),
     },
   };
 
