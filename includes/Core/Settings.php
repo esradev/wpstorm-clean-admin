@@ -26,7 +26,7 @@ if (! class_exists('Settings')) {
 
 			add_filter('plugin_action_links_' . WPSTORM_CLEAN_ADMIN_BASE, [$this, 'settings_link']);
 			add_filter('admin_menu', [$this, 'init_menu'], 999);
-			add_action('admin_head', [$this, 'admin_head'], 999);
+			add_action('admin_enqueue_scripts', [$this, 'enqueue_admin_assets']);
 			// Apply page-specific behaviors using current_screen (avoids direct $_GET access).
 			add_action('current_screen', [$this, 'maybe_setup_page']);
 		}
@@ -111,40 +111,34 @@ if (! class_exists('Settings')) {
 			<div class="wrap wpstorm-clean-admin-tw">
 				<div id="wpstorm-clean-admin-dashboard" class="wpstorm-clean-admin-tw"></div>
 			</div>
-		<?php
+<?php
 		}
 
-		/**
-		 * This method is called when the admin head section is being rendered.
-		 * It is used to perform any necessary actions or add any necessary scripts/styles to the admin head.
-		 */
-		public function admin_head()
+		public function enqueue_admin_assets($hook)
 		{
-			wp_register_style('wpstorm-clean-admin-fonts', WPSTORM_CLEAN_ADMIN_ASSETS_URL . 'fonts/fonts.css', [], WPSTORM_CLEAN_ADMIN_VERSION, 'all');
-			wp_enqueue_style('wpstorm-clean-admin-fonts');
-		?>
-			<style>
-				#wpfooter {
-					display: none;
-				}
+			// Enqueue Custom Fonts
+			wp_enqueue_style(
+				'wpstorm-clean-admin-fonts',
+				WPSTORM_CLEAN_ADMIN_ASSETS_URL . 'fonts/fonts.css',
+				[],
+				WPSTORM_CLEAN_ADMIN_VERSION
+			);
 
-				#wpbody-content {
-					padding-bottom: 0px !important;
-				}
-			</style>
+			// Enqueue admin styles
+			wp_enqueue_style(
+				'wpstorm-clean-admin-style',
+				WPSTORM_CLEAN_ADMIN_ASSETS_URL . 'css/admin.css',
+				['wpstorm-clean-admin-fonts'],
+				WPSTORM_CLEAN_ADMIN_VERSION
+			);
 
-			<?php
-
+			// Optional: RTL support
 			if (is_rtl()) {
-			?>
-				<style>
-					tr[data-plugin*='wpstorm-clean-admin/wpstorm-clean-admin.php'] {
-						font-family: var(--wpstorm-clean-admin-font-family), Tahoma, Arial, sans-serif;
-					}
-				</style>
-<?php
+				wp_style_add_data('wpstorm-clean-admin-style', 'rtl', 'replace');
 			}
 		}
+
+
 
 		function hide_all_admin_notices()
 		{

@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Plugin Name: WpstormCleanAdmin
- * Description: A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools.
+ * Plugin Name: Wpstorm Clean Admin
+ * Description: A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools, not affiliated with WordPress.org.
  * Version: 1.0.0
  * Author: wpstormdev
  * Author URI: https://wpstorm.ir

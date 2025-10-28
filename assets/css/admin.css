@@ -1,0 +1,12 @@
+#wpfooter {
+  display: none;
+}
+
+#wpbody-content {
+  padding-bottom: 0px !important;
+}
+
+/* RTL-specific rule (automatically loaded with rtl.css if you prefer) */
+html[dir='rtl'] tr[data-plugin*='wpstorm-clean-admin/wpstorm-clean-admin.php'] {
+  font-family: var(--wpstorm-clean-admin-font-family), Tahoma, Arial, sans-serif;
+}
