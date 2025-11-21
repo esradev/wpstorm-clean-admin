@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Storm Clean Admin
  * Description: A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools, not affiliated with WordPress.org.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: wpstormdev
  * Author URI: https://wpstorm.ir
  * License: GPL-2.0-or-later
@@ -54,7 +54,7 @@ if (! class_exists('StormCleanAdmin')) {
 
 		public function define_constants(): void
 		{
-			define('STORM_CLEAN_ADMIN_VERSION', '1.0.0');
+			define('STORM_CLEAN_ADMIN_VERSION', '1.1.0');
 			define('STORM_CLEAN_ADMIN_FILE', __FILE__);
 			define('STORM_CLEAN_ADMIN_DIR_PATH', plugin_dir_path(__FILE__));
 			define('STORM_CLEAN_ADMIN_SLUG', 'storm_clean_admin_settings');

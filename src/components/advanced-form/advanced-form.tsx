@@ -1,7 +1,7 @@
 import { useEffect, useState } from '@wordpress/element';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, type FieldValues, type DefaultValues } from 'react-hook-form';
-import { __ } from '@wordpress/i18n';
+import { __, isRTL } from '@wordpress/i18n';
 
 import { Form } from '@/components/ui/form';
 
@@ -121,7 +121,11 @@ export function AdvancedForm<TFormValues extends FieldValues>({
                   {renderButtons ? (
                     renderButtons(form.getValues(), () => form.reset())
                   ) : (
-                    <div className="flex items-center justify-end fixed bottom-5 left-8 z-10">
+                    <div
+                      className={`flex items-center fixed bottom-5 z-10 ${
+                        isRTL() ? 'left-8 justify-end' : 'right-8 justify-start'
+                      }`}
+                    >
                       <FormSubmitButton
                         state={saveBtnState}
                         onReset={() => form.reset()}

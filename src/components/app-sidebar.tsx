@@ -15,10 +15,8 @@ import {
 } from '@/components/ui/sidebar';
 import { items } from '@/lib/utils';
 import { NavLink } from 'react-router-dom';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-  const isMobile = useIsMobile();
   const { toggleSidebar, state } = useSidebar();
   const isCollapsed = state === 'collapsed';
 
@@ -73,28 +71,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         )}
                       </NavLink>
                     </SidebarMenuButton>
-                    {/* {item.items?.length ? (
-                      <SidebarMenuSub>
-                        {item.items.map((item) => (
-                          <SidebarMenuSubItem key={item.title}>
-                            <SidebarMenuSubButton
-                              asChild
-                              className="outline-none shadow-none hover:bg-transparent active:bg-transparent focus:bg-transparent"
-                            >
-                              <NavLink
-                                to={item.url}
-                                className="w-full rounded-lg"
-                                onClick={() => {
-                                  isMobile ? toggleSidebar : undefined;
-                                }}
-                              >
-                                {item.title}
-                              </NavLink>
-                            </SidebarMenuSubButton>
-                          </SidebarMenuSubItem>
-                        ))}
-                      </SidebarMenuSub>
-                    ) : null} */}
                   </SidebarMenuItem>
                 ))}
             </SidebarMenu>

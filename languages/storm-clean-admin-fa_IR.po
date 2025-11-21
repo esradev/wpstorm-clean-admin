@@ -17,451 +17,450 @@ msgstr ""
 #: includes/Core/Settings.php:87
 #: includes/Core/Settings.php:96
 msgid "Storm Clean Admin"
-msgstr ""
+msgstr "مدیریت پاک وردپرس"
 
 #. Description of the plugin
 #: storm-clean-admin.php
 msgid "A modern WordPress plugin for managing inactive users, monitoring site activity, and keeping your WordPress site optimized and secure with smart automation tools, not affiliated with WordPress.org."
-msgstr ""
+msgstr "یک افزونه مدرن وردپرس برای مدیریت کاربران غیرفعال، نظارت بر فعالیت سایت و حفظ بهینه‌سازی و امنیت سایت وردپرس شما با ابزارهای هوشمند اتوماسیون، بدون وابستگی به WordPress.org."
 
 #. Author of the plugin
 #: storm-clean-admin.php
 msgid "wpstormdev"
-msgstr ""
+msgstr "wpstormdev"
 
 #. Author URI of the plugin
 #: storm-clean-admin.php
 msgid "https://wpstorm.ir"
-msgstr ""
+msgstr "https://wpstorm.ir"
 
 #: includes/Core/Settings.php:70
+#: includes/Core/Settings.php:104
+#: includes/Core/Settings.php:105
 msgid "Settings"
-msgstr ""
+msgstr "تنظیمات"
 
 #: includes/Core/Settings.php:72
 msgid "Docs"
-msgstr ""
+msgstr "مستندات"
 
 #: includes/Core/Settings.php:84
 msgid "new"
-msgstr ""
-
-#: includes/Core/Settings.php:97
-msgid "Auth"
-msgstr ""
+msgstr  "جدید"
 
 #: assets/build/index.js:1
 msgid "Activity"
-msgstr ""
+msgstr "فعالیت"
 
 #: assets/build/index.js:1
 msgid "Logins"
-msgstr ""
+msgstr "ورودها"
 
 #: assets/build/index.js:1
 msgid "Registrations"
-msgstr ""
+msgstr "ثبت‌نام‌ها"
 
 #: assets/build/index.js:1
 msgid "User Activity"
-msgstr ""
+msgstr "فعالیت کاربران"
 
 #: assets/build/index.js:1
 msgid "No activity data available yet"
-msgstr ""
+msgstr "هنوز داده‌ای برای فعالیت موجود نیست"
 
 #: assets/build/index.js:1
 msgid "Start tracking user activity by enabling login tracking"
-msgstr ""
+msgstr " شروع به ردیابی فعالیت کاربران با فعال‌سازی ردیابی ورودها"
 
 #: assets/build/index.js:1
 msgid "Logins and registrations for the last 3 months"
-msgstr ""
+msgstr "ورودها و ثبت‌نام‌ها برای ۳ ماه گذشته"
 
 #: assets/build/index.js:1
 msgid "Last 3 months"
-msgstr ""
+msgstr "۳ ماه گذشته"
 
 #: assets/build/index.js:1
 msgid "Last 30 days"
-msgstr ""
+msgstr " ۳۰ روز گذشته"
 
 #: assets/build/index.js:1
 msgid "Last 7 days"
-msgstr ""
+msgstr "7 روز گذشته"
 
 #: assets/build/index.js:1
 msgid "Select a value"
-msgstr ""
+msgstr "یک مقدار را انتخاب کنید"
 
 #: assets/build/index.js:1
 msgid "Total Users"
-msgstr ""
+msgstr " کل کاربران"
 
 #: assets/build/index.js:1
 msgid "All registered users"
-msgstr ""
+msgstr "همه کاربران ثبت‌نام‌شده"
 
 #: assets/build/index.js:1
 msgid "Total users in the system"
-msgstr ""
+msgstr "همه کاربران در سیستم"
 
 #: assets/build/index.js:1
 msgid "New Users This Month"
-msgstr ""
+msgstr "کاربران جدید این ماه"
 
 #: assets/build/index.js:1
 msgid "Growth in new registrations"
-msgstr ""
+msgstr "رشد در ثبت‌نام‌های جدید"
 
 #: assets/build/index.js:1
 msgid "Decrease in registrations"
-msgstr ""
+msgstr "کاهش در ثبت‌نام‌ها"
 
 #: assets/build/index.js:1
 msgid "Stable registrations"
-msgstr ""
+msgstr "ثبت‌نام‌های پایدار"
 
 #: assets/build/index.js:1
 msgid "Compared to last month"
-msgstr ""
+msgstr "نسبت به ماه گذشته"
 
 #: assets/build/index.js:1
 msgid "Active Users (30 days)"
-msgstr ""
+msgstr "کاربران فعال (۳۰ روز)"
 
 #: assets/build/index.js:1
 msgid "Strong user retention"
-msgstr ""
+msgstr "نگهداری قوی کاربران"
 
 #: assets/build/index.js:1
 msgid "Declining activity"
-msgstr ""
+msgstr "کاهش فعالیت"
 
 #: assets/build/index.js:1
 msgid "Stable activity"
-msgstr ""
+msgstr "فعالیت پایدار"
 
 #: assets/build/index.js:1
 msgid "Users logged in last 30 days"
-msgstr ""
+msgstr "کاربران واردشده در ۳۰ روز گذشته"
 
 #: assets/build/index.js:1
 msgid "Activity Rate"
-msgstr ""
+msgstr "نرخ فعالیت"
 
 #: assets/build/index.js:1
 msgid "Increasing engagement"
-msgstr ""
+msgstr "افزایش تعامل"
 
 #: assets/build/index.js:1
 msgid "Declining engagement"
-msgstr ""
+msgstr "کاهش تعامل"
 
 #: assets/build/index.js:1
 msgid "Steady engagement"
-msgstr ""
+msgstr "تعامل پایدار"
 
 #: assets/build/index.js:1
 msgid "Active vs total users ratio"
-msgstr ""
+msgstr "نسبت کاربران فعال به کل کاربران"
 
 #: assets/build/index.js:1
 msgid "Add item"
-msgstr ""
+msgstr "افزودن مورد"
 
 #: assets/build/index.js:1
 msgid "Search..."
-msgstr ""
+msgstr "جستجو..."
 
 #: assets/build/index.js:1
 msgid "No Results"
-msgstr ""
+msgstr "بدون نتیجه"
 
 #: assets/build/index.js:1
 msgid "No data available to display."
-msgstr ""
+msgstr "داده‌ای برای نمایش موجود نیست"
 
 #: assets/build/index.js:1
 msgid "Select all"
-msgstr ""
+msgstr "انتخاب همه"
 
 #: assets/build/index.js:1
 msgid "Select row"
-msgstr ""
+msgstr "انتخاب ردیف"
 
 #: assets/build/index.js:1
 msgid "selected"
-msgstr ""
+msgstr "انتخاب‌شده"
 
 #: assets/build/index.js:1
 msgid "Bulk Actions"
-msgstr ""
+msgstr "عملیات دسته‌جمعی"
 
 #: assets/build/index.js:1
 msgid "Previous"
-msgstr ""
+msgstr "قبلی"
 
 #: assets/build/index.js:1
 msgid "Next"
-msgstr ""
+msgstr "بعدی"
 
 #: assets/build/index.js:1
 msgid "Invalid phone number format."
-msgstr ""
+msgstr "فرمت شماره تلفن نامعتبر است"
 
 #: assets/build/index.js:1
 msgid "Phone number already exists"
-msgstr ""
+msgstr "شماره تلفن قبلاً وجود دارد"
 
 #: assets/build/index.js:1
 msgid "Add Number"
-msgstr ""
+msgstr "افزودن شماره"
 
 #: assets/build/index.js:1
 msgid "Select an option"
-msgstr ""
+msgstr "یک گزینه را انتخاب کنید"
 
 #: assets/build/index.js:1
 msgid "Variables:"
-msgstr ""
+msgstr "متغیرها:"
 
 #: assets/build/index.js:1
 msgid "Select addon"
-msgstr ""
+msgstr "یک اددان را انتخاب کنید"
 
 #: assets/build/index.js:1
 msgid "Toggle"
-msgstr ""
+msgstr "تغییر وضعیت"
 
 #: assets/build/index.js:1
 msgid "Pick a date"
-msgstr ""
+msgstr "یک تاریخ را انتخاب کنید"
 
 #: assets/build/index.js:1
 msgid "Access Denied"
-msgstr ""
+msgstr "دسترسی غیرمجاز"
 
 #: assets/build/index.js:1
 msgid "You need to enable the following integrations to access this page:"
-msgstr ""
+msgstr "برای دسترسی به این صفحه باید ادغام‌های زیر را فعال کنید:"
 
 #: assets/build/index.js:1
 msgid "Plugin integration is off"
-msgstr ""
+msgstr "ادغام افزونه خاموش است"
 
 #: assets/build/index.js:1
 msgid "Enable the plugin integration to access this page"
-msgstr ""
+msgstr "برای دسترسی به این صفحه باید ادغام افزونه را فعال کنید"
 
 #: assets/build/index.js:1
 msgid "Enable integration"
-msgstr ""
+msgstr "فعال‌سازی ادغام"
 
 #: assets/build/index.js:1
 msgid "Go Back"
-msgstr ""
+msgstr "بازگشت"
 
 #: assets/build/index.js:1
 msgid "Section doc"
-msgstr ""
+msgstr "مستند بخش"
 
 #: assets/build/index.js:1
 msgid "Save Changes"
-msgstr ""
+msgstr "ذخیره تغییرات"
 
 #: assets/build/index.js:1
 msgid "Reset"
-msgstr ""
+msgstr "بازنشانی"
 
 #: assets/build/index.js:1
 msgid "Saving Settings, wait..."
-msgstr ""
+msgstr "در حال ذخیره تنظیمات، لطفاً صبر کنید..."
 
 #: assets/build/index.js:1
 msgid "Changes Saved"
-msgstr ""
+msgstr "تغییرات ذخیره شد"
 
 #: assets/build/index.js:1
 msgid "Error saving changes"
-msgstr ""
+msgstr "خطا در ذخیره تغییرات"
 
 #: assets/build/index.js:1
 msgid "Save your changes"
-msgstr ""
+msgstr "تغییرات را ذخیره کنید"
 
 #: assets/build/index.js:1
 msgid "Settings saved"
-msgstr ""
+msgstr "تنظیمات ذخیره شد"
 
 #: assets/build/index.js:1
 msgid "Your settings have been updated"
-msgstr ""
+msgstr "تنظیمات شما به‌روزرسانی شد"
 
 #: assets/build/index.js:1
 msgid "Save Settings"
-msgstr ""
+msgstr "ذخیره تنظیمات"
 
 #: assets/build/index.js:1
 msgid "Error saving options"
-msgstr ""
+msgstr "خطا در ذخیره گزینه‌ها"
 
 #: assets/build/index.js:1
 msgid "There was an error saving your options."
-msgstr ""
+msgstr "خطایی در ذخیره گزینه‌های شما رخ داد."
 
 #: assets/build/index.js:1
 msgid "Loading..."
-msgstr ""
+msgstr "در حال بارگذاری..."
 
 #: assets/build/index.js:1
 msgid "Sending data to the server."
-msgstr ""
+msgstr "ارسال داده‌ها به سرور."
 
+#: includes/Core/Settings.php:97
 #: assets/build/index.js:1
 msgid "Dashboard"
-msgstr ""
+msgstr "داشبورد"
 
 #: assets/build/index.js:1
 msgid "Username"
-msgstr ""
+msgstr "نام کاربری"
 
 #: assets/build/index.js:1
 msgid "Email"
-msgstr ""
+msgstr "ایمیل"
 
 #: assets/build/index.js:1
 msgid "Roles"
-msgstr ""
+msgstr "نقش‌ها"
 
 #: assets/build/index.js:1
 msgid "Last Login"
-msgstr ""
+msgstr "آخرین ورود"
 
 #: assets/build/index.js:1
 msgid "Registered"
-msgstr ""
+msgstr "ثبت‌نام‌شده"
 
 #: assets/build/index.js:1
 msgid "Actions"
-msgstr ""
+msgstr "اقدامات"
 
 #: assets/build/index.js:1
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: assets/build/index.js:1
 msgid "Generals"
-msgstr ""
+msgstr "عمومی‌"
 
 #: assets/build/index.js:1
 msgid "Inactivity Days"
-msgstr ""
+msgstr "روزهای غیرفعال بودن"
 
 #: assets/build/index.js:1
 msgid "Enter inactivity days, e.g. 30"
-msgstr ""
+msgstr "تعداد روزها برای غیرفعال محسوب کردن را وارد کنید، مثلاً ۳۰"
 
 #: assets/build/index.js:1
 msgid "Action"
-msgstr ""
+msgstr "عملیات"
 
 #: assets/build/index.js:1
 msgid "Deactivate"
-msgstr ""
+msgstr "غیرفعال کردن"
 
 #: assets/build/index.js:1
 msgid "Exclude Roles"
-msgstr ""
+msgstr "نقش‌های مستثنی‌شده"
 
 #: assets/build/index.js:1
 msgid "Select roles to exclude from the action. Administrator role is always excluded."
-msgstr ""
+msgstr "نقش‌هایی را که می‌خواهید از عملیات مستثنی شوند انتخاب کنید. نقش مدیر همیشه مستثنی است."
 
 #: assets/build/index.js:1
 msgid "Schedule"
-msgstr ""
+msgstr "زمان‌بندی"
 
 #: assets/build/index.js:1
 msgid "Select how often the scan and action should be performed."
-msgstr ""
+msgstr "انتخاب کنید که اسکن و عملیات هر چند وقت یکبار انجام شود."
 
 #: assets/build/index.js:1
 msgid "Daily"
-msgstr ""
+msgstr "روزانه"
 
 #: assets/build/index.js:1
 msgid "Twice Daily"
-msgstr ""
+msgstr "دو بار در روز"
 
 #: assets/build/index.js:1
 msgid "Weekly"
-msgstr ""
+msgstr "هفتگی"
 
 #: assets/build/index.js:1
 msgid "404"
-msgstr ""
+msgstr "۴۰۴"
 
 #: assets/build/index.js:1
 msgid "This page does not exist"
-msgstr ""
+msgstr "این صفحه وجود ندارد"
 
 #: assets/build/index.js:1
 msgid "Sorry, we couldn't find the page you're looking for."
-msgstr ""
+msgstr "متأسفیم، صفحه‌ای که به دنبال آن هستید پیدا نشد."
 
 #: assets/build/index.js:1
 msgid "Back to home"
-msgstr ""
+msgstr "بازگشت به خانه"
 
 #: assets/build/index.js:1
 msgid "Toggle theme"
-msgstr ""
+msgstr "تغییر تم"
 
 #: assets/build/index.js:1
 msgid "Operation completed successfully!"
-msgstr ""
+msgstr "عملیات با موفقیت انجام شد!"
 
 #: assets/build/index.js:1
 msgid "An error occurred during processing"
-msgstr ""
+msgstr "خطایی در حین پردازش رخ داد"
 
 #: assets/build/index.js:1
 msgid "Warning: Check your settings"
-msgstr ""
+msgstr "هشدار: تنظیمات خود را بررسی کنید"
 
 #: assets/build/index.js:1
 msgid "Information: New update available"
-msgstr ""
+msgstr "اطلاعیه: به‌روزرسانی جدید موجود است"
 
 #: assets/build/index.js:1
 msgid "Open notifications"
-msgstr ""
+msgstr "باز کردن اعلان‌ها"
 
 #: assets/build/index.js:1
 msgid "Notifications"
-msgstr ""
+msgstr "اعلان‌ها"
 
 #: assets/build/index.js:1
 msgid "View all"
-msgstr ""
+msgstr "مشاهده همه"
 
 #: assets/build/index.js:1
 msgid "Online"
-msgstr ""
+msgstr "آنلاین"
 
 #: assets/build/index.js:1
 msgid "Degraded"
-msgstr ""
+msgstr "کاهش‌یافته"
 
 #: assets/build/index.js:1
 msgid "Offline"
-msgstr ""
+msgstr "آفلاین"
 
 #: assets/build/index.js:1
 msgid "Current Version: 1.0.0"
-msgstr ""
+msgstr "نسخه فعلی: ۱.۰.۰"
 
 #: assets/build/index.js:1
 msgid "Clean Admin"
-msgstr ""
+msgstr "مدیریت پاک"

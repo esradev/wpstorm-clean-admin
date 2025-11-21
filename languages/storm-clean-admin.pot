@@ -3,13 +3,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Storm Clean Admin 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpstorm-clean-admin\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/storm-clean-admin\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-10-28T20:19:16+00:00\n"
+"POT-Creation-Date: 2025-11-21T07:48:23+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: storm-clean-admin\n"
@@ -38,6 +38,8 @@ msgid "https://wpstorm.ir"
 msgstr ""
 
 #: includes/Core/Settings.php:70
+#: includes/Core/Settings.php:104
+#: includes/Core/Settings.php:105
 msgid "Settings"
 msgstr ""
 
@@ -50,7 +52,8 @@ msgid "new"
 msgstr ""
 
 #: includes/Core/Settings.php:97
-msgid "Auth"
+#: assets/build/index.js:1
+msgid "Dashboard"
 msgstr ""
 
 #: assets/build/index.js:1
@@ -319,10 +322,6 @@ msgstr ""
 
 #: assets/build/index.js:1
 msgid "Sending data to the server."
-msgstr ""
-
-#: assets/build/index.js:1
-msgid "Dashboard"
 msgstr ""
 
 #: assets/build/index.js:1
